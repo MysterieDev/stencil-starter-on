@@ -9,7 +9,6 @@ export const config: Config = {
     },
   ],
   devServer: {
-    reloadStrategy: 'pageReload',
     initialLoadUrl: 'ON-your-styleguide',
   },
 };
