@@ -6,6 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface ExampleComponent {
+        "exampleProp": string;
+        "exampleToUpperCase": () => Promise<void>;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +26,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
+    }
+    var HTMLExampleComponentElement: {
+        prototype: HTMLExampleComponentElement;
+        new (): HTMLExampleComponentElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +39,15 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface ExampleComponent {
+        "exampleProp"?: string;
+        "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +63,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "example-component": ExampleComponent;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +71,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
