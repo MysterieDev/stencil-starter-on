@@ -26,7 +26,11 @@ export class MyComponent {
     return format(this.first, this.middle, this.last);
   }
 
+  private testTsx() {
+    return <span>Max Mustermann</span>
+  }
+
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return <div>Hello, World! I'm {this.getText().length > 0 ? this.getText() : this.testTsx()}</div>;
   }
 }
