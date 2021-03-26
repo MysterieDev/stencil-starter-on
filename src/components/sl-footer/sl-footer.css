@@ -1,0 +1,12 @@
+.sl-footer {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    padding: 10px
+}
+
+.sl-dark-mode {
+    background-color: indigo;
+    color: white;
+}
