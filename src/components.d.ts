@@ -24,6 +24,11 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface SlServiceCard {
+        "slDarkMode": boolean;
+        "slImgSrc": string;
+        "slLink": string;
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +43,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLSlServiceCardElement extends Components.SlServiceCard, HTMLStencilElement {
+    }
+    var HTMLSlServiceCardElement: {
+        prototype: HTMLSlServiceCardElement;
+        new (): HTMLSlServiceCardElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "sl-service-card": HTMLSlServiceCardElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +74,15 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface SlServiceCard {
+        "slDarkMode"?: boolean;
+        "slImgSrc"?: string;
+        "slLink"?: string;
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "sl-service-card": SlServiceCard;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +91,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "sl-service-card": LocalJSX.SlServiceCard & JSXBase.HTMLAttributes<HTMLSlServiceCardElement>;
         }
     }
 }

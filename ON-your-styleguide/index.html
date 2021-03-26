@@ -8,12 +8,36 @@
     <script src="/dist/stencil-starter-on/stencil-starter-on.esm.js" type="module"></script>
     <title>your design guide</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-    <example-component example-prop="Dies ist ein Property-Inhalt der Webcomponent"> Dies ist der Slot-Inhalt </example-component>
-    <p>Ihr könnt all diesen Content verändern und mehr Unterseiten hinzufügen</p>
-    <small>Viel Spaß beim kreativ werden :-)</small>
+<body style="margin-top: 40px">
+    <div class="container grid-md">
+        <div class="columns">
+            <div class="column col-4 col-md-6 col-sm-12">
+                <sl-service-card sl-img-src="https://www.rd.com/wp-content/uploads/2019/05/American-shorthair-cat-scaled.jpg" sl-dark-mode sl-link="https://www.slezak-it.de">
+                    <div slot="slHeadline">Für Katzen</div>
+                    <div slot="slContent">Alles für die Mieze</div>
+                    <div slot="slLink">zur Website für Katzen</div>
+                </sl-service-card>
+            </div>
+            <div class="column col-4 col-md-6 col-sm-12">
+                <sl-service-card sl-link="https://www.slezak-it.de">
+                    <div slot="slLink">zur Website</div>
+                </sl-service-card>
+            </div>
+            <div class="column col-4 col-md-6 col-sm-12">
+                <sl-service-card sl-img-src="https://www.mera-petfood.com/files/_processed_/b/b/csm_iStock-521697453_bb8fbb7807.jpg" sl-dark-mode sl-link="https://www.slezak-it.de">
+                    <div slot="slHeadline">Für Hunde</div>
+                    <div slot="slContent">Alles für den Wauzi</div>
+                    <div slot="slLink">zur Website für Hunde</div>
+                </sl-service-card>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

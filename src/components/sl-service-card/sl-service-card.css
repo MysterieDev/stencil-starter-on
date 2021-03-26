@@ -1,0 +1,23 @@
+:host {
+    display: block;
+}
+
+.sl-card-style {
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.sl-card-img {
+    max-width: 100%;
+}
+
+.sl-dark-card,
+.sl-dark-card>a {
+    background-color: indigo;
+    color: white;
+}
+
+.sl-light-card {
+    background-color: ghostwhite;
+}
