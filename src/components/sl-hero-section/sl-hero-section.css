@@ -15,6 +15,17 @@
     text-align: center;
 }
 
+#addProductsButton {
+    background: ghostwhite;
+    border-radius: 8px;
+}
+
+#addProductsButton:hover {
+    color: grey;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
 ul {
     max-width: 300px;
     margin: 0 auto;

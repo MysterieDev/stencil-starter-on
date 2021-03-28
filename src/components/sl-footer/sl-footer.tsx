@@ -6,18 +6,17 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class SlFooter {
-  @Prop({reflect: true}) slDatenschutz: string;
-  @Prop({reflect: true}) slImpressum: string;
-  @Prop({reflect: true}) slDarkMode: boolean;
+  @Prop({ reflect: true, mutable: true }) slDatenschutz: string;
+  @Prop({ reflect: true, mutable: true }) slImpressum: string;
+  @Prop({ reflect: true, mutable: true }) slDarkMode: boolean;
 
   getFooterClasses() {
-    return "sl-footer " + this.hasDarkModeClasses()
+    return 'sl-footer ' + this.hasDarkModeClasses();
   }
 
   hasDarkModeClasses() {
-    return this.slDarkMode ? "sl-dark-mode" : "";
+    return this.slDarkMode ? 'sl-dark-mode' : '';
   }
-
 
   render() {
     return (
@@ -30,12 +29,21 @@ export class SlFooter {
             <h1>hello world!</h1>
           </slot>
           <div>
-            <p> <a class={this.hasDarkModeClasses()} href={this.slDatenschutz ?? "#"}>zum Datenschutz</a></p>
-            <p><a  class={this.hasDarkModeClasses()} href={this.slImpressum ?? "#"}> zum Impressum</a></p>
+            <p>
+              {' '}
+              <a class={this.hasDarkModeClasses()} href={this.slDatenschutz ?? '#'}>
+                zum Datenschutz
+              </a>
+            </p>
+            <p>
+              <a class={this.hasDarkModeClasses()} href={this.slImpressum ?? '#'}>
+                {' '}
+                zum Impressum
+              </a>
+            </p>
           </div>
         </div>
       </Host>
     );
   }
-
 }

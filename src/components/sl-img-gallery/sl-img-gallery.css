@@ -1,0 +1,25 @@
+:host {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.sl-img-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grow:hover {
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    transition: all 0.3s ease;
+}

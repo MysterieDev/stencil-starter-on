@@ -6,7 +6,7 @@ import { Component, Host, h, Prop, Element, State } from '@stencil/core';
   shadow: true,
 })
 export class SlHeroSection {
-  @Prop() slHeroHeadline: string;
+  @Prop({ reflect: true, mutable: true }) slHeroHeadline: string;
   @Element() el: HTMLElement;
 
   @State() remainingButtonClicked: boolean = false;
