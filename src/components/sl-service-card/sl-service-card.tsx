@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, Listen } from '@stencil/core';
 
 @Component({
   tag: 'sl-service-card',
@@ -10,6 +10,16 @@ export class SlServiceCard {
   @Prop({ reflect: true }) slLink: string;
   @Prop({ reflect: true }) slImgSrc: string;
   @Prop({ reflect: true }) slDarkMode: boolean;
+
+  @Listen("mouseenter")
+  handleMouseover() {
+    this.slDarkMode = !this.slDarkMode
+  }
+  
+    @Listen("mouseleave")
+  handleMouseleave() {
+    this.slDarkMode = !this.slDarkMode
+    }
   getLinkContent() {
     return this.slLink
       ? <a target="_blank" href={this.slLink}><slot name="slLink">externer Link</slot></a>
