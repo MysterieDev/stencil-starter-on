@@ -32,6 +32,9 @@ export namespace Components {
     interface SlHeader {
         "slDarkMode": boolean;
     }
+    interface SlHeroSection {
+        "slHeroHeadline": string;
+    }
     interface SlServiceCard {
         "slDarkMode": boolean;
         "slImgSrc": string;
@@ -63,6 +66,12 @@ declare global {
         prototype: HTMLSlHeaderElement;
         new (): HTMLSlHeaderElement;
     };
+    interface HTMLSlHeroSectionElement extends Components.SlHeroSection, HTMLStencilElement {
+    }
+    var HTMLSlHeroSectionElement: {
+        prototype: HTMLSlHeroSectionElement;
+        new (): HTMLSlHeroSectionElement;
+    };
     interface HTMLSlServiceCardElement extends Components.SlServiceCard, HTMLStencilElement {
     }
     var HTMLSlServiceCardElement: {
@@ -74,6 +83,7 @@ declare global {
         "my-component": HTMLMyComponentElement;
         "sl-footer": HTMLSlFooterElement;
         "sl-header": HTMLSlHeaderElement;
+        "sl-hero-section": HTMLSlHeroSectionElement;
         "sl-service-card": HTMLSlServiceCardElement;
     }
 }
@@ -104,6 +114,9 @@ declare namespace LocalJSX {
     interface SlHeader {
         "slDarkMode"?: boolean;
     }
+    interface SlHeroSection {
+        "slHeroHeadline"?: string;
+    }
     interface SlServiceCard {
         "slDarkMode"?: boolean;
         "slImgSrc"?: string;
@@ -114,6 +127,7 @@ declare namespace LocalJSX {
         "my-component": MyComponent;
         "sl-footer": SlFooter;
         "sl-header": SlHeader;
+        "sl-hero-section": SlHeroSection;
         "sl-service-card": SlServiceCard;
     }
 }
@@ -125,6 +139,7 @@ declare module "@stencil/core" {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "sl-footer": LocalJSX.SlFooter & JSXBase.HTMLAttributes<HTMLSlFooterElement>;
             "sl-header": LocalJSX.SlHeader & JSXBase.HTMLAttributes<HTMLSlHeaderElement>;
+            "sl-hero-section": LocalJSX.SlHeroSection & JSXBase.HTMLAttributes<HTMLSlHeroSectionElement>;
             "sl-service-card": LocalJSX.SlServiceCard & JSXBase.HTMLAttributes<HTMLSlServiceCardElement>;
         }
     }
