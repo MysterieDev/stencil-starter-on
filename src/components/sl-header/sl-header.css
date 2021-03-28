@@ -5,10 +5,19 @@
     padding: 10px
 }
 
+.sl-header>a {
+    text-decoration-line: none;
+}
+
+.sl-header>a:hover {
+    font-weight: bold;
+}
+
 .sl-dark-header,
 .sl-dark-header>a {
     background: var(--app-dark-mode-bg);
     color: var(--app-dark-mode-color);
+    ;
 }
 
 .sl-light-header {
