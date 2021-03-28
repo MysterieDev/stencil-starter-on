@@ -14,10 +14,10 @@
 
 .sl-dark-card,
 .sl-dark-card>a {
-    background-color: indigo;
-    color: white;
+    background-color: var(--app-dark-mode-bg);
+    color: var(--app-dark-mode-color);
 }
 
 .sl-light-card {
-    background-color: ghostwhite;
+    background-color: var(--app-light-mode-bg);
 }

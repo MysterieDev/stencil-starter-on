@@ -29,6 +29,9 @@ export namespace Components {
         "slDatenschutz": string;
         "slImpressum": string;
     }
+    interface SlHeader {
+        "slDarkMode": boolean;
+    }
     interface SlServiceCard {
         "slDarkMode": boolean;
         "slImgSrc": string;
@@ -54,6 +57,12 @@ declare global {
         prototype: HTMLSlFooterElement;
         new (): HTMLSlFooterElement;
     };
+    interface HTMLSlHeaderElement extends Components.SlHeader, HTMLStencilElement {
+    }
+    var HTMLSlHeaderElement: {
+        prototype: HTMLSlHeaderElement;
+        new (): HTMLSlHeaderElement;
+    };
     interface HTMLSlServiceCardElement extends Components.SlServiceCard, HTMLStencilElement {
     }
     var HTMLSlServiceCardElement: {
@@ -64,6 +73,7 @@ declare global {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
         "sl-footer": HTMLSlFooterElement;
+        "sl-header": HTMLSlHeaderElement;
         "sl-service-card": HTMLSlServiceCardElement;
     }
 }
@@ -91,6 +101,9 @@ declare namespace LocalJSX {
         "slDatenschutz"?: string;
         "slImpressum"?: string;
     }
+    interface SlHeader {
+        "slDarkMode"?: boolean;
+    }
     interface SlServiceCard {
         "slDarkMode"?: boolean;
         "slImgSrc"?: string;
@@ -100,6 +113,7 @@ declare namespace LocalJSX {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
         "sl-footer": SlFooter;
+        "sl-header": SlHeader;
         "sl-service-card": SlServiceCard;
     }
 }
@@ -110,6 +124,7 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "sl-footer": LocalJSX.SlFooter & JSXBase.HTMLAttributes<HTMLSlFooterElement>;
+            "sl-header": LocalJSX.SlHeader & JSXBase.HTMLAttributes<HTMLSlHeaderElement>;
             "sl-service-card": LocalJSX.SlServiceCard & JSXBase.HTMLAttributes<HTMLSlServiceCardElement>;
         }
     }

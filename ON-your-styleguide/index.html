@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/dist/stencil-starter-on/stencil-starter-on.esm.js" type="module"></script>
+    <link rel="stylesheet" href="dist/stencil-starter-on/stencil-starter-on.css" />
     <title>your design guide</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css" />
-    <link rel="stylesheet" href="style.css" />
 </head>
 
-<body style="margin-top: 40px">
+<body>
     <div class="container grid-md">
+        <sl-header>
+            <div slot="sl-header-links">
+                <a href="#">zum Blog</a>
+                <a href="#">zum Shop</a>
+                <a href="https://www.slezak-it.de/impressum">Impressum</a>
+            </div>
+        </sl-header>
         <div class="columns">
             <div class="column col-4 col-md-6 col-sm-12">
                 <sl-service-card sl-img-src="https://www.rd.com/wp-content/uploads/2019/05/American-shorthair-cat-scaled.jpg" sl-dark-mode sl-link="https://www.slezak-it.de">

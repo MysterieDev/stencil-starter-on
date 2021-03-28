@@ -7,6 +7,6 @@
 }
 
 .sl-dark-mode {
-    background-color: indigo;
-    color: white;
+    background-color: var(--app-dark-mode-bg);
+    color: var(--app-dark-mode-color);
 }

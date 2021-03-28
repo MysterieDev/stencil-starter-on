@@ -1,0 +1,16 @@
+.sl-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    padding: 10px
+}
+
+.sl-dark-header,
+.sl-dark-header>a {
+    background: var(--app-dark-mode-bg);
+    color: var(--app-dark-mode-color);
+}
+
+.sl-light-header {
+    background: var(--app-light-mode-bg);
+}
