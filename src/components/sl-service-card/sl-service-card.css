@@ -16,8 +16,10 @@
 .sl-dark-card>a {
     background-color: var(--app-dark-mode-bg);
     color: var(--app-dark-mode-color);
+    transition: 0.4s;
 }
 
 .sl-light-card {
     background-color: var(--app-light-mode-bg);
+    transition: 0.4s;
 }

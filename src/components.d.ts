@@ -24,6 +24,8 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface SlFlipCard {
+    }
     interface SlFooter {
         "slDarkMode": boolean;
         "slDatenschutz": string;
@@ -55,6 +57,12 @@ declare global {
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
+    };
+    interface HTMLSlFlipCardElement extends Components.SlFlipCard, HTMLStencilElement {
+    }
+    var HTMLSlFlipCardElement: {
+        prototype: HTMLSlFlipCardElement;
+        new (): HTMLSlFlipCardElement;
     };
     interface HTMLSlFooterElement extends Components.SlFooter, HTMLStencilElement {
     }
@@ -89,6 +97,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "sl-flip-card": HTMLSlFlipCardElement;
         "sl-footer": HTMLSlFooterElement;
         "sl-header": HTMLSlHeaderElement;
         "sl-hero-section": HTMLSlHeroSectionElement;
@@ -115,6 +124,8 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface SlFlipCard {
+    }
     interface SlFooter {
         "slDarkMode"?: boolean;
         "slDatenschutz"?: string;
@@ -136,6 +147,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "sl-flip-card": SlFlipCard;
         "sl-footer": SlFooter;
         "sl-header": SlHeader;
         "sl-hero-section": SlHeroSection;
@@ -149,6 +161,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "sl-flip-card": LocalJSX.SlFlipCard & JSXBase.HTMLAttributes<HTMLSlFlipCardElement>;
             "sl-footer": LocalJSX.SlFooter & JSXBase.HTMLAttributes<HTMLSlFooterElement>;
             "sl-header": LocalJSX.SlHeader & JSXBase.HTMLAttributes<HTMLSlHeaderElement>;
             "sl-hero-section": LocalJSX.SlHeroSection & JSXBase.HTMLAttributes<HTMLSlHeroSectionElement>;
