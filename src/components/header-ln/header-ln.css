@@ -1,0 +1,90 @@
+:host {
+  display: block;
+  color: #45a29e;
+}
+
+.ebn1item{
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.ebn2 {
+  height: 100vh;
+width: 0;
+position: fixed;
+right: 0;
+top: 0;
+background-color: #26313f;
+transition: 1s;
+}
+
+.ebn1 {
+  height: 0;
+width: 100vw;
+left: 0;
+bottom: 0;
+background-color: #1f2833;
+position: fixed;
+z-index: 1030;
+transition: 1s;
+}
+
+a:link {
+  color: #45a29e;
+}
+a:hover {
+  color: #2f706d;
+}
+
+a{
+  color: #45a29e;
+  font-size: 45px;
+}
+
+
+
+.exit {
+  color: #45a29e;
+  font-size: 45px;
+}
+
+.item2{
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+.ebn1>a .ebn1>p {
+  font-size: 45px;
+}
+
+.ebn1>.exit{
+  font-size: 40px;
+  z-index: 1032;
+  position: relative;
+  bottom: 135px;
+  left: 30px;
+  text-align: left;
+}
+
+.burger {
+  display: block;
+  height: 29px;
+  width: 44px;
+  z-index: 1031;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+}
+.burger>span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1031;
+  background: black;
+}
