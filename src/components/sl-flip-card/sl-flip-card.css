@@ -5,7 +5,8 @@
 .sl-card {
     width: 200px;
     height: 200px;
-    perspective: 500px;
+    perspective: 800px;
+    margin: 0 auto;
 }
 
 .sl-content {
