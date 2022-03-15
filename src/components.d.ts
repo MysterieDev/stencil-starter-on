@@ -10,6 +10,12 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface ExpNavbar {
+        "contactBtnHref": string;
+        "contactBtnLabel": string;
+        "isDarkMode": boolean;
+        "navLinksJson": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -32,6 +38,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLExpNavbarElement extends Components.ExpNavbar, HTMLStencilElement {
+    }
+    var HTMLExpNavbarElement: {
+        prototype: HTMLExpNavbarElement;
+        new (): HTMLExpNavbarElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -40,6 +52,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "exp-navbar": HTMLExpNavbarElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -47,6 +60,12 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface ExpNavbar {
+        "contactBtnHref"?: string;
+        "contactBtnLabel"?: string;
+        "isDarkMode"?: boolean;
+        "navLinksJson"?: string;
     }
     interface MyComponent {
         /**
@@ -64,6 +83,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "exp-navbar": ExpNavbar;
         "my-component": MyComponent;
     }
 }
@@ -72,6 +92,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "exp-navbar": LocalJSX.ExpNavbar & JSXBase.HTMLAttributes<HTMLExpNavbarElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
