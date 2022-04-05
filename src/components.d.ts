@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { MyObj } from "./utils/interfaces";
 export namespace Components {
     interface ExampleComponent {
         "exampleProp": string;
@@ -24,6 +25,11 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface OnTest {
+        "isBold": boolean;
+        "myArray": number[];
+        "myObj": MyObj;
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +44,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLOnTestElement extends Components.OnTest, HTMLStencilElement {
+    }
+    var HTMLOnTestElement: {
+        prototype: HTMLOnTestElement;
+        new (): HTMLOnTestElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "on-test": HTMLOnTestElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +75,15 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface OnTest {
+        "isBold"?: boolean;
+        "myArray"?: number[];
+        "myObj"?: MyObj;
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "on-test": OnTest;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +92,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "on-test": LocalJSX.OnTest & JSXBase.HTMLAttributes<HTMLOnTestElement>;
         }
     }
 }
