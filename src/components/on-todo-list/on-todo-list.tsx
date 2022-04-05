@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, State, Listen } from '@stencil/core';
 
 @Component({
   tag: 'on-todo-list',
@@ -7,18 +7,35 @@ import { Component, Host, h } from '@stencil/core';
 })
 export class OnTodoList {
 
+  @State() todos: Array<{task: string, completed: boolean}> = [
+    {task: 'müll rausbringen', completed: false},
+    {task: 'stencil lernen', completed: true},
+  ];
+
+  toggleTodoCompleted(todo: {task: string, completed: boolean}){
+    const index = this.todos.findIndex((listEntry)=>
+      listEntry.task === todo.task);
+    !true
+    this.todos[index].completed = !this.todos[index].completed;
+    this.todos = [...this.todos];
+  }
+
   render() {
     return (
       <Host>
         <div id="myDIV" class="header">
-  <h2 style={{margin: '5px'}}>My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title..." />
-  <span onClick={()=>{}} class="addBtn">Add</span>
-</div>
+        <h2 style={{margin: '5px'}}>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title..." />
+        <span onClick={()=>{}} class="addBtn">Add</span>
+      </div>
         <ul>
-          <li>addTodo 1</li>
-          <li>addTodo 1</li>
-          <li>addTodo 1</li>
+          {
+            this.todos.map((todo)=> 
+            <li class={todo.completed && "checked"} 
+            onClick={()=>this.toggleTodoCompleted(todo)}>
+            {todo.task}
+            </li>)
+          }
         </ul>
       </Host>
     );
