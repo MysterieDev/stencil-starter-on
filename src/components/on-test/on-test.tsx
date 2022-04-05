@@ -69,15 +69,16 @@ export class OnTest {
   render() {
     return (
       <Host>
+        <p>Dies ist ein Absatz</p>
          { this.isBold ? <strong><slot></slot></strong> : <slot></slot>}
-         <ul onClick={()=>this.handleListClick()} >
+         <ul >
          {
            this.myArray.map((entry)=>
             <li>{entry.toString()}</li>
            )
          }
          </ul>
-         <p>{this.timesClicked}</p>
+         <button onClick={()=>this.handleListClick()}>{this.timesClicked} -- increment me by clicking</button>
       </Host>
     );
   }

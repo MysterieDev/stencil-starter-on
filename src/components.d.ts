@@ -27,6 +27,7 @@ export namespace Components {
     }
     interface OnTest {
         "countUpTimesClicked": () => Promise<void>;
+        "getComponentDimensions": () => Promise<number>;
         "isBold": boolean;
         "myArray": number[];
         "myObj": MyObj;
