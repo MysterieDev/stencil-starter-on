@@ -80,6 +80,7 @@ declare namespace LocalJSX {
         "isBold"?: boolean;
         "myArray"?: number[];
         "myObj"?: MyObj;
+        "onMyCustomEvent"?: (event: CustomEvent<string>) => void;
         "timesClicked"?: number;
     }
     interface IntrinsicElements {
