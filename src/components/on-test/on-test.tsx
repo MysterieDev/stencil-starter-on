@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Listen, Event, EventEmitter, Method, State, Watch} from '@stencil/core';
+import { Component, Host, h, Prop, Listen, Event, EventEmitter, Method, State, Watch, Element} from '@stencil/core';
 import { MyObj } from '../../utils/interfaces';
 
 
@@ -8,6 +8,8 @@ import { MyObj } from '../../utils/interfaces';
   shadow: true,
 })
 export class OnTest {
+
+  @Element() el: HTMLOnTestElement;
 
   @Prop({ mutable: true}) isBold = false;
   @Prop() myArray = [1,2,3];
@@ -35,6 +37,11 @@ export class OnTest {
   }
 
   @Method()
+  async getComponentDimensions(){
+    return this.el.getBoundingClientRect().height;
+  }
+
+  @Method()
   async countUpTimesClicked(){
     this.timesClicked++;
   }
@@ -51,6 +58,13 @@ export class OnTest {
     this.timesClicked = this.timesClicked +1 ;
   }
 
+  componentDidLoad(){
+    console.log("component was loaded")
+  }
+
+  componentDidUpdate(){
+    console.log("component did update")
+  }
 
   render() {
     return (
