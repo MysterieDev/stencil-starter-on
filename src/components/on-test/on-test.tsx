@@ -60,6 +60,7 @@ export class OnTest {
 
   componentDidLoad(){
     console.log("component was loaded")
+    console.log(this.el.querySelector('button'));
   }
 
   componentDidUpdate(){
@@ -71,7 +72,7 @@ export class OnTest {
       <Host>
         <p>Dies ist ein Absatz</p>
          { this.isBold ? <strong><slot></slot></strong> : <slot></slot>}
-         <ul >
+         <ul>
          {
            this.myArray.map((entry)=>
             <li>{entry.toString()}</li>

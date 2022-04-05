@@ -3,3 +3,10 @@
   border: 1px dotted black;
   padding: 5px;
 }
+
+:host button{
+background-color: skyblue;
+font-weight:bold;
+text-decoration: underline;
+font-size: 1.5em;
+}

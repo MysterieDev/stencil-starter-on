@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
     <title>your design guide</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <style>
         p{
             color:red;
+        }
+        button{
+            background-color: red;
+            font-weight: bold;
+            text-decoration: line-through;
         }
     </style>
 </head>
@@ -19,9 +25,10 @@
 <body>
     <example-component example-prop="Dies ist ein Property-Inhalt der Webcomponent"> Dies ist der Slot-Inhalt </example-component>
     <p>Ihr könnt all diesen Content verändern und mehr Unterseiten hinzufügen</p>
+    <button>Klick mich nicht an</button><br>
     <small>Viel Spaß beim kreativ werden :-)</small>
     <br>
-    <on-test is-bold my-array="3">Hello World</on-test>
+    <on-test class="border-solid hover:border-dotted" is-bold my-array="3">Hello World</on-test>
 </body>
 
 </html>
