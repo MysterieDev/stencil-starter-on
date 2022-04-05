@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Listen, Event, EventEmitter} from '@stencil/core';
+import { Component, Host, h, Prop, Listen, Event, EventEmitter, Method, State, Watch} from '@stencil/core';
 import { MyObj } from '../../utils/interfaces';
 
 
@@ -16,7 +16,9 @@ export class OnTest {
     nachname: '',
     alter: 0
   }
-  @Prop({mutable: true}) timesClicked = 1;
+  @State() timesClicked = 1;
+
+
 
   @Event({
     eventName: 'myCustomEvent'
@@ -32,11 +34,21 @@ export class OnTest {
     console.log(e, e.detail)
   }
 
-  private handleListClick(){
-    this.timesClicked = this.timesClicked +1 ;
+  @Method()
+  async countUpTimesClicked(){
+    this.timesClicked++;
+  }
+
+  @Watch('timesClicked')
+  handleTimesClickedWatcher(){
+    console.log('timesClicked Changed, its :', this.timesClicked)
     if(this.timesClicked > 10){
       this.myCustomEvent.emit("test");
     }
+  }
+
+  private handleListClick(){
+    this.timesClicked = this.timesClicked +1 ;
   }
 
 

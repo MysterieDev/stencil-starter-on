@@ -26,10 +26,10 @@ export namespace Components {
         "middle": string;
     }
     interface OnTest {
+        "countUpTimesClicked": () => Promise<void>;
         "isBold": boolean;
         "myArray": number[];
         "myObj": MyObj;
-        "timesClicked": number;
     }
 }
 declare global {
@@ -81,7 +81,6 @@ declare namespace LocalJSX {
         "myArray"?: number[];
         "myObj"?: MyObj;
         "onMyCustomEvent"?: (event: CustomEvent<string>) => void;
-        "timesClicked"?: number;
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
