@@ -24,6 +24,8 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface OnTodoList {
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +40,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLOnTodoListElement extends Components.OnTodoList, HTMLStencilElement {
+    }
+    var HTMLOnTodoListElement: {
+        prototype: HTMLOnTodoListElement;
+        new (): HTMLOnTodoListElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "on-todo-list": HTMLOnTodoListElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +71,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface OnTodoList {
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "on-todo-list": OnTodoList;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +85,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "on-todo-list": LocalJSX.OnTodoList & JSXBase.HTMLAttributes<HTMLOnTodoListElement>;
         }
     }
 }
