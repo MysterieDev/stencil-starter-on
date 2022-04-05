@@ -19,7 +19,7 @@ export class OnTodoList {
       listEntry.task === todo.task);
     !true
     this.todos[index].completed = !this.todos[index].completed;
-    this.todos = [...this.todos];
+    this.todos = [...this.todos]; // for change detection
   }
 
   handleAddTodo(){
@@ -34,9 +34,19 @@ export class OnTodoList {
       alert("todo already exists")
     }
     else{
-      this.todos = [...this.todos, {task: input.value, completed: false}]
+      this.todos = [...this.todos, {task: input.value, completed: false}]  // ADD todo
     }
     
+  }
+
+  deleteTodo(todo: {task: string, completed: boolean}){
+    const todoIndex = this.todos.findIndex(
+      (todoEl) => todoEl.task === todo.task
+    )
+    if(todoIndex !== -1){
+      this.todos.splice(todoIndex, 1);
+      this.todos = [...this.todos]; // for change detection
+    }
   }
 
   render() {
@@ -53,6 +63,7 @@ export class OnTodoList {
             <li class={todo.completed && "checked"} 
             onClick={()=>this.toggleTodoCompleted(todo)}>
             {todo.task}
+            <span onClick={()=>this.deleteTodo(todo)} class="close">x</span>
             </li>)
           }
         </ul>
