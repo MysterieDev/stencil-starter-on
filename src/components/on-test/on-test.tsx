@@ -69,8 +69,8 @@ export class OnTest {
 
   render() {
     return (
-      <Host>
-        <p>Dies ist ein Absatz</p>
+      <Host  class={"content"}>
+        <p class={'is-size-1'}>Dies ist ein Absatz</p>
          { this.isBold ? <strong><slot></slot></strong> : <slot></slot>}
          <ul>
          {

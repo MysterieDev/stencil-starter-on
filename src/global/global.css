@@ -1,3 +1,6 @@
 :root {
-    --app-example-var: black;
+    --app-button-background-dark: black;
+    --app-button-font-dark: white;
+    --app-button-background-light: white;
+    --app-button-font-light: black;
 }
