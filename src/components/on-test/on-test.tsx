@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, Listen } from '@stencil/core';
+import { Component, Host, h, Prop, Listen} from '@stencil/core';
 import { MyObj } from '../../utils/interfaces';
 
 
@@ -19,7 +19,7 @@ export class OnTest {
     alter: 0
   }
 
-  @Prop() timesClicked = 0;
+  @Prop({mutable: true}) timesClicked = 1;
 
   @Listen("click")
   handleClick(){
@@ -27,16 +27,15 @@ export class OnTest {
   }
 
   private handleListClick(){
-    console.log("list");
-    debugger;
-    this.timesClicked = this.timesClicked + 1;
+    this.timesClicked = this.timesClicked +1 ;
   }
+
 
   render() {
     return (
       <Host>
          { this.isBold ? <strong><slot></slot></strong> : <slot></slot>}
-         <ul onClick={this.handleListClick} >
+         <ul onClick={()=>this.handleListClick()} >
          {
            this.myArray.map((entry)=>
             <li>{entry.toString()}</li>
