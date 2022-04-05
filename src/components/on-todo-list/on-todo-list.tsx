@@ -1,4 +1,4 @@
-import { Component, Host, h, State, Listen } from '@stencil/core';
+import { Component, Host, h, State, Element } from '@stencil/core';
 
 @Component({
   tag: 'on-todo-list',
@@ -12,6 +12,8 @@ export class OnTodoList {
     {task: 'stencil lernen', completed: true},
   ];
 
+  @Element() el: HTMLOnTodoListElement;
+
   toggleTodoCompleted(todo: {task: string, completed: boolean}){
     const index = this.todos.findIndex((listEntry)=>
       listEntry.task === todo.task);
@@ -20,13 +22,30 @@ export class OnTodoList {
     this.todos = [...this.todos];
   }
 
+  handleAddTodo(){
+    const input = this.el.shadowRoot.getElementById('myInput') as HTMLInputElement;
+    if(!input.value){
+      alert('Please enter a todo');
+    }
+    const isAlreadyInList = this.todos.findIndex(
+      (todoEl) => todoEl.task === input.value
+      ) !== -1
+    if(isAlreadyInList){
+      alert("todo already exists")
+    }
+    else{
+      this.todos = [...this.todos, {task: input.value, completed: false}]
+    }
+    
+  }
+
   render() {
     return (
       <Host>
         <div id="myDIV" class="header">
         <h2 style={{margin: '5px'}}>My To Do List</h2>
         <input type="text" id="myInput" placeholder="Title..." />
-        <span onClick={()=>{}} class="addBtn">Add</span>
+        <span onClick={()=>this.handleAddTodo()} class="addBtn">Add</span>
       </div>
         <ul>
           {
