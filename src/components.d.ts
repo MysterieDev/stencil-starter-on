@@ -29,6 +29,7 @@ export namespace Components {
         "isBold": boolean;
         "myArray": number[];
         "myObj": MyObj;
+        "timesClicked": number;
     }
 }
 declare global {
@@ -79,6 +80,7 @@ declare namespace LocalJSX {
         "isBold"?: boolean;
         "myArray"?: number[];
         "myObj"?: MyObj;
+        "timesClicked"?: number;
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
