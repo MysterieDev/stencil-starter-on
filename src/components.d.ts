@@ -10,6 +10,10 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixRecipeCard {
+    }
+    interface GrpsixRecipeGallery {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -32,6 +36,18 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixRecipeCardElement extends Components.GrpsixRecipeCard, HTMLStencilElement {
+    }
+    var HTMLGrpsixRecipeCardElement: {
+        prototype: HTMLGrpsixRecipeCardElement;
+        new (): HTMLGrpsixRecipeCardElement;
+    };
+    interface HTMLGrpsixRecipeGalleryElement extends Components.GrpsixRecipeGallery, HTMLStencilElement {
+    }
+    var HTMLGrpsixRecipeGalleryElement: {
+        prototype: HTMLGrpsixRecipeGalleryElement;
+        new (): HTMLGrpsixRecipeGalleryElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -40,6 +56,8 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-recipe-card": HTMLGrpsixRecipeCardElement;
+        "grpsix-recipe-gallery": HTMLGrpsixRecipeGalleryElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -47,6 +65,10 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixRecipeCard {
+    }
+    interface GrpsixRecipeGallery {
     }
     interface MyComponent {
         /**
@@ -64,6 +86,8 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-recipe-card": GrpsixRecipeCard;
+        "grpsix-recipe-gallery": GrpsixRecipeGallery;
         "my-component": MyComponent;
     }
 }
@@ -72,6 +96,8 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-recipe-card": LocalJSX.GrpsixRecipeCard & JSXBase.HTMLAttributes<HTMLGrpsixRecipeCardElement>;
+            "grpsix-recipe-gallery": LocalJSX.GrpsixRecipeGallery & JSXBase.HTMLAttributes<HTMLGrpsixRecipeGalleryElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
