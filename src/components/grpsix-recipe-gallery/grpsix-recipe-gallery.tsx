@@ -29,19 +29,18 @@ componentWillLoad() {
   render() {
     return (
       <Host>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-
-            {this.apiData && // Checks if data is available
-            this.apiData.map(recipe =>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          {this.apiData && // Checks if data is available
+          this.apiData.map(recipe =>
+            <div class="col">
               <div class="card">
-              <img src={recipe.imageUrl} class="card-img-top" alt={this.imageAltTextInfo + (recipe.title)} />
-              <div class="card-body">
-                <h5 class="card-title">{recipe.title}</h5>
+                <img src={recipe.imageUrl} class="card-img-top" alt={this.imageAltTextInfo + (recipe.title)} />
+                <div class="card-body">
+                  <h5 class="card-title">{recipe.title}</h5>
+                </div>
               </div>
             </div>
-            )}
-          </div>
+          )}
         </div>
       </Host>
     );
