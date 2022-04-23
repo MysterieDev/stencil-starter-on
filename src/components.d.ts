@@ -13,6 +13,7 @@ export namespace Components {
     interface GrpsixRecipeCard {
     }
     interface GrpsixRecipeGallery {
+        "imageAltTextInfo": string;
     }
     interface MyComponent {
         /**
@@ -69,6 +70,7 @@ declare namespace LocalJSX {
     interface GrpsixRecipeCard {
     }
     interface GrpsixRecipeGallery {
+        "imageAltTextInfo"?: string;
     }
     interface MyComponent {
         /**

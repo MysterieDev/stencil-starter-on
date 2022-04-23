@@ -1,4 +1,4 @@
-import { Component, Host, h, State } from '@stencil/core';
+import { Component, Host, h, State, Prop } from '@stencil/core';
 
 // Interface for API
 interface ApiData {
@@ -6,6 +6,7 @@ interface ApiData {
   ingredients: Array<string>;
   preperation: Array<string>;
   tips: string;
+  imageUrl: string;
 }
 
 @Component({
@@ -16,6 +17,7 @@ interface ApiData {
 export class GrpsixRecipeGallery {
 
 @State() apiData: ApiData[];
+@Prop() imageAltTextInfo: string = "Bild für ";
 
 componentWillLoad() {
   fetch('./ON-your-styleguide/recipes.json') // Fetching the data via api :TODO: Dummy
@@ -27,13 +29,19 @@ componentWillLoad() {
   render() {
     return (
       <Host>
-        <div>
-          {this.apiData && // If Data is available, then interate thru the array
-          this.apiData.map(recipe => // return the map, iterate thru the array and create the following elements for each element
-            <div>
-              <h3>{recipe.title}</h3>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+
+            {this.apiData && // Checks if data is available
+            this.apiData.map(recipe =>
+              <div class="card">
+              <img src={recipe.imageUrl} class="card-img-top" alt={this.imageAltTextInfo + (recipe.title)} />
+              <div class="card-body">
+                <h5 class="card-title">{recipe.title}</h5>
+              </div>
             </div>
-          )}
+            )}
+          </div>
         </div>
       </Host>
     );

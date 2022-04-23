@@ -1,4 +1,74 @@
 [
+
+    {
+        "title": "Fakerezept",
+        "ingredients": [
+            "Fake ingredient",
+            "250ml Milch oder Pflanzendrink",
+            "1  Msp. Zimt",
+            "Nach Bedarf Agavendicksaft"
+        ],
+        "preperation": [
+            "Fake preperation",
+            "Milch zusammen mit der Banane und dem Zimt pürieren.",
+            "Nach Bedarf mit Agavendicksaft abschmecken.",
+            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
+        ],
+        "tips": "Fake tip",
+        "imageUrl": "https://via.placeholder.com/600/92c952"
+    },
+    {
+        "title": "Fakerezept",
+        "ingredients": [
+            "Fake ingredient",
+            "250ml Milch oder Pflanzendrink",
+            "1  Msp. Zimt",
+            "Nach Bedarf Agavendicksaft"
+        ],
+        "preperation": [
+            "Fake preperation",
+            "Milch zusammen mit der Banane und dem Zimt pürieren.",
+            "Nach Bedarf mit Agavendicksaft abschmecken.",
+            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
+        ],
+        "tips": "Fake tip",
+        "imageUrl": "https://via.placeholder.com/600/92c952"
+    },
+    {
+        "title": "Fakerezept",
+        "ingredients": [
+            "Fake ingredient",
+            "250ml Milch oder Pflanzendrink",
+            "1  Msp. Zimt",
+            "Nach Bedarf Agavendicksaft"
+        ],
+        "preperation": [
+            "Fake preperation",
+            "Milch zusammen mit der Banane und dem Zimt pürieren.",
+            "Nach Bedarf mit Agavendicksaft abschmecken.",
+            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
+        ],
+        "tips": "Fake tip",
+        "imageUrl": "https://via.placeholder.com/600/92c952"
+    },
+    {
+        "title": "Fakerezept",
+        "ingredients": [
+            "Fake ingredient",
+            "250ml Milch oder Pflanzendrink",
+            "1  Msp. Zimt",
+            "Nach Bedarf Agavendicksaft"
+        ],
+        "preperation": [
+            "Fake preperation",
+            "Milch zusammen mit der Banane und dem Zimt pürieren.",
+            "Nach Bedarf mit Agavendicksaft abschmecken.",
+            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
+        ],
+        "tips": "Fake tip",
+        "imageUrl": "https://via.placeholder.com/600/92c952"
+    },
+
     {
         "title": "Bananenmilch",
         "ingredients": [
