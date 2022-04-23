@@ -1,6 +1,6 @@
 import { Component, Host, h, State } from '@stencil/core';
 
-// Interface for APi
+// Interface for API
 interface ApiData {
   title: string;
   ingredients: Array<string>;
