@@ -20,7 +20,7 @@ export class GrpsixRecipeGallery {
 @Prop() imageAltTextInfo: string = "Bild für ";
 
 componentWillLoad() {
-  fetch('./ON-your-styleguide/recipes.json') // Fetching the data via api :TODO: Dummy
+  fetch('./recipes.json') // Fetching the data via api :TODO: Dummy
   .then(res => res.json()) // Return the fetched Data as JSON
   .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes)) // apiData wird der Key aus apiRecipes zugewiesen
   .catch(err => console.error(err)); // catching errors and logging in console
