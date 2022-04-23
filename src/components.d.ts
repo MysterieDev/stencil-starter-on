@@ -10,6 +10,14 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixHerobanner {
+        "heading": string;
+        "imageAltText": string;
+        "imageSrc": string;
+        "linkHref": string;
+        "linkText": string;
+        "text": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -32,6 +40,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixHerobannerElement extends Components.GrpsixHerobanner, HTMLStencilElement {
+    }
+    var HTMLGrpsixHerobannerElement: {
+        prototype: HTMLGrpsixHerobannerElement;
+        new (): HTMLGrpsixHerobannerElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -40,6 +54,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-herobanner": HTMLGrpsixHerobannerElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -47,6 +62,14 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixHerobanner {
+        "heading"?: string;
+        "imageAltText"?: string;
+        "imageSrc"?: string;
+        "linkHref"?: string;
+        "linkText"?: string;
+        "text"?: string;
     }
     interface MyComponent {
         /**
@@ -64,6 +87,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-herobanner": GrpsixHerobanner;
         "my-component": MyComponent;
     }
 }
@@ -72,6 +96,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-herobanner": LocalJSX.GrpsixHerobanner & JSXBase.HTMLAttributes<HTMLGrpsixHerobannerElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
