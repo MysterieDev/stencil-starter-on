@@ -3,10 +3,9 @@ import { Component, Host, h, State } from '@stencil/core';
 // Interface for APi
 interface ApiData {
   title: string;
-  title_ingredients: string;
   ingredients: Array<string>;
-  title_preperation: string;
   preperation: Array<string>;
+  tips: string;
 }
 
 @Component({
@@ -33,7 +32,6 @@ componentWillLoad() {
           this.apiData.map(recipe => // return the map, iterate thru the array and create the following elements for each element
             <div>
               <h3>{recipe.title}</h3>
-              <h4>{recipe.title_ingredients}</h4>
             </div>
           )}
         </div>
