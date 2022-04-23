@@ -1,11 +1,11 @@
 import { Component, Host, h } from '@stencil/core';
 
 @Component({
-  tag: 'grpsix-recipe-galery',
-  styleUrl: 'grpsix-recipe-galery.css',
+  tag: 'grpsix-recipe-gallery',
+  styleUrl: 'grpsix-recipe-gallery.css',
   shadow: true,
 })
-export class GrpsixRecipeGalery {
+export class GrpsixRecipeGallery {
 
   render() {
     return (
