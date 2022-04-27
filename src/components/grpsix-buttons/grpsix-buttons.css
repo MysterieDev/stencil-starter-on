@@ -1,3 +1,15 @@
 :host {
   display: block;
 }
+.btn-primary {
+  background-color: mistyrose;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5%;
+  font-size: 100%;
+  border-radius: 1.2em;
+}
+.btn-primary:focus, .btn-primary:hover {
+  box-shadow: 0 .2em .4em;
+  cursor: pointer;
+}
