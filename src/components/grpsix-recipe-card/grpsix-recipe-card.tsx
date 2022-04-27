@@ -1,4 +1,13 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, State } from '@stencil/core';
+
+// Interface for API
+interface ApiData {
+  title: string;
+  ingredients: Array<string>;
+  preperation: Array<string>;
+  tips: string;
+  imageUrl: string;
+}
 
 @Component({
   tag: 'grpsix-recipe-card',
@@ -7,10 +16,24 @@ import { Component, Host, h } from '@stencil/core';
 })
 export class GrpsixRecipeCard {
 
+  @State() apiData: ApiData[];
+
+  componentWillLoad() {
+    fetch('./recipes.json')
+    .then(res => res.json())
+    .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes))
+    .catch(err => console.log(err));
+  }
+
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div>
+          {this.apiData &&
+          this.apiData.map((recipe, index) =>
+            <p></p>
+          )}
+        </div>
       </Host>
     );
   }
