@@ -14,5 +14,5 @@ export class GrpsixCookiebanner {
       </Host>
     );
   }
-
+//Funktionen  hier!!!
 }
