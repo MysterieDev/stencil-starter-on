@@ -1,16 +1,22 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'grpsix-buttons',
   styleUrl: 'grpsix-buttons.css',
   shadow: true,
 })
+
 export class GrpsixButtons {
+  @Prop() buttonLabel: string = '';
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div>
+          <button class="btn btn-primary">
+          <slot>{this.buttonLabel}</slot>
+          </button>
+        </div>
       </Host>
     );
   }
