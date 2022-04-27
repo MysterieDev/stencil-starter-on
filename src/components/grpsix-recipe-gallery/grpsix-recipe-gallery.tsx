@@ -26,6 +26,10 @@ componentWillLoad() {
   .catch(err => console.error(err)); // catching errors and logging in console
 }
 
+componentDidLoad() {
+  console.log(this.apiData);
+}
+
   render() {
     return (
       <Host>
