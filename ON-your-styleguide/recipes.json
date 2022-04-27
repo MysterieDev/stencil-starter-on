@@ -1,8 +1,8 @@
 [
 
     {
-        "id": 1,
-        "title": "Fakerezept",
+        "id": 1000,
+        "title": "Fakerezept 1",
         "ingredients": [
             "Fake ingredient",
             "250ml Milch oder Pflanzendrink",
@@ -19,7 +19,8 @@
         "imageUrl": "https://via.placeholder.com/600/92c952"
     },
     {
-        "title": "Fakerezept",
+        "id": 2000,
+        "title": "Fakerezept 2",
         "ingredients": [
             "Fake ingredient",
             "250ml Milch oder Pflanzendrink",
@@ -36,7 +37,8 @@
         "imageUrl": "https://via.placeholder.com/600/92c952"
     },
     {
-        "title": "Fakerezept",
+        "id": 3000,
+        "title": "Fakerezept 3",
         "ingredients": [
             "Fake ingredient",
             "250ml Milch oder Pflanzendrink",
@@ -53,7 +55,8 @@
         "imageUrl": "https://via.placeholder.com/600/92c952"
     },
     {
-        "title": "Fakerezept",
+        "id": 4000,
+        "title": "Fakerezept 4",
         "ingredients": [
             "Fake ingredient",
             "250ml Milch oder Pflanzendrink",
@@ -71,6 +74,7 @@
     },
 
     {
+        "id": 10,
         "title": "Bananenmilch",
         "ingredients": [
             "1 Banane",
@@ -87,6 +91,7 @@
     },
 
     {
+        "id": 20,
         "title": "Blätterteigstangen",
         "ingredients": [
             "2 Packungen gerollten Blätterteig",
@@ -111,6 +116,7 @@
     },
 
     {
+        "id": 30,
         "title": "Sommerliche Früchte-Quark-Creme",
         "ingredients": [
             "500g Quark",
@@ -130,6 +136,7 @@
     },
 
     {
+        "id": 40,
         "title": "Gemüsesuppe",
         "ingredients": [
             "1 Zwiebel",
@@ -154,6 +161,7 @@
     },
 
     {
+        "id": 50,
         "title": "Haferbrei (\"Porridge\")",
         "ingredients": [
             "60g feine Haferflocken",
@@ -175,6 +183,7 @@
     },
 
     {
+        "id": 60,
         "title": "Kartoffelbrötchen",
         "ingredients": [
             "400g Mehl (Typ 550)",
@@ -197,6 +206,7 @@
     },
 
     {
+        "id": 70,
         "title": "Knäckebrot",
         "ingredients": [
             "110g Buchweizenmehl",
@@ -223,6 +233,7 @@
     },
 
     {
+        "id": 80,
         "title": "Lachscreme",
         "ingredients": [
             "600g Frischkäse",
@@ -242,6 +253,7 @@
     },
 
     {
+        "id": 90,
         "title": "Makkaroni-Auflauf",
         "ingredients": [
             "250g Makkaroni",
@@ -267,6 +279,7 @@
     },
 
     {
+        "id": 100,
         "title": "Quarkkrapfen",
         "ingredients": [
             "50g Margarine",
@@ -291,6 +304,7 @@
     },
 
     {
+        "id": 110,
         "title": "Rotweinkuchen",
         "ingredients": [
             "4 Eier",
@@ -318,6 +332,7 @@
     },
 
     {
+        "id": 120,
         "title": "Schokoladen-Nuss-Kuchen",
         "ingredients": [
             "250g Butter oder Margarine",
@@ -342,6 +357,7 @@
     },
 
     {
+        "id": 130,
         "title": "Spaghettisalat",
         "ingredients": [
             "500g Spaghetti",
@@ -362,6 +378,7 @@
     },
 
     {
+        "id": 140,
         "title": "Tomatenketchup - selbstgemachte",
         "ingredients": [
             "2kg Tomaten",
@@ -384,6 +401,7 @@
     },
 
     {
+        "id": 150,
         "title": "Tomatensuppe",
         "ingredients": [
             "700g Tomaten",
