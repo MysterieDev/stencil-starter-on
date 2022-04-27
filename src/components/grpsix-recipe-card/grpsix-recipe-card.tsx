@@ -19,7 +19,7 @@ export class GrpsixRecipeCard {
   @State() apiData: ApiData[];
 
   componentWillLoad() {
-    fetch('./recipes.json')
+    fetch('./ON-your-styleguide/recipes.json')
     .then(res => res.json())
     .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes))
     .catch(err => console.log(err));
@@ -29,10 +29,9 @@ export class GrpsixRecipeCard {
     return (
       <Host>
         <div>
-          {this.apiData &&
-          this.apiData.map((recipe, index) =>
-            <p></p>
-          )}
+          <h1>ehhhh</h1>
+
+          {console.log(this.apiData)}
         </div>
       </Host>
     );
