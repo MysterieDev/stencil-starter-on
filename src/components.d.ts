@@ -13,6 +13,7 @@ export namespace Components {
     interface GrpsixHeader {
         "contactBtnHref": string;
         "contactBtnLabel": string;
+        "isBackgroundPink": boolean;
         "navLinksJson": string;
     }
     interface MyComponent {
@@ -63,6 +64,7 @@ declare namespace LocalJSX {
     interface GrpsixHeader {
         "contactBtnHref"?: string;
         "contactBtnLabel"?: string;
+        "isBackgroundPink"?: boolean;
         "navLinksJson"?: string;
     }
     interface MyComponent {
