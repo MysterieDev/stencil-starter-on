@@ -37,3 +37,6 @@
   cursor: pointer;
 }
 
+#alert {
+  visibility: hidden;
+}

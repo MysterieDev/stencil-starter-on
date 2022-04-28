@@ -11,6 +11,7 @@ export namespace Components {
         "exampleToUpperCase": () => Promise<void>;
     }
     interface GrpsixNewsletter {
+        "websiteName": string;
     }
     interface MyComponent {
         /**
@@ -58,6 +59,7 @@ declare namespace LocalJSX {
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
     interface GrpsixNewsletter {
+        "websiteName"?: string;
     }
     interface MyComponent {
         /**
