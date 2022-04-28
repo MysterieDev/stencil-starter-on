@@ -1,0 +1,1 @@
+import {} from '@stencil/core';
