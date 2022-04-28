@@ -24,6 +24,8 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PopCard {
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +40,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPopCardElement extends Components.PopCard, HTMLStencilElement {
+    }
+    var HTMLPopCardElement: {
+        prototype: HTMLPopCardElement;
+        new (): HTMLPopCardElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "pop-card": HTMLPopCardElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +71,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PopCard {
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "pop-card": PopCard;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +85,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
         }
     }
 }
