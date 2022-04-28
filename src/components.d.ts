@@ -11,6 +11,8 @@ export namespace Components {
         "exampleToUpperCase": () => Promise<void>;
     }
     interface GrpsixHeader {
+        "contactBtnHref": string;
+        "contactBtnLabel": string;
         "navLinksJson": string;
     }
     interface MyComponent {
@@ -59,6 +61,8 @@ declare namespace LocalJSX {
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
     interface GrpsixHeader {
+        "contactBtnHref"?: string;
+        "contactBtnLabel"?: string;
         "navLinksJson"?: string;
     }
     interface MyComponent {

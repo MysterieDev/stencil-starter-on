@@ -7,6 +7,8 @@ import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
 })
 export class GrpsixHeader {
   @Prop() navLinksJson: string;
+  @Prop() contactBtnLabel: string;
+  @Prop() contactBtnHref: string;
 
   @Watch('navLinkJson')
   handleNavLinksJsonChanged(){
@@ -22,6 +24,16 @@ export class GrpsixHeader {
   convertNavJson(){
     this.navlinks = JSON.parse(this.navLinksJson);
   }
+
+  willShowContactBtn(){
+    if(this.contactBtnHref && this.contactBtnLabel){
+      return true
+    }
+    else{
+      false;
+    }
+  }
+
 
 
   render() {
@@ -39,11 +51,7 @@ export class GrpsixHeader {
           </ul>
         </nav>
 
-        <a href="#" class="cta">
-          <button type="button" name="button">
-            Contact
-          </button>
-        </a>
+        
       </Host>
     );
   }
