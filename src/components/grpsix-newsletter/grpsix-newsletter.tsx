@@ -16,21 +16,15 @@ export class GrpsixNewsletter {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.value);
+    this.message = "- Danke, dass du dich für unseren Newsletter entschieden hast -";
   }
 
   ckeckInputFunction(event) {
     this.value = event.target.value;
     if (event.target.validity.typeMismatch) {
       console.log('this element is not valid')
-    }else{
-      this.message = "- Danke, dass du dich für unseren Newsletter entschieden hast -";
     }
-
   }
-
-  private messageClickFunction = () => {
-    this.message = "- Danke, dass du dich für unseren Newsletter entschieden hast -";
-   }
 
   render() {
     return (
@@ -52,21 +46,18 @@ export class GrpsixNewsletter {
 
             <div class="checkbox">
               <input type="checkbox" value={this.value} id="Datenschutz" required></input>
-              <label htmlFor="Datenschutz">  Ich habe die Datenschutzerklärung zur Kenntnis genommen.</label>
+              <label htmlFor="Datenschutz">  Ich habe die <a href="https://www.datenschutzkanzlei.de/datenschutzerklaerung/">Datenschutzerklärung</a> zur Kenntnis genommen.</label>
             </div>
 
-            <button class="form-control" id="anmeldebtn" onClick={this.messageClickFunction}>Jetzt Anmelden</button>
+            <button class="form-control" id="anmeldebtn">Jetzt Anmelden</button>
 
             <div>{this.message}</div>
           
           </form>
         </div>
         </div>
-
         </slot>
       </Host>
     );
   }
-
 }
-//<a href="https://www.mozilla.org/en-US/">Datenschutzerklärung</a>.
