@@ -10,6 +10,9 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixButtons {
+        "buttonLabel": string;
+    }
     interface GrpsixCookiebanner {
         "cookieBanner": string;
     }
@@ -35,6 +38,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixButtonsElement extends Components.GrpsixButtons, HTMLStencilElement {
+    }
+    var HTMLGrpsixButtonsElement: {
+        prototype: HTMLGrpsixButtonsElement;
+        new (): HTMLGrpsixButtonsElement;
+    };
     interface HTMLGrpsixCookiebannerElement extends Components.GrpsixCookiebanner, HTMLStencilElement {
     }
     var HTMLGrpsixCookiebannerElement: {
@@ -49,6 +58,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-cookiebanner": HTMLGrpsixCookiebannerElement;
         "my-component": HTMLMyComponentElement;
     }
@@ -57,6 +67,9 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixButtons {
+        "buttonLabel"?: string;
     }
     interface GrpsixCookiebanner {
         "cookieBanner"?: string;
@@ -77,6 +90,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-buttons": GrpsixButtons;
         "grpsix-cookiebanner": GrpsixCookiebanner;
         "my-component": MyComponent;
     }
@@ -86,6 +100,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-cookiebanner": LocalJSX.GrpsixCookiebanner & JSXBase.HTMLAttributes<HTMLGrpsixCookiebannerElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
