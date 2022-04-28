@@ -10,6 +10,9 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixButtons {
+        "buttonLabel": string;
+    }
     interface GrpsixHovercards {
     }
     interface MyComponent {
@@ -34,6 +37,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixButtonsElement extends Components.GrpsixButtons, HTMLStencilElement {
+    }
+    var HTMLGrpsixButtonsElement: {
+        prototype: HTMLGrpsixButtonsElement;
+        new (): HTMLGrpsixButtonsElement;
+    };
     interface HTMLGrpsixHovercardsElement extends Components.GrpsixHovercards, HTMLStencilElement {
     }
     var HTMLGrpsixHovercardsElement: {
@@ -48,6 +57,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-hovercards": HTMLGrpsixHovercardsElement;
         "my-component": HTMLMyComponentElement;
     }
@@ -56,6 +66,9 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixButtons {
+        "buttonLabel"?: string;
     }
     interface GrpsixHovercards {
     }
@@ -75,6 +88,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-buttons": GrpsixButtons;
         "grpsix-hovercards": GrpsixHovercards;
         "my-component": MyComponent;
     }
@@ -84,6 +98,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-hovercards": LocalJSX.GrpsixHovercards & JSXBase.HTMLAttributes<HTMLGrpsixHovercardsElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
