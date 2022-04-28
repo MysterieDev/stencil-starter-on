@@ -12,24 +12,24 @@ export class GrpsixNewsletter {
 
   @State() message: string = "";
   @State() value: string;
-  @State() selectValue: string;
 
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.value);
   }
 
-  handleChange(event) {
+  ckeckInputFunction(event) {
     this.value = event.target.value;
-
     if (event.target.validity.typeMismatch) {
       console.log('this element is not valid')
+    }else{
+      this.message = "- Danke, dass du dich für unseren Newsletter entschieden hast -";
     }
+
   }
 
-  private messageClick = () => {
+  private messageClickFunction = () => {
     this.message = "- Danke, dass du dich für unseren Newsletter entschieden hast -";
-    //alert ("- Danke, dass du dich für unseren Newsletter entschieden hast -");
    }
 
   render() {
@@ -41,18 +41,21 @@ export class GrpsixNewsletter {
           <h2>{this.websiteName} Newsletter</h2>
           <p>Hier bekommst du jede Woche tolle Rezepte und praktische Tipps!</p>
           <form onSubmit={(e) => this.handleSubmit(e)}>
+
             <div class="form-group">
-              <input class="form-control" id="nameFeld" placeholder="Dein Name"></input>
+              <input type="text" value={this.value} class="form-control" id="nameFeld" placeholder="Dein Name" required></input>
             </div>
+
             <div class="form-group">
-              <input type="email" value={this.value} class="form-control" id="emailFeld" placeholder="Deine Email-Adresse"></input>
+              <input type="email" value={this.value} class="form-control" id="emailFeld" placeholder="Deine Email-Adresse" required></input>
             </div>
+
             <div class="checkbox">
-              <input type="checkbox" id="Datenschutz"></input>
+              <input type="checkbox" value={this.value} id="Datenschutz" required></input>
               <label htmlFor="Datenschutz">  Ich habe die Datenschutzerklärung zur Kenntnis genommen.</label>
             </div>
 
-            <button class="form-control" id="anmeldebtn" onClick={this.messageClick}>Jetzt Anmelden</button>
+            <button class="form-control" id="anmeldebtn" onClick={this.messageClickFunction}>Jetzt Anmelden</button>
 
             <div>{this.message}</div>
           
@@ -66,3 +69,4 @@ export class GrpsixNewsletter {
   }
 
 }
+//<a href="https://www.mozilla.org/en-US/">Datenschutzerklärung</a>.
