@@ -10,6 +10,9 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixCookiebanner {
+        "cookieBanner": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -32,6 +35,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixCookiebannerElement extends Components.GrpsixCookiebanner, HTMLStencilElement {
+    }
+    var HTMLGrpsixCookiebannerElement: {
+        prototype: HTMLGrpsixCookiebannerElement;
+        new (): HTMLGrpsixCookiebannerElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -40,6 +49,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-cookiebanner": HTMLGrpsixCookiebannerElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -47,6 +57,9 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixCookiebanner {
+        "cookieBanner"?: string;
     }
     interface MyComponent {
         /**
@@ -64,6 +77,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-cookiebanner": GrpsixCookiebanner;
         "my-component": MyComponent;
     }
 }
@@ -72,6 +86,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-cookiebanner": LocalJSX.GrpsixCookiebanner & JSXBase.HTMLAttributes<HTMLGrpsixCookiebannerElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

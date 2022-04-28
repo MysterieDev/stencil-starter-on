@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop} from '@stencil/core';
+import { Component, Host, h, Prop, State} from '@stencil/core';
 
 @Component({
   tag: 'grpsix-cookiebanner',
@@ -7,6 +7,7 @@ import { Component, Host, h, Prop} from '@stencil/core';
 })
 export class GrpsixCookiebanner {
   @Prop() cookieBanner: string;
+  @State() visible: boolean = true;
   render() {
     return (
       <Host>
@@ -17,14 +18,14 @@ export class GrpsixCookiebanner {
               Unsere Website verwendet Cookies, um Ihnen das Surfen zu erleichtern und relevante Informationen zu liefern. 
               Bevor Sie unsere Website weiter nutzen, erklären Sie sich mit unserer <a href="ON-your-styleguide/datenschutz.html">Datenschutzerklärung & Cookie-Richtlinien </a>einverstanden.
             </p>
-            <button onClick={() => this.remove()} id="acceptCookie">Akzeptieren</button>
+            <button onClick={() => this.visible=false} id="acceptCookie">Akzeptieren</button>
           </div>
         </slot>
       </Host>
     );
   }
-remove () {
-  console.log("Test123");
-}
+  if (visible = false) {
+    visible
+  }
 //Funktionen  hier!!!
 }
