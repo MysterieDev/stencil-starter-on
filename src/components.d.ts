@@ -10,6 +10,9 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixButtons {
+        "buttonLabel": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -32,6 +35,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixButtonsElement extends Components.GrpsixButtons, HTMLStencilElement {
+    }
+    var HTMLGrpsixButtonsElement: {
+        prototype: HTMLGrpsixButtonsElement;
+        new (): HTMLGrpsixButtonsElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -40,6 +49,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-buttons": HTMLGrpsixButtonsElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -47,6 +57,9 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixButtons {
+        "buttonLabel"?: string;
     }
     interface MyComponent {
         /**
@@ -64,6 +77,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-buttons": GrpsixButtons;
         "my-component": MyComponent;
     }
 }
@@ -72,6 +86,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
