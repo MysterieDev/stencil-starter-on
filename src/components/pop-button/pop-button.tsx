@@ -14,10 +14,12 @@ export class PopButton {
 
   @Prop() link? :string;
 
+  @Prop() color?: string;
+
   render() {
     return (
       <Host>
-        <button class={this.size}><a href={this.link ? this.link : "#"}>{this.text}</a></button>
+        <button class={`${this.size} ${this.color}`}><a href={this.link ? this.link : "#"}>{this.text}</a></button>
       </Host>
     );
   }

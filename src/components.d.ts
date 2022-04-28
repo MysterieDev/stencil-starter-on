@@ -25,6 +25,7 @@ export namespace Components {
         "middle": string;
     }
     interface PopButton {
+        "color"?: string;
         "link"?: string;
         "size": string;
         "text": string;
@@ -96,6 +97,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface PopButton {
+        "color"?: string;
         "link"?: string;
         "size"?: string;
         "text"?: string;
