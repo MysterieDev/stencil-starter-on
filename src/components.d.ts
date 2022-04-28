@@ -24,6 +24,12 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PopButton {
+        "color"?: string;
+        "link"?: string;
+        "size": string;
+        "text": string;
+    }
     interface PopCard {
         "popyName": string;
         "properties": Array<{property: string, property2? :string, property3? :string}>;
@@ -45,6 +51,12 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPopButtonElement extends Components.PopButton, HTMLStencilElement {
+    }
+    var HTMLPopButtonElement: {
+        prototype: HTMLPopButtonElement;
+        new (): HTMLPopButtonElement;
+    };
     interface HTMLPopCardElement extends Components.PopCard, HTMLStencilElement {
     }
     var HTMLPopCardElement: {
@@ -60,6 +72,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
         "pop-header": HTMLPopHeaderElement;
     }
@@ -83,6 +96,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PopButton {
+        "color"?: string;
+        "link"?: string;
+        "size"?: string;
+        "text"?: string;
+    }
     interface PopCard {
         "popyName"?: string;
         "properties"?: Array<{property: string, property2? :string, property3? :string}>;
@@ -93,6 +112,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "pop-button": PopButton;
         "pop-card": PopCard;
         "pop-header": PopHeader;
     }
@@ -103,6 +123,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
         }

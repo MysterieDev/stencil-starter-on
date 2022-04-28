@@ -1,0 +1,52 @@
+button{
+  padding: 0.5em 1em;
+  border: none;
+  background-color: var(--blue-100);
+  font-style: bolder;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+button.darkblue{
+  background-color: var(--blue-100);
+}
+
+button.blue{
+  background-color: var(--blue-80);
+}
+
+button.lightblue{
+  background-color: var(--blue-60);
+}
+
+button.lightblue:hover,
+button.darkblue:hover{
+  background-color: var(--blue-80);
+}
+
+button.blue:hover{
+  background-color: var(--blue-100);
+}
+
+button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+button.s{
+  font-size: 20px;
+}
+
+button.m{
+  font-size: 25px;
+}
+
+button.l{
+  font-size: 35px;
+}
+
+button.xl{
+  font-size: 50px;
+}
