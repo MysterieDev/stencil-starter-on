@@ -1,0 +1,29 @@
+button{
+  padding: 0.5em 1em;
+  border: none;
+  background-color: var(--blue-100);
+  font-style: bolder;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+button:hover{
+  background-color: var(--blue-80);
+}
+
+button a{
+  color: #fff;
+  text-decoration: none;
+}
+
+button.s{
+  font-size: 20px;
+}
+
+button.m{
+  font-size: 30px;
+}
+
+button.l{
+  font-size: 60px;
+}
