@@ -14,7 +14,7 @@ export namespace Components {
         "buttonLabel": string;
     }
     interface GrpsixCookiebanner {
-        "cookieBanner": string;
+        "cookiebanner": any;
     }
     interface MyComponent {
         /**
@@ -72,7 +72,7 @@ declare namespace LocalJSX {
         "buttonLabel"?: string;
     }
     interface GrpsixCookiebanner {
-        "cookieBanner"?: string;
+        "cookiebanner"?: any;
     }
     interface MyComponent {
         /**
