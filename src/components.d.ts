@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable */
 /* tslint:disable */
 /**
@@ -106,3 +107,5 @@ declare module "@stencil/core" {
         }
     }
 }
+=======
+>>>>>>> origin/develop
