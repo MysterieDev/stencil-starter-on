@@ -13,8 +13,12 @@ export class GrpsixHovercards {
         <div class="hovercard">
           <div class="card">
             <div class="front-page">
-              <img src=""
+              <img src='Antje.jpg' />
             </div>
+          <div class="back-page">
+            <h1>Antje Schmollinger</h1>
+            <p>Developer and Design</p>
+          </div>
           </div>
         </div>
         <slot></slot>

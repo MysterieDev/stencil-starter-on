@@ -1,4 +1,3 @@
-
 /* eslint-disable */
 /* tslint:disable */
 /**
@@ -15,6 +14,9 @@ export namespace Components {
         "buttonLabel": string;
     }
     interface GrpsixHovercards {
+    }
+    interface GrpsixNewsletter {
+        "websiteName": string;
     }
     interface MyComponent {
         /**
@@ -50,6 +52,12 @@ declare global {
         prototype: HTMLGrpsixHovercardsElement;
         new (): HTMLGrpsixHovercardsElement;
     };
+    interface HTMLGrpsixNewsletterElement extends Components.GrpsixNewsletter, HTMLStencilElement {
+    }
+    var HTMLGrpsixNewsletterElement: {
+        prototype: HTMLGrpsixNewsletterElement;
+        new (): HTMLGrpsixNewsletterElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -60,6 +68,7 @@ declare global {
         "example-component": HTMLExampleComponentElement;
         "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-hovercards": HTMLGrpsixHovercardsElement;
+        "grpsix-newsletter": HTMLGrpsixNewsletterElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -72,6 +81,9 @@ declare namespace LocalJSX {
         "buttonLabel"?: string;
     }
     interface GrpsixHovercards {
+    }
+    interface GrpsixNewsletter {
+        "websiteName"?: string;
     }
     interface MyComponent {
         /**
@@ -91,6 +103,7 @@ declare namespace LocalJSX {
         "example-component": ExampleComponent;
         "grpsix-buttons": GrpsixButtons;
         "grpsix-hovercards": GrpsixHovercards;
+        "grpsix-newsletter": GrpsixNewsletter;
         "my-component": MyComponent;
     }
 }
@@ -101,8 +114,8 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-hovercards": LocalJSX.GrpsixHovercards & JSXBase.HTMLAttributes<HTMLGrpsixHovercardsElement>;
+            "grpsix-newsletter": LocalJSX.GrpsixNewsletter & JSXBase.HTMLAttributes<HTMLGrpsixNewsletterElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }
-
