@@ -13,6 +13,10 @@ export namespace Components {
     interface GrpsixButtons {
         "buttonLabel": string;
     }
+    interface GrpsixFoodfacts {
+        "imgAlternativetext": string;
+        "imgSource": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -41,6 +45,12 @@ declare global {
         prototype: HTMLGrpsixButtonsElement;
         new (): HTMLGrpsixButtonsElement;
     };
+    interface HTMLGrpsixFoodfactsElement extends Components.GrpsixFoodfacts, HTMLStencilElement {
+    }
+    var HTMLGrpsixFoodfactsElement: {
+        prototype: HTMLGrpsixFoodfactsElement;
+        new (): HTMLGrpsixFoodfactsElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -50,6 +60,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "grpsix-buttons": HTMLGrpsixButtonsElement;
+        "grpsix-foodfacts": HTMLGrpsixFoodfactsElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -60,6 +71,10 @@ declare namespace LocalJSX {
     }
     interface GrpsixButtons {
         "buttonLabel"?: string;
+    }
+    interface GrpsixFoodfacts {
+        "imgAlternativetext"?: string;
+        "imgSource"?: string;
     }
     interface MyComponent {
         /**
@@ -78,6 +93,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "grpsix-buttons": GrpsixButtons;
+        "grpsix-foodfacts": GrpsixFoodfacts;
         "my-component": MyComponent;
     }
 }
@@ -87,6 +103,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
+            "grpsix-foodfacts": LocalJSX.GrpsixFoodfacts & JSXBase.HTMLAttributes<HTMLGrpsixFoodfactsElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

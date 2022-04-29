@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.card {
+  width: 20%;
+  border: 0.1px solid rgb(175, 174, 174);
+  box-shadow: 3px 5px 10px silver;
+  margin: 50px;
+  padding: 20px;
+  float: left;
+  align-items: center;
+}
+
+.card-img-top {
+  width: auto;
+}
+
+#cardWrapper {
+  padding: 50px;
+}
