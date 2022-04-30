@@ -9,7 +9,7 @@ export class GrpsixHovercards {
 @Prop() headlineLarge:string;
 @Prop() headlineMedium:string;
 @Prop() descriptionText:string;
-@Prop() imageSource:string;
+@Prop() imageQuelle:string;
 @Prop() altText:string;
   render() {
     return (
@@ -17,7 +17,7 @@ export class GrpsixHovercards {
         <div class="hovercard">
           <div class="card">
             <div class="front-page">
-             <img src={this.imageSource} alt={this.altText}/>
+             <img src={this.imageQuelle} alt={this.altText}/>
             </div>
           <div class="back-page">
             {this.headlineLarge && <h1>{this.headlineLarge}</h1>}

@@ -18,7 +18,7 @@ export namespace Components {
         "descriptionText": string;
         "headlineLarge": string;
         "headlineMedium": string;
-        "imageSource": string;
+        "imageQuelle": string;
     }
     interface GrpsixNewsletter {
         "websiteName": string;
@@ -90,7 +90,7 @@ declare namespace LocalJSX {
         "descriptionText"?: string;
         "headlineLarge"?: string;
         "headlineMedium"?: string;
-        "imageSource"?: string;
+        "imageQuelle"?: string;
     }
     interface GrpsixNewsletter {
         "websiteName"?: string;
