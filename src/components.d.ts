@@ -11,6 +11,7 @@ export namespace Components {
         "exampleToUpperCase": () => Promise<void>;
     }
     interface GrpsixRecipeCard {
+        "recipyId": number;
     }
     interface GrpsixRecipeGallery {
         "imageAltTextInfo": string;
@@ -68,6 +69,7 @@ declare namespace LocalJSX {
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
     }
     interface GrpsixRecipeCard {
+        "recipyId"?: number;
     }
     interface GrpsixRecipeGallery {
         "imageAltTextInfo"?: string;

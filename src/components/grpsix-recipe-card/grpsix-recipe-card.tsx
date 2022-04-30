@@ -1,4 +1,4 @@
-import { Component, Host, h, State } from '@stencil/core';
+import { Component, Host, h, State, Prop } from '@stencil/core';
 
 // Interface for API
 interface ApiData {
@@ -19,6 +19,7 @@ export class GrpsixRecipeCard {
 
   @State() apiData: ApiData[];
   @State() myActualRecipe: any; // Any?
+  @Prop() recipyId: number;
 
   componentWillLoad() {
     return fetch('./recipes.json')
@@ -26,7 +27,7 @@ export class GrpsixRecipeCard {
     .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes))
     .then(
       recipe => {
-        return this.myActualRecipe = recipe.find(element => element.id === 2000);
+        this.myActualRecipe = recipe.find(element => element.id === this.recipyId);
       }
     )
     .catch(err => console.log(err));
