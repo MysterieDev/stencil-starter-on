@@ -30,8 +30,22 @@ export class GrpsixFoodfacts {
                   <p>
                     <br/>
                     <br/>
-                    blabla
+                    <u><b>1.</b> Erdbeeren sind eigentlich gar keine Früchte.</u>
                   </p>
+                  <p> Botanisch betrachtet ist die Erdbeere eine Sammelnussfrucht.
+                      Die kleinen Körnchen, die so gerne zwischen den Zähnen hängen bleiben, sind die eigentlichen Früchte.
+                      Das Fruchtfleisch ist eine verdickte Blütenachse und hält diese ganzen Früchte zusammen: deshalb Sammelfrucht.
+                  </p>
+                  <p><u><b>2.</b> Es gibt mehr als 600 Sorten.</u></p>
+                  <p> Sogar eine weiße Erdbeere ist darunter!</p>
+                  <p><u><b>3.</b> Die Frucht hat mehr Vitamin C als Orangen.</u></p>
+                  <p> Erdbeeren sind also nicht nur lecker, sondern sind auch super für das Immunsystem.</p>
+                  <p><u><b>4.</b> Keine klimakterischen Früchte.</u></p>
+                  <p> Klimakterische Früchte sind Obst- und Gemüsesorten, die nach der Ernte nachreifen.
+                      Doch genau das tun Erdbeeren nicht. Wenn Erdbeeren geerntet wurden, werden sie nicht mehr süßer.</p>
+                  <p><u><b>5.</b> Wenig Kalorien, viel Wasser.</u></p>
+                  <p>Pro 100 Gramm enthalten Erdbeeren nur rund 30 Kilokalorien. Rund 90% ist Wasser und ca. 5% Zucker.</p>
+                  {/*Quelle der Erdbeer-facts:https://foodlovin.de/7-fakten-ueber-erdbeeren-die-du-sicher-noch-nicht-kennst/*/}
                 </details>
               </div>
             </div>
