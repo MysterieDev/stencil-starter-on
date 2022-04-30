@@ -13,7 +13,7 @@ interface ApiData {
 @Component({
   tag: 'grpsix-recipe-card',
   styleUrl: 'grpsix-recipe-card.css',
-  shadow: true,
+  shadow: false,
 })
 export class GrpsixRecipeCard {
 
@@ -68,7 +68,7 @@ export class GrpsixRecipeCard {
               <p>{this.myActualRecipe.tips}</p>
             </div>
           }
-        </div>
+        </div>        
       </Host>
     );
   }
