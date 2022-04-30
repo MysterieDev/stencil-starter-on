@@ -32,31 +32,6 @@ export class GrpsixRecipeCard {
     )
     .catch(err => console.log(err));
   }
-   
-
-  // getRecipe () {
-  //   return fetch('./recipes.json')
-  //   .then(res => res.json())
-  //   .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes))
-  //   .then(
-  //     recipe => {
-  //       return this.myActualRecipe = recipe.find(element => element.id === 2000);
-  //     }
-  //   )
-  //   .catch(err => console.log(err));
-  // }
-
-  // Warum funktioniert das nicht????? --> recipe.find ist void????
-  // showRecipes () {
-  //   this.getRecipes().then(
-  //     recipe => {
-  //       this.myActualRecipe = recipe.find(element => element.id === 3000);
-        
-  //       console.log(this.myActualRecipe);
-  //     }
-  //   )
-  // }
-
 
   render() {
     return (
