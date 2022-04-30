@@ -36,6 +36,6 @@ img {
 
 .back-page {
   background-color: rgb(243, 223, 238);
-  color: white;
+  color: #000000;
   transform: rotateY(180deg);
 }
