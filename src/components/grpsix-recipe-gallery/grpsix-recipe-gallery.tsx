@@ -20,23 +20,17 @@ export class GrpsixRecipeGallery {
 @Prop() imageAltTextInfo: string = "Bild für ";
 
 componentWillLoad() {
-  fetch('./recipes.json') // Fetching the data via api :TODO: Dummy
+  fetch('./recipes.json')
   .then(res => res.json()) // Return the fetched Data as JSON
   .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes)) // apiData wird der Key aus apiRecipes zugewiesen
   .catch(err => console.error(err)); // catching errors and logging in console
-
-  console.log("Will Load: " + this.apiData);
 }
 
-componentDidLoad() {
-  console.log("Did Load: " + this.apiData);
-}
-// TODO: Fehler fetch beseitigen
   render() {
     return (
       <Host>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-        {console.log("Render: " + this.apiData)}
+        {/* {console.log("Render: " + this.apiData)} */}
           {this.apiData && // Checks if data is available
           this.apiData.map(recipe =>
             <div class="col">
