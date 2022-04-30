@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type                 | Default  |
-| -------- | --------- | ----------- | -------------------- | -------- |
-| `label`  | `label`   |             | `"number" \| "text"` | `"text"` |
+| Property      | Attribute      | Description | Type     | Default |
+| ------------- | -------------- | ----------- | -------- | ------- |
+| `buttonLabel` | `button-label` |             | `string` | `''`    |
 
 
 ----------------------------------------------
