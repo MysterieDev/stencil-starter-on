@@ -30,7 +30,6 @@ componentWillLoad() {
     return (
       <Host>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-        {/* {console.log("Render: " + this.apiData)} */}
           {this.apiData && // Checks if data is available
           this.apiData.map(recipe =>
             <div class="col">
