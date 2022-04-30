@@ -6,7 +6,7 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class GrpsixHovercards {
-@Prop() headlineLarge: string;
+@Prop() headlineLarge:string;
 @Prop() headlineMedium:string;
 @Prop() descriptionText:string;
 @Prop() imageSource:string;
