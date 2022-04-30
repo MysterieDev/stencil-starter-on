@@ -11,6 +11,8 @@ img {
   height: 390px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
+  margin-left: 40%;
+  margin-top: 5%;
 }
 
 .card {

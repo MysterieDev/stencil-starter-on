@@ -14,10 +14,11 @@ export namespace Components {
         "buttonLabel": string;
     }
     interface GrpsixHovercards {
-        "description_text": string;
-        "headline_h1": string;
-        "headline_h2": string;
-        "image": any;
+        "altText": string;
+        "descriptionText": string;
+        "headlineLarge": string;
+        "headlineMedium": string;
+        "imageSource": string;
     }
     interface GrpsixNewsletter {
         "websiteName": string;
@@ -85,10 +86,11 @@ declare namespace LocalJSX {
         "buttonLabel"?: string;
     }
     interface GrpsixHovercards {
-        "description_text"?: string;
-        "headline_h1"?: string;
-        "headline_h2"?: string;
-        "image"?: any;
+        "altText"?: string;
+        "descriptionText"?: string;
+        "headlineLarge"?: string;
+        "headlineMedium"?: string;
+        "imageSource"?: string;
     }
     interface GrpsixNewsletter {
         "websiteName"?: string;
