@@ -28,11 +28,11 @@ export class GrpsixCookiebanner {
       </Host>
     );
     
-    
+
   }
   clickAccept (){
     this.cookiebanner.style.display = "none";
-    console.log("Wenigstens ich werde angezeigt…");
+    console.log("Test");
   };
 }
 
