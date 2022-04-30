@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* eslint-disable */
 /* tslint:disable */
 /**
@@ -16,6 +15,9 @@ export namespace Components {
     }
     interface GrpsixCookiebanner {
         "cookiebanner": any;
+    }
+    interface GrpsixNewsletter {
+        "websiteName": string;
     }
     interface MyComponent {
         /**
@@ -51,6 +53,12 @@ declare global {
         prototype: HTMLGrpsixCookiebannerElement;
         new (): HTMLGrpsixCookiebannerElement;
     };
+    interface HTMLGrpsixNewsletterElement extends Components.GrpsixNewsletter, HTMLStencilElement {
+    }
+    var HTMLGrpsixNewsletterElement: {
+        prototype: HTMLGrpsixNewsletterElement;
+        new (): HTMLGrpsixNewsletterElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -61,6 +69,7 @@ declare global {
         "example-component": HTMLExampleComponentElement;
         "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-cookiebanner": HTMLGrpsixCookiebannerElement;
+        "grpsix-newsletter": HTMLGrpsixNewsletterElement;
         "my-component": HTMLMyComponentElement;
     }
 }
@@ -74,6 +83,9 @@ declare namespace LocalJSX {
     }
     interface GrpsixCookiebanner {
         "cookiebanner"?: any;
+    }
+    interface GrpsixNewsletter {
+        "websiteName"?: string;
     }
     interface MyComponent {
         /**
@@ -93,6 +105,7 @@ declare namespace LocalJSX {
         "example-component": ExampleComponent;
         "grpsix-buttons": GrpsixButtons;
         "grpsix-cookiebanner": GrpsixCookiebanner;
+        "grpsix-newsletter": GrpsixNewsletter;
         "my-component": MyComponent;
     }
 }
@@ -103,9 +116,8 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-cookiebanner": LocalJSX.GrpsixCookiebanner & JSXBase.HTMLAttributes<HTMLGrpsixCookiebannerElement>;
+            "grpsix-newsletter": LocalJSX.GrpsixNewsletter & JSXBase.HTMLAttributes<HTMLGrpsixNewsletterElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
 }
-=======
->>>>>>> origin/develop
