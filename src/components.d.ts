@@ -12,6 +12,7 @@ export namespace Components {
     }
     interface GrpsixBrightnessslider {
         "container": HTMLElement;
+        "slider": HTMLElement;
     }
     interface GrpsixButtons {
         "buttonLabel": string;
@@ -80,6 +81,7 @@ declare namespace LocalJSX {
     }
     interface GrpsixBrightnessslider {
         "container"?: HTMLElement;
+        "slider"?: HTMLElement;
     }
     interface GrpsixButtons {
         "buttonLabel"?: string;

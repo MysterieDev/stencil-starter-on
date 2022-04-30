@@ -9,14 +9,14 @@ export class GrpsixBrightnessslider {
 
   @Prop() container : HTMLElement = document.body;
   @State() val : number;
-  value: any;
-
-  changeBrightness(e){
+  @Prop() slider : HTMLElement = document.querySelector("input[type='range']");
+  
+  changeBrightness(event : Event){
     console.log("Kommt an")
-    e.preventDefault();
-    let val = this.value;
+    event.preventDefault();
+    let val = (event.target as HTMLInputElement).value;
     console.log(val);
-    {/*this.container.style.filter = "brightness() setAttribute("style", "filter: brightness("+val+"%);");*/}
+    this.container.setAttribute("style", "filter: brightness("+val+"%);");
   }
 
   render() {
@@ -26,15 +26,10 @@ export class GrpsixBrightnessslider {
           <p>💡</p>
         </div>
         <div class="brightness-div" id="slider-container">
-          <input type="range" id="brightness-range" min="10" max="100" value="50" onChange={(e) => this.changeBrightness(e)}/>
+          <input type="range" id="brightness-range" min="10" max="100" value="50" step="1.0" onChange={(event) => this.changeBrightness(event)}/>
         </div>
         <slot></slot>
       </Host>
     );
   }
 }
-
-{/*} else {
-  divElem.style.filter = `brightness(${slider.value}%)`;
-*/}
-

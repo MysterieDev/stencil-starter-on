@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property    | Attribute | Description | Type          | Default         |
-| ----------- | --------- | ----------- | ------------- | --------------- |
-| `container` | --        |             | `HTMLElement` | `document.body` |
+| Property    | Attribute | Description | Type          | Default                                         |
+| ----------- | --------- | ----------- | ------------- | ----------------------------------------------- |
+| `container` | --        |             | `HTMLElement` | `document.body`                                 |
+| `slider`    | --        |             | `HTMLElement` | `document.querySelector("input[type='range']")` |
 
 
 ----------------------------------------------
