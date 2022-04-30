@@ -28,6 +28,7 @@ export class GrpsixCookiebanner {
       </Host>
     );
     
+    
   }
   clickAccept (){
     this.cookiebanner.style.display = "none";
