@@ -14,8 +14,12 @@ export namespace Components {
         "buttonLabel": string;
     }
     interface GrpsixFoodfacts {
-        "imgAlternativetext": string;
-        "imgSource": string;
+        "altOne": string;
+        "altThree": string;
+        "altTwo": string;
+        "sourceOne": string;
+        "sourceThree": string;
+        "sourceTwo": string;
     }
     interface MyComponent {
         /**
@@ -73,8 +77,12 @@ declare namespace LocalJSX {
         "buttonLabel"?: string;
     }
     interface GrpsixFoodfacts {
-        "imgAlternativetext"?: string;
-        "imgSource"?: string;
+        "altOne"?: string;
+        "altThree"?: string;
+        "altTwo"?: string;
+        "sourceOne"?: string;
+        "sourceThree"?: string;
+        "sourceTwo"?: string;
     }
     interface MyComponent {
         /**
