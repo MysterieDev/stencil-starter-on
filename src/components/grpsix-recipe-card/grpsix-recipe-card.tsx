@@ -5,7 +5,7 @@ interface ApiData {
   id: number;
   title: string;
   ingredients: Array<string>;
-  preperation: Array<string>;
+  preperations: Array<string>;
   tips: string;
   imageUrl: string;
 }
@@ -36,8 +36,38 @@ export class GrpsixRecipeCard {
   render() {
     return (
       <Host>
-        <div>
-          <h1>Das ist Rezept: {this.myActualRecipe.title}</h1>
+        <div class="container">
+          <h1>{this.myActualRecipe.title}</h1>
+          {/* https://stenciljs.com/docs/templating-jsx#loops */}
+
+          {this.myActualRecipe.ingredients &&
+            <div>
+              <h3>Zutaten</h3>
+                <ul>
+                  {this.myActualRecipe.ingredients.map((ingredient) =>
+                    <li>{ingredient}</li>
+                  )}
+                </ul>
+            </div>
+          }
+          
+          {this.myActualRecipe.preperations &&
+            <div>
+              <h3>Zubereitung</h3>
+              <ol>
+                {this.myActualRecipe.preperations.map((preperation) =>
+                  <li>{preperation}</li>
+                )}
+              </ol>
+            </div>
+          }
+          
+          {this.myActualRecipe.tips &&
+            <div>
+              <h3>Weitere Tipps zur Zubereitung</h3>
+              <p>{this.myActualRecipe.tips}</p>
+            </div>
+          }
         </div>
       </Host>
     );

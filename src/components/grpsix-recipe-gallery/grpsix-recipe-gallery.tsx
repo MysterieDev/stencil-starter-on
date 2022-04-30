@@ -31,7 +31,7 @@ componentWillLoad() {
 componentDidLoad() {
   console.log("Did Load: " + this.apiData);
 }
-
+// TODO: Fehler fetch beseitigen
   render() {
     return (
       <Host>

@@ -8,8 +8,8 @@
             "1  Msp. Zimt",
             "Nach Bedarf Agavendicksaft"
         ],
-        "preperation": [
-            "Fake preperation",
+        "preperations": [
+            "Fake preperations",
             "Milch zusammen mit der Banane und dem Zimt pürieren.",
             "Nach Bedarf mit Agavendicksaft abschmecken.",
             "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
@@ -26,8 +26,8 @@
             "1  Msp. Zimt",
             "Nach Bedarf Agavendicksaft"
         ],
-        "preperation": [
-            "Fake preperation",
+        "preperations": [
+            "Fake preperations",
             "Milch zusammen mit der Banane und dem Zimt pürieren.",
             "Nach Bedarf mit Agavendicksaft abschmecken.",
             "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
@@ -44,8 +44,8 @@
             "1  Msp. Zimt",
             "Nach Bedarf Agavendicksaft"
         ],
-        "preperation": [
-            "Fake preperation",
+        "preperations": [
+            "Fake preperations",
             "Milch zusammen mit der Banane und dem Zimt pürieren.",
             "Nach Bedarf mit Agavendicksaft abschmecken.",
             "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
@@ -62,8 +62,8 @@
             "1  Msp. Zimt",
             "Nach Bedarf Agavendicksaft"
         ],
-        "preperation": [
-            "Fake preperation",
+        "preperations": [
+            "Fake preperations",
             "Milch zusammen mit der Banane und dem Zimt pürieren.",
             "Nach Bedarf mit Agavendicksaft abschmecken.",
             "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
@@ -81,7 +81,7 @@
             "1  Msp. Zimt",
             "Nach Bedarf Agavendicksaft"
         ],
-        "preperation": [
+        "preperations": [
             "Banane schälen und in grobe Stücke schneiden.",
             "Milch zusammen mit der Banane und dem Zimt pürieren.",
             "Nach Bedarf mit Agavendicksaft abschmecken.",
@@ -102,7 +102,7 @@
             "Kräuter nach Wahl",
             "Bei Bedarf: Saaten (Sesam, Sonnenblumenkerne, …)"
         ],
-        "preperation": [
+        "preperations": [
             "Den Backofen auf 220° Umluft vorheizen.",
             "Die getrockneten Tomaten und die Paprika kleinschneiden.",
             "Zusammen mit dem Frischkäse und dem geriebenen Käse zu einer streichfähigen Masse verarbeiten. Bei Bedarf noch etwas Milch hinzugeben und mit Salz und Pfeffer, sowie den Kräutern abschmecken.",
@@ -125,7 +125,7 @@
             "80g Zucker",
             "Früchte nach Wahl (Ananas, Mandarine, Banane, …)"
         ],
-        "preperation": [
+        "preperations": [
             "Sahne steif aufschlagen.",
             "Quark mit Fruchtsaft, Buttermilch, Quark und Zucker glattrühren. Die geschlagene Sahne dazugeben und kaltstellen.",
             "Die Früchte kleinschneiden.",
@@ -150,7 +150,7 @@
             "1 1/2 Liter Gemüsebrühe",
             "Petersilie, Salz, Pfeffer"
         ],
-        "preperation": [
+        "preperations": [
             "Möhre, Kartoffeln und Sellerie schälen. Gemüse waschen und anschließend kleinschneiden.",
             "Öl in einem Topf erhitzen und die Zwiebel anbraten. Anschließend das restliche Gemüse zugeben und andünsten.",
             "Alles mit Gemüsebrühe ablöscheln und köcheln lassen.",
@@ -171,7 +171,7 @@
             "Zimt",
             "Obst"
         ],
-        "preperation": [
+        "preperations": [
             "Haferflocken mit der Milch in einem kleinen Topf aufkochen.",
             "In der Zwischenzeit das Obst kleinschneiden und die Nüsse hacken.",
             "Nachdem der Haferbrei die gewünschte Konsistenz erreicht hat, den Zimt dazugeben. In eine Schüssel geben.",
@@ -194,7 +194,7 @@
             "10g Butter",
             "5g Hefe"
         ],
-        "preperation": [
+        "preperations": [
             "Lauwarmes Wasser in eine Schüssel geben. Die Hefe zerbröseln und Zucker zugeben. Alles mit dem Schneebesen verrühren. Mischung ein paar Minuten stehen lassen.",
             "Mehl, Salz, Kartoffeln und Butter hinzugeben und einen Teig herstellen. Für 2 Stunden an einem warmen Ort gehen lassen.",
             "Teig auf 240° Ober-/Unterhitze vorheizen.",
@@ -220,7 +220,7 @@
             "6 EL Öl (Raps)",
             "300ml warmes Wasser"
         ],
-        "preperation": [
+        "preperations": [
             "Backofen auf 150° Ober-/Unterhitze vorheizen.",
             "Alle Zutaten zu einem zähen Teig vermischen.",
             "Das Blech leicht einölen und darauf ein Backpapier legen.",
@@ -242,7 +242,7 @@
             "125g Räucherlachs",
             "Pfeffer, evtl. Salz"
         ],
-        "preperation": [
+        "preperations": [
             "Den Räucherlachs und die Zwiebel in Würfel schneiden.",
             "Den Schnittlauch ebenfalls kleinschneiden.",
             "Frischkäse mit Creme fraiche cremig rühren. Räucherlachs und Zwiebel hinzufügen und 2/3 des Schnittlauchs ebenfalls unterrühren.",
@@ -265,7 +265,7 @@
             "Kräuter der Provence",
             "Semmelbrösel"
         ],
-        "preperation": [
+        "preperations": [
             "Backofen auf 200° Ober-/Unterhitze vorheizen.",
             "Die Makkaroni in kochendem Salzwasser nach Packungsanleitung kochen.",
             "Den Lauch schneiden. Bei Bedarf weiteres Gemüse schneiden.",
@@ -291,7 +291,7 @@
             "125g Quark",
             "Puderzucker zum Bestäuben"
         ],
-        "preperation": [
+        "preperations": [
             "Margarine mit dem Zucker schaumig rühren.",
             "Das Ei dazugeben und weiterrühren.",
             "Salz, Mehl, Stärke und Backpulver mischen und unterrühren.",
@@ -319,7 +319,7 @@
             "125g Schokostreusel",
             "etwas Puderzucker zum Bestäuben"
         ],
-        "preperation": [
+        "preperations": [
             "Backofen auf 180° vorheizen.",
             "Eier trennen. Eigelb, Butter, Zucker und Vanillezucker in einer Schüssel schaumig rühren.",
             "Backpulver mit dem Mehl, Kakao und Zimt in eine Schüssel sieben. Nach und nach zur Eier-Zucker Mischung geben.",
@@ -344,7 +344,7 @@
             "1 TL Kakao",
             "1 EL Rum"
         ],
-        "preperation": [
+        "preperations": [
             "Backofen auf 180° Ober-/Unterhitze vorheizen.",
             "Schokolade klein raspeln oder hacken.",
             "Butter mit Zucker un den Eiern schaumig schlagen.",
@@ -367,7 +367,7 @@
             "8 Tomaten",
             "Salz, Pfeffer"
         ],
-        "preperation": [
+        "preperations": [
             "Die Spaghetti in kochendem Salzwasser nach Packungsanleitung kochen.",
             "Getrocknete Tomaten, Öl und Knoblauch pürieren. Die Mischung unter die gekochten Spaghetti mischen.",
             "Die Tomaten in kleine Würfel schneiden und mit dem Basilikum dazugeben.",
@@ -391,7 +391,7 @@
             "1 Msp. Pfeffer",
             "100g Tomatenmark"
         ],
-        "preperation": [
+        "preperations": [
             "Die Tomaten und die Zwiebel kleinschneiden. Zusammen mit dem Salz andünsten.",
             "Essig, Rotwein, Zucker, Nelken, Koriander und Pfeffer hinzugeben und eine Stunde kochen lassen.",
             "Dann Tomatenmark dazugeben, nochmal aufkochen lassen und in Gläser abfüllen.",
@@ -412,7 +412,7 @@
             "1 EL italienische Kräuter",
             "frischer Basilikum"
         ],
-        "preperation": [
+        "preperations": [
             "Die Tomaten und die Zwiebel kleinschneiden. Anschließend Margarine in einem Topf erhitzen und Tomaten und Zwiebel darin anbraten.",
             "Mit Gemüsebrühe ablöschen.",
             "Tomatenmark und Gewürze dazugeben.",
