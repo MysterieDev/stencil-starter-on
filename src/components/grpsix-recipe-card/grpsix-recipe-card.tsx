@@ -19,7 +19,7 @@ export class GrpsixRecipeCard {
 
   @State() apiData: ApiData[];
   @State() myActualRecipe: any; // Any?
-  @Prop() recipyId: number;
+  @Prop() recipeId: number;
 
   componentWillLoad() {
     return fetch('./recipes.json')
@@ -27,7 +27,7 @@ export class GrpsixRecipeCard {
     .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes))
     .then(
       recipe => {
-        this.myActualRecipe = recipe.find(element => element.id === this.recipyId);
+        this.myActualRecipe = recipe.find(element => element.id === this.recipeId);
       }
     )
     .catch(err => console.log(err));

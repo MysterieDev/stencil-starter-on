@@ -9,7 +9,7 @@
 
 | Property   | Attribute   | Description | Type     | Default     |
 | ---------- | ----------- | ----------- | -------- | ----------- |
-| `recipyId` | `recipy-id` |             | `number` | `undefined` |
+| `recipeId` | `recipe-id` |             | `number` | `undefined` |
 
 
 ----------------------------------------------
