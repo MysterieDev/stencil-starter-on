@@ -7,10 +7,14 @@
 
 ## Properties
 
-| Property             | Attribute             | Description | Type     | Default     |
-| -------------------- | --------------------- | ----------- | -------- | ----------- |
-| `imgAlternativetext` | `img-alternativetext` |             | `string` | `undefined` |
-| `imgSource`          | `img-source`          |             | `string` | `undefined` |
+| Property      | Attribute      | Description | Type     | Default     |
+| ------------- | -------------- | ----------- | -------- | ----------- |
+| `altOne`      | `alt-one`      |             | `string` | `undefined` |
+| `altThree`    | `alt-three`    |             | `string` | `undefined` |
+| `altTwo`      | `alt-two`      |             | `string` | `undefined` |
+| `sourceOne`   | `source-one`   |             | `string` | `undefined` |
+| `sourceThree` | `source-three` |             | `string` | `undefined` |
+| `sourceTwo`   | `source-two`   |             | `string` | `undefined` |
 
 
 ----------------------------------------------
