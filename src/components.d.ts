@@ -10,6 +10,20 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface GrpsixButtons {
+        "buttonLabel": string;
+    }
+    interface GrpsixHerobanner {
+        "heading": string;
+        "imageAltText": string;
+        "imageSrc": string;
+        "linkHref": string;
+        "linkText": string;
+        "text": string;
+    }
+    interface GrpsixNewsletter {
+        "websiteName": string;
+    }
     interface GrpsixRecipeCard {
         "recipeId": number;
     }
@@ -38,6 +52,24 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLGrpsixButtonsElement extends Components.GrpsixButtons, HTMLStencilElement {
+    }
+    var HTMLGrpsixButtonsElement: {
+        prototype: HTMLGrpsixButtonsElement;
+        new (): HTMLGrpsixButtonsElement;
+    };
+    interface HTMLGrpsixHerobannerElement extends Components.GrpsixHerobanner, HTMLStencilElement {
+    }
+    var HTMLGrpsixHerobannerElement: {
+        prototype: HTMLGrpsixHerobannerElement;
+        new (): HTMLGrpsixHerobannerElement;
+    };
+    interface HTMLGrpsixNewsletterElement extends Components.GrpsixNewsletter, HTMLStencilElement {
+    }
+    var HTMLGrpsixNewsletterElement: {
+        prototype: HTMLGrpsixNewsletterElement;
+        new (): HTMLGrpsixNewsletterElement;
+    };
     interface HTMLGrpsixRecipeCardElement extends Components.GrpsixRecipeCard, HTMLStencilElement {
     }
     var HTMLGrpsixRecipeCardElement: {
@@ -58,6 +90,9 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "grpsix-buttons": HTMLGrpsixButtonsElement;
+        "grpsix-herobanner": HTMLGrpsixHerobannerElement;
+        "grpsix-newsletter": HTMLGrpsixNewsletterElement;
         "grpsix-recipe-card": HTMLGrpsixRecipeCardElement;
         "grpsix-recipe-gallery": HTMLGrpsixRecipeGalleryElement;
         "my-component": HTMLMyComponentElement;
@@ -67,6 +102,20 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface GrpsixButtons {
+        "buttonLabel"?: string;
+    }
+    interface GrpsixHerobanner {
+        "heading"?: string;
+        "imageAltText"?: string;
+        "imageSrc"?: string;
+        "linkHref"?: string;
+        "linkText"?: string;
+        "text"?: string;
+    }
+    interface GrpsixNewsletter {
+        "websiteName"?: string;
     }
     interface GrpsixRecipeCard {
         "recipeId"?: number;
@@ -90,6 +139,9 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "grpsix-buttons": GrpsixButtons;
+        "grpsix-herobanner": GrpsixHerobanner;
+        "grpsix-newsletter": GrpsixNewsletter;
         "grpsix-recipe-card": GrpsixRecipeCard;
         "grpsix-recipe-gallery": GrpsixRecipeGallery;
         "my-component": MyComponent;
@@ -100,6 +152,9 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
+            "grpsix-herobanner": LocalJSX.GrpsixHerobanner & JSXBase.HTMLAttributes<HTMLGrpsixHerobannerElement>;
+            "grpsix-newsletter": LocalJSX.GrpsixNewsletter & JSXBase.HTMLAttributes<HTMLGrpsixNewsletterElement>;
             "grpsix-recipe-card": LocalJSX.GrpsixRecipeCard & JSXBase.HTMLAttributes<HTMLGrpsixRecipeCardElement>;
             "grpsix-recipe-gallery": LocalJSX.GrpsixRecipeGallery & JSXBase.HTMLAttributes<HTMLGrpsixRecipeGalleryElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;

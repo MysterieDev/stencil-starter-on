@@ -2,7 +2,9 @@ import { Component, Host, h, State, Prop } from '@stencil/core';
 
 // Interface for API
 interface ApiData {
+  id: number;
   title: string;
+  url: string;
   ingredients: Array<string>;
   preperation: Array<string>;
   tips: string;
@@ -38,6 +40,7 @@ componentWillLoad() {
                 <div class="card-body">
                   <h5 class="card-title">{recipe.title}</h5>
                 </div>
+                <a href={recipe.url} class="btn btn-primary">Zum Rezept</a>
               </div>
             </div>
           )}

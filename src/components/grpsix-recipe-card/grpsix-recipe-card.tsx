@@ -4,8 +4,9 @@ import { Component, Host, h, State, Prop } from '@stencil/core';
 interface ApiData {
   id: number;
   title: string;
+  url: string;
   ingredients: Array<string>;
-  preperations: Array<string>;
+  preperation: Array<string>;
   tips: string;
   imageUrl: string;
 }
