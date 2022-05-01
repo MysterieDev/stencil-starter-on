@@ -60,7 +60,7 @@ Ist eine Komponente zum Anzeigen eines bestimmten Rezeptes anhand einer ID
 Die JSON wurde von der Gruppe selbst erstellt und mit Daten befüllt.
 Diese hat nachfolgenden Aufbau. (``Key: Dateityp`` => Beschreibung des Inhalts)
 - ``id: number`` PFLICHT => Die eindeutige ID des Rezeptes, dient dem Aufruf über Comonents
-- ``url: string`` PFLICHT => Der Dateipfad, zum Aufruf über interne Links etc. (**title** des Rezeptes wird **klein geschrieben**, **Umlaute** zu **Einzelschreibwese** (ä --> ae), **Leerzeichen** werden mit einem **Bindenstrich** getrennt.)
+- ``url: string`` => Der Dateipfad, zum Aufruf über interne Links etc. (**title** des Rezeptes wird **klein geschrieben**, **Umlaute** zu **Einzelschreibwese** (ä --> ae), **Leerzeichen** werden mit einem **Bindenstrich** getrennt.)
 - ``title: string`` => Ist der Titel des Rezeptes
 - ``ingredients: Array<>`` => Sind die Zudaten als Array gespeichert. Darüber kann dann iterert werden
 - ``preperations: Array<>`` => Die Zubereitungsweise als Array gespeichert. Darüber kann dann iterert werden
