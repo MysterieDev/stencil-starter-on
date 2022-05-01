@@ -2,19 +2,18 @@
   display: block;
 }
 
-.brightness-div{
+.brightness-div {
   float: right;
   width: auto;
   height: 90px;
 }
 
-#brightness-range{
+#brightness-range {
   width: 200px;
   cursor: pointer;  
   margin: 30px; 
   margin-right: 5px;
   margin-top: 40px;
-  
 }
 
 p {

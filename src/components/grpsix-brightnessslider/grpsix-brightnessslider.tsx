@@ -12,10 +12,8 @@ export class GrpsixBrightnessslider {
   @Prop() slider : HTMLElement = document.querySelector("input[type='range']");
   
   changeBrightness(event : Event){
-    console.log("Kommt an")
     event.preventDefault();
     let val = (event.target as HTMLInputElement).value;
-    console.log(val);
     this.container.setAttribute("style", "filter: brightness("+val+"%);");
   }
 
