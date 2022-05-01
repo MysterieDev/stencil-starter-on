@@ -15,8 +15,8 @@
   /*background-color:xx;   Je nach Farbkonzept noch eine Farbe dazu!*/
 }
 
-.card-img-top:hover{
-  transform:scale(1.1);
+.card-img-top:hover {
+  transform: scale(1.1);
 }
 
 .card-img-top {
@@ -30,16 +30,16 @@
   padding-right: 9%;
 }
 
-#cardOne{
+#cardOne {
   float: left;
 }
 
-#cardTwo{
+#cardTwo {
   margin-left: 8%;
   margin-right: 8%;
 }
 
-#cardThree{
+#cardThree {
   float: right;
 }
 
@@ -55,6 +55,6 @@
   box-shadow: 1.5px 2.5px 5px silver;
 }
 
-#button:hover{
-  transform:scale(1.1);
+#button:hover {
+  transform: scale(1.1);
 }
