@@ -65,7 +65,7 @@ Diese hat nachfolgenden Aufbau. (``Key: Dateityp`` => Beschreibung des Inhalts)
 - ``ingredients: Array<>`` => Sind die Zudaten als Array gespeichert. Darüber kann dann iterert werden
 - ``preperations: Array<>`` => Die Zubereitungsweise als Array gespeichert. Darüber kann dann iterert werden
 - ``tips: string`` OPTIONAL => Zusätzliche Tips können hier gespeichert werden
-- ``imageUrl: string`` => Ist der Pfad zum Bild des Rezeptes inkl. Datei
+- ``imageUrl: string`` => Der Dateipfad zum Bild; **Keine Sonderzeichen, Leerzeichen (ßäöü?…), Slashes (/), Klammern!** (**Name** der Datei wird **klein geschrieben**, **Umlaute** zu **Einzelschreibwese** (ä --> ae), **Leerzeichen** werden mit einem **Bindenstrich** getrennt.)
 
 ### Example JSON mit einem Rezept
 ```JSON
