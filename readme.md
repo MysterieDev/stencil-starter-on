@@ -11,6 +11,22 @@ Olga Merz @olgaluisemerz
 
 Rosanna Wagner @WagnerRosanna
 
+# Component-Description
+## Hero-Banner
+### Variablen pflicht
+- image-src: Pfad zum Bild
+- image-alt-text: Alttext
+
+### Variablen optional
+- heading: Überschrift (2. Ordnung)
+- text: Text unter der Überschrift
+- link-href: link, dargestellt als Button
+
+### Example-Code-Snippet
+```
+<grpsix-herobanner image-src="pfad-zum-bild" image-alt-text="Alttext" heading="Heading 1" text="Hallo Welt!"  link-text="klick mich!" link-href="#"></grpsix-herobanner>
+```
+
 
 # Stencil Component Starter
 
