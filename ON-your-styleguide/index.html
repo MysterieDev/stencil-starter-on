@@ -7,21 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/dist/stencil-starter-on/stencil-starter-on.esm.js" type="module"></script>
     <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
-    <title>your design guide</title>
+    <title>PopUp - Das ultimative Minispiel</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
+    <script>
+      window.addEventListener('load',()=>{
+        document.querySelector("#headerbar").navlinks = [{name:"Anleitung" ,href:"#"},{name:"Download" ,href:"#"},{name:"Team" ,href:"#"},{name:"Popies" ,href:"#"},{name:"Shop" ,href:"#"}, {name:"Newsletter" ,href:"#"},{name:"Devlog" ,href:"#"},{name:"Kontakt" ,href:"#"}]
+        document.querySelector("#footerbar").footerlinks = [{name:"Impressum" ,href:"#"},{name:"Datenschutz" ,href:"#"}]
+      })
+    </script>
 </head>
 
-<body>
+
+<body style="background-color:#006E76" >
     <pop-header id="headerbar"></pop-header>
+    <pop-footer id="footerbar"></pop-footer>
     <script>
-      document.querySelector("#headerbar").navlinks = [{name:"Anleitung" ,href:"#"},{name:"Download" ,href:"#"},{name:"Team" ,href:"#"},{name:"Popies" ,href:"#"},{name:"Shop" ,href:"#"}, {name:"Newsletter" ,href:"#"},{name:"Devlog" ,href:"#"},{name:"Kontakt" ,href:"#"}]
     </script>
-    <div style="display: flex; justify-content: center;">
-      <pop-animated-card step="1"></pop-animated-card>
-      <pop-animated-card step="2"></pop-animated-card>
-      <pop-animated-card step="3"></pop-animated-card>
-    </div>
-    
+    <pop-introduction></pop-introduction>
+    <pop-heading heading="PopUp - wie funktioniert’s?"></pop-heading>
+     <div style="display: flex; justify-content: center;">
+        <pop-animated-card step="1"></pop-animated-card>
+        <pop-animated-card step="2"></pop-animated-card>
+        <pop-animated-card step="3"></pop-animated-card>
+      </div>
+    <pop-heading heading="PopUp - lad’ es dir herunter!"></pop-heading>
+    <pop-button text="Hello World" size="xl" link="https://www.google.de" color="blue"></pop-button>
+    <pop-heading heading="PopUp - die Schöpfer"></pop-heading>
+    <pop-heading heading="PopUp - Familie Pop"></pop-heading>
+    <pop-heading heading="PopUp - werde Pop-Star"></pop-heading>
+    <pop-heading heading="PopUp - die Unterstützer"></pop-heading>
+    <pop-supporter supporter="1"></pop-supporter>
+    <pop-supporter supporter="2"></pop-supporter>
+    <pop-supporter supporter="3"></pop-supporter>
+    <pop-heading heading="PopUp - bleib Pop-up to date"></pop-heading>
+    <pop-heading heading="PopUp - pop aktuell"></pop-heading>
 </body>
 
 </html>

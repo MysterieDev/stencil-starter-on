@@ -24,15 +24,35 @@ export namespace Components {
          */
         "middle": string;
     }
+
     interface PopAnimatedCard {
         "step": number;
+    }
+    interface PopButton {
+        "color"?: string;
+        "link"?: string;
+        "size": string;
+        "text": string;
+
     }
     interface PopCard {
         "popyName": string;
         "properties": Array<{property: string, property2? :string, property3? :string}>;
     }
+    interface PopFooter {
+        "footerlinks": Array <{name: string, href: string}>;
+    }
     interface PopHeader {
         "navlinks": Array <{name: string, href: string}>;
+    }
+    interface PopHeading {
+        "heading": string;
+    }
+    interface PopIntroduction {
+        "introduction": any;
+    }
+    interface PopSupporter {
+        "supporter": number;
     }
 }
 declare global {
@@ -48,11 +68,19 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+
     interface HTMLPopAnimatedCardElement extends Components.PopAnimatedCard, HTMLStencilElement {
     }
     var HTMLPopAnimatedCardElement: {
         prototype: HTMLPopAnimatedCardElement;
         new (): HTMLPopAnimatedCardElement;
+    };
+    interface HTMLPopButtonElement extends Components.PopButton, HTMLStencilElement {
+    }
+    var HTMLPopButtonElement: {
+        prototype: HTMLPopButtonElement;
+        new (): HTMLPopButtonElement;
+
     };
     interface HTMLPopCardElement extends Components.PopCard, HTMLStencilElement {
     }
@@ -60,18 +88,47 @@ declare global {
         prototype: HTMLPopCardElement;
         new (): HTMLPopCardElement;
     };
+    interface HTMLPopFooterElement extends Components.PopFooter, HTMLStencilElement {
+    }
+    var HTMLPopFooterElement: {
+        prototype: HTMLPopFooterElement;
+        new (): HTMLPopFooterElement;
+    };
     interface HTMLPopHeaderElement extends Components.PopHeader, HTMLStencilElement {
     }
     var HTMLPopHeaderElement: {
         prototype: HTMLPopHeaderElement;
         new (): HTMLPopHeaderElement;
     };
+    interface HTMLPopHeadingElement extends Components.PopHeading, HTMLStencilElement {
+    }
+    var HTMLPopHeadingElement: {
+        prototype: HTMLPopHeadingElement;
+        new (): HTMLPopHeadingElement;
+    };
+    interface HTMLPopIntroductionElement extends Components.PopIntroduction, HTMLStencilElement {
+    }
+    var HTMLPopIntroductionElement: {
+        prototype: HTMLPopIntroductionElement;
+        new (): HTMLPopIntroductionElement;
+    };
+    interface HTMLPopSupporterElement extends Components.PopSupporter, HTMLStencilElement {
+    }
+    var HTMLPopSupporterElement: {
+        prototype: HTMLPopSupporterElement;
+        new (): HTMLPopSupporterElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
         "pop-animated-card": HTMLPopAnimatedCardElement;
+        "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
+        "pop-footer": HTMLPopFooterElement;
         "pop-header": HTMLPopHeaderElement;
+        "pop-heading": HTMLPopHeadingElement;
+        "pop-introduction": HTMLPopIntroductionElement;
+        "pop-supporter": HTMLPopSupporterElement;
     }
 }
 declare namespace LocalJSX {
@@ -96,19 +153,42 @@ declare namespace LocalJSX {
     interface PopAnimatedCard {
         "step"?: number;
     }
+    interface PopButton {
+        "color"?: string;
+        "link"?: string;
+        "size"?: string;
+        "text"?: string;
+    }
     interface PopCard {
         "popyName"?: string;
         "properties"?: Array<{property: string, property2? :string, property3? :string}>;
     }
+    interface PopFooter {
+        "footerlinks"?: Array <{name: string, href: string}>;
+    }
     interface PopHeader {
         "navlinks"?: Array <{name: string, href: string}>;
+    }
+    interface PopHeading {
+        "heading"?: string;
+    }
+    interface PopIntroduction {
+        "introduction"?: any;
+    }
+    interface PopSupporter {
+        "supporter"?: number;
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
         "pop-animated-card": PopAnimatedCard;
+        "pop-button": PopButton;
         "pop-card": PopCard;
+        "pop-footer": PopFooter;
         "pop-header": PopHeader;
+        "pop-heading": PopHeading;
+        "pop-introduction": PopIntroduction;
+        "pop-supporter": PopSupporter;
     }
 }
 export { LocalJSX as JSX };
@@ -118,8 +198,13 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "pop-animated-card": LocalJSX.PopAnimatedCard & JSXBase.HTMLAttributes<HTMLPopAnimatedCardElement>;
+            "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
+            "pop-footer": LocalJSX.PopFooter & JSXBase.HTMLAttributes<HTMLPopFooterElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
+            "pop-heading": LocalJSX.PopHeading & JSXBase.HTMLAttributes<HTMLPopHeadingElement>;
+            "pop-introduction": LocalJSX.PopIntroduction & JSXBase.HTMLAttributes<HTMLPopIntroductionElement>;
+            "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
     }
 }
