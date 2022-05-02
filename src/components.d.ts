@@ -24,6 +24,9 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PopAnimatedCard {
+        "step": number;
+    }
     interface PopCard {
         "popyName": string;
         "properties": Array<{property: string, property2? :string, property3? :string}>;
@@ -45,6 +48,12 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPopAnimatedCardElement extends Components.PopAnimatedCard, HTMLStencilElement {
+    }
+    var HTMLPopAnimatedCardElement: {
+        prototype: HTMLPopAnimatedCardElement;
+        new (): HTMLPopAnimatedCardElement;
+    };
     interface HTMLPopCardElement extends Components.PopCard, HTMLStencilElement {
     }
     var HTMLPopCardElement: {
@@ -60,6 +69,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "pop-animated-card": HTMLPopAnimatedCardElement;
         "pop-card": HTMLPopCardElement;
         "pop-header": HTMLPopHeaderElement;
     }
@@ -83,6 +93,9 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PopAnimatedCard {
+        "step"?: number;
+    }
     interface PopCard {
         "popyName"?: string;
         "properties"?: Array<{property: string, property2? :string, property3? :string}>;
@@ -93,6 +106,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "pop-animated-card": PopAnimatedCard;
         "pop-card": PopCard;
         "pop-header": PopHeader;
     }
@@ -103,6 +117,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pop-animated-card": LocalJSX.PopAnimatedCard & JSXBase.HTMLAttributes<HTMLPopAnimatedCardElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
         }
