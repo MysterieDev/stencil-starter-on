@@ -19,7 +19,6 @@ export class PopAnimatedCard {
     
     @Listen("mouseover")
       mouseoverListener() {
-        console.log("test")
         const image = this.element.shadowRoot.querySelector(".image");
         image.setAttribute("src", `${this.checkAnimation()}`);
     }
@@ -70,6 +69,7 @@ export class PopAnimatedCard {
           return HighscoreJpg;
       }
     }
+
     private checkAnimation() {
       switch(this.step) {
         case 1:

@@ -9,7 +9,7 @@
 
 | Property    | Attribute   | Description | Type     | Default     |
 | ----------- | ----------- | ----------- | -------- | ----------- |
-| `supporter` | `supporter` |             | `number` | `undefined` |
+| `supporter` | `supporter` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

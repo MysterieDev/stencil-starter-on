@@ -50,7 +50,7 @@ export namespace Components {
         "introduction": any;
     }
     interface PopSupporter {
-        "supporter": number;
+        "supporter": string;
     }
 }
 declare global {
@@ -172,7 +172,7 @@ declare namespace LocalJSX {
         "introduction"?: any;
     }
     interface PopSupporter {
-        "supporter"?: number;
+        "supporter"?: string;
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
