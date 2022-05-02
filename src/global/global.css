@@ -8,3 +8,13 @@
     --orange-100: rgb(240, 90, 35);
     --yellow-100: rgb(252, 238, 33);
 }
+
+body {
+    background-color: var(--blue-100);
+}
+
+.tutorial,
+.supporter {
+    display: flex; 
+    justify-content: center;
+}

@@ -1,5 +1,6 @@
 import { Component, h, Host, Prop, Element, getAssetPath } from '@stencil/core';
 const BaeckereiLogo = getAssetPath("/assets/logo_maester.svg");
+const CinemaLogo = getAssetPath("/assets/logo-nacho-cinema.svg");
 
 @Component({
   tag: 'pop-supporter',
@@ -33,7 +34,7 @@ export class PopSupporter {
             case 1:
                 return BaeckereiLogo;
             case 2:
-                return;
+                return CinemaLogo;
             case 3: 
                 return;
         }
