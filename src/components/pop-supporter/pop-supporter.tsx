@@ -1,5 +1,5 @@
-import { Component, h, Host, Prop, Element } from '@stencil/core';
-import  BaeckereiLogo  from "../../assets/logo_maester.svg";
+import { Component, h, Host, Prop, Element, getAssetPath } from '@stencil/core';
+const BaeckereiLogo = getAssetPath("/assets/logo_maester.svg");
 
 @Component({
   tag: 'pop-supporter',

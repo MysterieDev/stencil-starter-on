@@ -43,6 +43,9 @@ export namespace Components {
     interface PopHeading {
         "heading": string;
     }
+    interface PopIntroduction {
+        "introduction": any;
+    }
     interface PopSupporter {
         "supporter": number;
     }
@@ -90,6 +93,12 @@ declare global {
         prototype: HTMLPopHeadingElement;
         new (): HTMLPopHeadingElement;
     };
+    interface HTMLPopIntroductionElement extends Components.PopIntroduction, HTMLStencilElement {
+    }
+    var HTMLPopIntroductionElement: {
+        prototype: HTMLPopIntroductionElement;
+        new (): HTMLPopIntroductionElement;
+    };
     interface HTMLPopSupporterElement extends Components.PopSupporter, HTMLStencilElement {
     }
     var HTMLPopSupporterElement: {
@@ -104,6 +113,7 @@ declare global {
         "pop-footer": HTMLPopFooterElement;
         "pop-header": HTMLPopHeaderElement;
         "pop-heading": HTMLPopHeadingElement;
+        "pop-introduction": HTMLPopIntroductionElement;
         "pop-supporter": HTMLPopSupporterElement;
     }
 }
@@ -145,6 +155,9 @@ declare namespace LocalJSX {
     interface PopHeading {
         "heading"?: string;
     }
+    interface PopIntroduction {
+        "introduction"?: any;
+    }
     interface PopSupporter {
         "supporter"?: number;
     }
@@ -156,6 +169,7 @@ declare namespace LocalJSX {
         "pop-footer": PopFooter;
         "pop-header": PopHeader;
         "pop-heading": PopHeading;
+        "pop-introduction": PopIntroduction;
         "pop-supporter": PopSupporter;
     }
 }
@@ -170,6 +184,7 @@ declare module "@stencil/core" {
             "pop-footer": LocalJSX.PopFooter & JSXBase.HTMLAttributes<HTMLPopFooterElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
             "pop-heading": LocalJSX.PopHeading & JSXBase.HTMLAttributes<HTMLPopHeadingElement>;
+            "pop-introduction": LocalJSX.PopIntroduction & JSXBase.HTMLAttributes<HTMLPopIntroductionElement>;
             "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
     }
