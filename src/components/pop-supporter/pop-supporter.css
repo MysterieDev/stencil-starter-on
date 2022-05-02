@@ -45,6 +45,7 @@ h3 {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    margin: 40px;
 }
 
 .card.flipped {

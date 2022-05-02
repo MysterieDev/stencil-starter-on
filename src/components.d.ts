@@ -24,7 +24,6 @@ export namespace Components {
          */
         "middle": string;
     }
-
     interface PopAnimatedCard {
         "step": number;
     }
@@ -33,7 +32,6 @@ export namespace Components {
         "link"?: string;
         "size": string;
         "text": string;
-
     }
     interface PopCard {
         "popyName": string;
@@ -68,7 +66,6 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
-
     interface HTMLPopAnimatedCardElement extends Components.PopAnimatedCard, HTMLStencilElement {
     }
     var HTMLPopAnimatedCardElement: {
@@ -80,7 +77,6 @@ declare global {
     var HTMLPopButtonElement: {
         prototype: HTMLPopButtonElement;
         new (): HTMLPopButtonElement;
-
     };
     interface HTMLPopCardElement extends Components.PopCard, HTMLStencilElement {
     }
