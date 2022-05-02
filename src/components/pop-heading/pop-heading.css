@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}

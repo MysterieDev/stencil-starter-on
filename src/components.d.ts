@@ -37,6 +37,9 @@ export namespace Components {
     interface PopHeader {
         "navlinks": Array <{name: string, href: string}>;
     }
+    interface PopHeading {
+        "heading": string;
+    }
     interface PopSupporter {
         "supporter": number;
     }
@@ -72,6 +75,12 @@ declare global {
         prototype: HTMLPopHeaderElement;
         new (): HTMLPopHeaderElement;
     };
+    interface HTMLPopHeadingElement extends Components.PopHeading, HTMLStencilElement {
+    }
+    var HTMLPopHeadingElement: {
+        prototype: HTMLPopHeadingElement;
+        new (): HTMLPopHeadingElement;
+    };
     interface HTMLPopSupporterElement extends Components.PopSupporter, HTMLStencilElement {
     }
     var HTMLPopSupporterElement: {
@@ -84,6 +93,7 @@ declare global {
         "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
         "pop-header": HTMLPopHeaderElement;
+        "pop-heading": HTMLPopHeadingElement;
         "pop-supporter": HTMLPopSupporterElement;
     }
 }
@@ -119,6 +129,9 @@ declare namespace LocalJSX {
     interface PopHeader {
         "navlinks"?: Array <{name: string, href: string}>;
     }
+    interface PopHeading {
+        "heading"?: string;
+    }
     interface PopSupporter {
         "supporter"?: number;
     }
@@ -128,6 +141,7 @@ declare namespace LocalJSX {
         "pop-button": PopButton;
         "pop-card": PopCard;
         "pop-header": PopHeader;
+        "pop-heading": PopHeading;
         "pop-supporter": PopSupporter;
     }
 }
@@ -140,6 +154,7 @@ declare module "@stencil/core" {
             "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
+            "pop-heading": LocalJSX.PopHeading & JSXBase.HTMLAttributes<HTMLPopHeadingElement>;
             "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
     }
