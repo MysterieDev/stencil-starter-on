@@ -4,7 +4,8 @@ button{
   background-color: var(--blue-100);
   font-style: bolder;
   cursor: pointer;
-  transition: 150ms;
+  transition: 200ms;
+  clip-path: polygon(0 3%, 99% 5%, 89% 88%, 8% 100%);
 }
 
 button.darkblue{
@@ -19,21 +20,14 @@ button.lightblue{
   background-color: var(--blue-60);
 }
 
-button.lightblue:hover,
-button.darkblue:hover{
-  background-color: var(--blue-80);
-}
-
-button.blue:hover{
-  background-color: var(--blue-100);
+button:hover{
+  transform: scale(1.1);
 }
 
 button a{
   color: #fff;
   text-decoration: none;
 }
-
-
 
 button.s{
   font-size: 20px;
