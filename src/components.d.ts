@@ -37,6 +37,9 @@ export namespace Components {
     interface PopHeader {
         "navlinks": Array <{name: string, href: string}>;
     }
+    interface PopSupporter {
+        "supporter": number;
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -69,12 +72,19 @@ declare global {
         prototype: HTMLPopHeaderElement;
         new (): HTMLPopHeaderElement;
     };
+    interface HTMLPopSupporterElement extends Components.PopSupporter, HTMLStencilElement {
+    }
+    var HTMLPopSupporterElement: {
+        prototype: HTMLPopSupporterElement;
+        new (): HTMLPopSupporterElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
         "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
         "pop-header": HTMLPopHeaderElement;
+        "pop-supporter": HTMLPopSupporterElement;
     }
 }
 declare namespace LocalJSX {
@@ -109,12 +119,16 @@ declare namespace LocalJSX {
     interface PopHeader {
         "navlinks"?: Array <{name: string, href: string}>;
     }
+    interface PopSupporter {
+        "supporter"?: number;
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
         "pop-button": PopButton;
         "pop-card": PopCard;
         "pop-header": PopHeader;
+        "pop-supporter": PopSupporter;
     }
 }
 export { LocalJSX as JSX };
@@ -126,6 +140,7 @@ declare module "@stencil/core" {
             "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
+            "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
     }
 }
