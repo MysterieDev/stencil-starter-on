@@ -1,7 +1,6 @@
 
 .front {
     background-color: rgb(0, 79, 86);
-    clip-path: polygon(0 0, 96% 6%, 91% 95%, 6% 100%);
     width: 300px;
     height: 300px;
     display: flex;
@@ -10,9 +9,15 @@
 
 }
 
+.polygon1 {
+    clip-path: polygon(0 0, 96% 6%, 91% 95%, 6% 100%);
+}
+.polygon2 {
+    clip-path: polygon(4% 6%, 100% 0%, 94% 100%, 9% 95%);
+}
+
 .back {
     background-color: rgb(48, 163, 172);;
-    clip-path: polygon(4% 6%, 100% 0%, 94% 100%, 9% 95%);
     width: 300px;
     height: 300px;
     display: block;
