@@ -1,4 +1,4 @@
-import { Component, Host, h, State} from '@stencil/core';
+import { Component, Host, h, State, Prop} from '@stencil/core';
 
 //let cookiebanner:HTMLElement = 
 
@@ -9,6 +9,7 @@ import { Component, Host, h, State} from '@stencil/core';
 })
 export class GrpsixCookiebanner {
   @State() hasAccepted: boolean = false;
+  @Prop() linkDatenschutzrichtlinie: string;
   
   render() {
     return (
@@ -18,7 +19,7 @@ export class GrpsixCookiebanner {
                 <img src='Cookie.png' />
               <p>
                 Unsere Website verwendet Cookies, um Ihnen das Surfen zu erleichtern und relevante Informationen zu liefern. 
-                Bevor Sie unsere Website weiter nutzen, erklären Sie sich mit unserer <a href="ON-your-styleguide/datenschutz.html">Datenschutzerklärung und Cookie-Richtlinien </a>einverstanden.
+                Bevor Sie unsere Website weiter nutzen, erklären Sie sich mit unserer <a href={this.linkDatenschutzrichtlinie}>Datenschutzerklärung und Cookie-Richtlinien </a>einverstanden.
               </p>
               <button onClick={()=>this.clickAccept()} id="acceptCookie">akzeptieren</button>
             </div>

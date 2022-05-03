@@ -14,13 +14,7 @@ export namespace Components {
         "buttonLabel": string;
     }
     interface GrpsixCookiebanner {
-    }
-    interface GrpsixHovercards {
-        "altText": string;
-        "descriptionText": string;
-        "headlineLarge": string;
-        "headlineMedium": string;
-        "imageQuelle": string;
+        "linkDatenschutzrichtlinie": string;
     }
     interface GrpsixNewsletter {
         "websiteName": string;
@@ -59,12 +53,6 @@ declare global {
         prototype: HTMLGrpsixCookiebannerElement;
         new (): HTMLGrpsixCookiebannerElement;
     };
-    interface HTMLGrpsixHovercardsElement extends Components.GrpsixHovercards, HTMLStencilElement {
-    }
-    var HTMLGrpsixHovercardsElement: {
-        prototype: HTMLGrpsixHovercardsElement;
-        new (): HTMLGrpsixHovercardsElement;
-    };
     interface HTMLGrpsixNewsletterElement extends Components.GrpsixNewsletter, HTMLStencilElement {
     }
     var HTMLGrpsixNewsletterElement: {
@@ -81,7 +69,6 @@ declare global {
         "example-component": HTMLExampleComponentElement;
         "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-cookiebanner": HTMLGrpsixCookiebannerElement;
-        "grpsix-hovercards": HTMLGrpsixHovercardsElement;
         "grpsix-newsletter": HTMLGrpsixNewsletterElement;
         "my-component": HTMLMyComponentElement;
     }
@@ -95,13 +82,7 @@ declare namespace LocalJSX {
         "buttonLabel"?: string;
     }
     interface GrpsixCookiebanner {
-    }
-    interface GrpsixHovercards {
-        "altText"?: string;
-        "descriptionText"?: string;
-        "headlineLarge"?: string;
-        "headlineMedium"?: string;
-        "imageQuelle"?: string;
+        "linkDatenschutzrichtlinie"?: string;
     }
     interface GrpsixNewsletter {
         "websiteName"?: string;
@@ -124,7 +105,6 @@ declare namespace LocalJSX {
         "example-component": ExampleComponent;
         "grpsix-buttons": GrpsixButtons;
         "grpsix-cookiebanner": GrpsixCookiebanner;
-        "grpsix-hovercards": GrpsixHovercards;
         "grpsix-newsletter": GrpsixNewsletter;
         "my-component": MyComponent;
     }
@@ -136,7 +116,6 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-cookiebanner": LocalJSX.GrpsixCookiebanner & JSXBase.HTMLAttributes<HTMLGrpsixCookiebannerElement>;
-            "grpsix-hovercards": LocalJSX.GrpsixHovercards & JSXBase.HTMLAttributes<HTMLGrpsixHovercardsElement>;
             "grpsix-newsletter": LocalJSX.GrpsixNewsletter & JSXBase.HTMLAttributes<HTMLGrpsixNewsletterElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
