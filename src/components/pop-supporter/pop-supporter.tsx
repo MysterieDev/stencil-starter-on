@@ -1,6 +1,7 @@
 import { Component, h, Host, Prop, Element, getAssetPath } from '@stencil/core';
 const BaeckereiLogo = getAssetPath("/assets/logo-bakery.svg");
 const CinemaLogo = getAssetPath("/assets/logo-nacho-cinema.svg");
+const CheeseLogo = getAssetPath("/assets/logo-cheese-clothing.svg");
 
 @Component({
   tag: 'pop-supporter',
@@ -36,7 +37,7 @@ export class PopSupporter {
             case "cinema":
                 return CinemaLogo;
             case "shop": 
-                return;
+                return CheeseLogo;
         }
     }
 
@@ -47,7 +48,7 @@ export class PopSupporter {
             case "cinema":
                 return "NACHO CINEMA";
             case "shop": 
-                return "CHEESY JUNK";
+                return "CHEESY CLOTHING";
         }
     }
 
