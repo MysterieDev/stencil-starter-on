@@ -9,7 +9,7 @@
 }
 li, a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .headerlinks {
   list-style: none;
@@ -22,4 +22,7 @@ li, a {
   display: inline-block;
   padding: 0 10px;
   color: black;
+}
+li :hover {
+  color: gray;
 }
