@@ -10,6 +10,7 @@
 li, a {
   text-decoration: none;
   color: white;
+  transition: 200ms;
 }
 .headerlinks {
   list-style: none;
@@ -23,6 +24,12 @@ li, a {
   padding: 0 10px;
   color: black;
 }
+
 li :hover {
   color: gray;
+  
+} 
+a :hover {
+  color: gray;
+  
 }
