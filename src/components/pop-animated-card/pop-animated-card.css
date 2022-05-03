@@ -1,0 +1,35 @@
+:host {
+    display: block;
+    font-family: 'Open Sans' , sans-serif;
+  }
+
+  .cardBody {
+      width: 400px;
+      height: 500px;
+      background-color: rgb(0, 79, 86);
+      color: white;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin: 5px;
+  }
+
+  .polygon1 {
+    clip-path: polygon(3% 3%, 95% 6%, 87% 93%, 9% 97%);
+  }
+
+  .polygon2 {
+    clip-path: polygon(5% 6%, 97% 3%, 91% 97%, 13% 93%);
+  }
+
+  h3 {
+      padding-top: 45px;
+  }
+
+  p {
+      margin: 10px 70px;
+  }
+
+  img {
+      width: 270px;
+  }

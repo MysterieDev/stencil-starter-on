@@ -24,6 +24,9 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PopAnimatedCard {
+        "step": number;
+    }
     interface PopButton {
         "color"?: string;
         "link"?: string;
@@ -47,7 +50,7 @@ export namespace Components {
         "introduction": any;
     }
     interface PopSupporter {
-        "supporter": number;
+        "supporter": string;
     }
 }
 declare global {
@@ -62,6 +65,12 @@ declare global {
     var HTMLMyComponentElement: {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
+    };
+    interface HTMLPopAnimatedCardElement extends Components.PopAnimatedCard, HTMLStencilElement {
+    }
+    var HTMLPopAnimatedCardElement: {
+        prototype: HTMLPopAnimatedCardElement;
+        new (): HTMLPopAnimatedCardElement;
     };
     interface HTMLPopButtonElement extends Components.PopButton, HTMLStencilElement {
     }
@@ -108,6 +117,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "pop-animated-card": HTMLPopAnimatedCardElement;
         "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
         "pop-footer": HTMLPopFooterElement;
@@ -136,6 +146,9 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PopAnimatedCard {
+        "step"?: number;
+    }
     interface PopButton {
         "color"?: string;
         "link"?: string;
@@ -159,11 +172,12 @@ declare namespace LocalJSX {
         "introduction"?: any;
     }
     interface PopSupporter {
-        "supporter"?: number;
+        "supporter"?: string;
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "pop-animated-card": PopAnimatedCard;
         "pop-button": PopButton;
         "pop-card": PopCard;
         "pop-footer": PopFooter;
@@ -179,6 +193,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pop-animated-card": LocalJSX.PopAnimatedCard & JSXBase.HTMLAttributes<HTMLPopAnimatedCardElement>;
             "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-footer": LocalJSX.PopFooter & JSXBase.HTMLAttributes<HTMLPopFooterElement>;

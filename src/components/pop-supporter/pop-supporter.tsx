@@ -1,5 +1,6 @@
 import { Component, h, Host, Prop, Element, getAssetPath } from '@stencil/core';
 const BaeckereiLogo = getAssetPath("/assets/logo_maester.svg");
+const CinemaLogo = getAssetPath("/assets/logo-nacho-cinema.svg");
 
 @Component({
   tag: 'pop-supporter',
@@ -8,7 +9,7 @@ const BaeckereiLogo = getAssetPath("/assets/logo_maester.svg");
 })
 export class PopSupporter {
 
-    @Prop() supporter : number;
+    @Prop() supporter : string;
 
     @Element() private element: HTMLElement;
 
@@ -18,7 +19,7 @@ export class PopSupporter {
         card.addEventListener('click',() => {
             card.classList.toggle('flipped');        
         })   
-        if (this.supporter === 2){
+        if (this.supporter === "cinema"){
             const front = this.element.shadowRoot.querySelector('.front');
             const back = this.element.shadowRoot.querySelector('.back');
             front.classList.add("polygon2");
@@ -30,33 +31,33 @@ export class PopSupporter {
 
     private checkLogo(){
         switch (this.supporter){
-            case 1:
+            case "bakery":
                 return BaeckereiLogo;
-            case 2:
-                return;
-            case 3: 
+            case "cinema":
+                return CinemaLogo;
+            case "shop": 
                 return;
         }
     }
 
     private checkHeading(){
         switch (this.supporter){
-            case 1:
+            case "bakery":
                 return "BÄCKEREI MÄSTER";
-            case 2:
+            case "cinema":
                 return "NACHO CINEMA";
-            case 3: 
+            case "shop": 
                 return "CHEESY JUNK";
         }
     }
 
     private checkText(){
         switch (this.supporter){
-            case 1:
+            case "bakery":
                 return "Bäste Backwaren im ganzen Odenwald. Seit drei Generationen backen wir täglich für Sie!";
-            case 2:
+            case "cinema":
                 return "Crunchige Snacks und weiche Sessel. Genießen Sie den nächsten Blockbuster bei uns!";
-            case 3: 
+            case "shop": 
                 return "Sie lieben Kitsch und Völlerei, dann kommen Sie bei uns vorbei. Bis bald!";
         }
     }
