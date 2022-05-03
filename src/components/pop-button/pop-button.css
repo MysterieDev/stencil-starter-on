@@ -1,5 +1,5 @@
 button{
-  padding: 0.5em 1em;
+  padding: 0.75em 1.5em;
   border: none;
   background-color: var(--blue-100);
   font-style: bolder;
@@ -9,15 +9,15 @@ button{
 }
 
 button.darkblue{
-  background-color: var(--blue-100);
+  background-color: var(--blue-dark);
 }
 
 button.blue{
-  background-color: var(--blue-80);
+  background-color: var(--blue-100);
 }
 
 button.lightblue{
-  background-color: var(--blue-60);
+  background-color: var(--blue-80);
 }
 
 button:hover{
@@ -30,17 +30,21 @@ button a{
 }
 
 button.s{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 button.m{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 button.l{
-  font-size: 35px;
+  font-size: 25px;
 }
 
 button.xl{
-  font-size: 50px;
+  font-size: 40px;
+}
+
+button.xxl{
+  font-size: 75px;
 }

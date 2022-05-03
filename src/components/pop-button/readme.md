@@ -15,6 +15,19 @@
 | `text`   | `text`    |             | `string` | `undefined` |
 
 
+## Dependencies
+
+### Used by
+
+ - [pop-download](../pop-download)
+
+### Graph
+```mermaid
+graph TD;
+  pop-download --> pop-button
+  style pop-button fill:#f9f,stroke:#333,stroke-width:4px
+```
+
 ----------------------------------------------
 
 *Built with [StencilJS](https://stenciljs.com/)*
