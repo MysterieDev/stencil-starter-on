@@ -61,3 +61,6 @@ body {
   bottom: 2em;
   right: 2em;
 }
+.nichtAnzeigen {
+  display: none;
+}
