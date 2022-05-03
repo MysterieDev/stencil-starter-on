@@ -16,7 +16,6 @@ export class PopSupporter {
 
     componentDidLoad() {
        const card = this.element.shadowRoot.querySelector('.card');
-        console.log(card)
         card.addEventListener('click',() => {
             card.classList.toggle('flipped');        
         })   

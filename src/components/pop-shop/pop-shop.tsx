@@ -1,4 +1,4 @@
-import { Component, Host, h, getAssetPath, Prop, Element } from '@stencil/core';
+import { Component, Host, h, getAssetPath, Element, State } from '@stencil/core';
 const GangsterShirt = getAssetPath("/assets/shirt_gangsterpopy.jpg");
 const LogoSnapback = getAssetPath("/assets/Snapback_logo-popup.jpg");
 const PopUpShirt = getAssetPath("/assets/shirt_logo-popup_big.jpg");
@@ -13,58 +13,55 @@ const LogoShirt = getAssetPath("/assets/shirt_logo-popup.jpg");
 })
 export class PopShop {
 
-  @Prop() shop : any;
+  @Element() public element: HTMLElement;
 
-  @Element() private element: HTMLElement;
-  
-  componentDidLoad() {
-  const buttons = this.element.shadowRoot.querySelectorAll("[data-carousel-button]")
+  @State() public previousButton: HTMLButtonElement;
+  @State() public nextButton: HTMLButtonElement;
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const offset = button.dataset.carouselButton === "next" ? 1 : -1
-      const slides = button.closest("[data-carousel]")
-
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]")
-
-      const activeSlide = slides.querySelector("[data-active]")
-      let newIndex = [...slides.children].indexOf(activeSlide) + offset
-      if (newIndex < 0) newIndex = slides.children.length -1
-      if (newIndex >= slides.children.length) newIndex = 0
-
-      slides.children[newIndex].dataset.active = true
-      delete activeSlide.dataset.active
-    })
-  });
+  componentWillLoad() {
+    const previousButton = this.element.shadowRoot.querySelector('#prev');
+    const nextButton = this.element.shadowRoot.querySelector('#next');
+    console.log(nextButton, previousButton)
   }
+  
+  
+  setImage() {
+    let currentImage = 3;
+    
+    this.previousButton.addEventListener("click", () => {
+      if(currentImage > 1) {
+        currentImage++;
+      }
+    })
+
+    this.nextButton.addEventListener("click", () => {
+      if(currentImage < 5) {
+        currentImage--;
+      }
+    })
+
+    switch (currentImage) {
+      case 1:
+        return GangsterShirt;
+      case 2:
+        return LogoSnapback;
+      case 3:
+        return PopUpShirt;
+      case 4:
+        return SweetSnapback;
+      case 5:
+        return LogoShirt;
+      }
+    }
 
   render() {
     return (
       <Host>
-        <section aria-label="Newest Photos">
-          <div class="carousel" data-carousel>
-            <button class="carouselButton" data-carousel-button="prev">&#8656;</button>
-            <button class="carouselButton" data-carousel-button="next">&#8658;</button>
-            <ul data-slides>
-              <li class="slide" data-active>
-                <img src={GangsterShirt} alt="Shop Image #1"/>
-              </li>
-              <li class="slide">
-                <img src={LogoSnapback} alt="Shop Image #2"/>
-              </li>
-              <li class="slide">
-                <img src={PopUpShirt} alt="Shop Image #3"/>
-              </li>
-              <li class="slide">
-                <img src={SweetSnapback} alt="Shop Image #4"/>
-              </li>
-              <li class="slide">
-                <img src={LogoShirt} alt="Shop Image #5"/>
-              </li>
-            </ul>
+          <div class="carousel">
+            <button class="carouselButton prev" id="prev">zu</button>
+            <button class="carouselButton next" id="next">vor</button>
+            <img src={GangsterShirt} />
           </div>
-        </section>
       </Host>
     );
   }

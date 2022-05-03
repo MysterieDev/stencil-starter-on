@@ -50,7 +50,6 @@ export namespace Components {
         "introduction": any;
     }
     interface PopShop {
-        "shop": any;
     }
     interface PopSupporter {
         "supporter": string;
@@ -182,7 +181,6 @@ declare namespace LocalJSX {
         "introduction"?: any;
     }
     interface PopShop {
-        "shop"?: any;
     }
     interface PopSupporter {
         "supporter"?: string;
