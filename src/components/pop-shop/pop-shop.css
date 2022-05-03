@@ -1,0 +1,44 @@
+:host {
+  display: block;
+  box-sizing: border-box;
+}
+
+.carousel {
+  width: 300px;
+  position: relative;
+}
+
+.carousel > ul {
+  list-style: none;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide data-active {
+  opacity: 1;
+}
+
+.slide > img {
+  display: block;
+  width: 300px;
+}
+
+.carouselButton {
+  z-index: 2;
+  font-size: 20px;
+  position: absolute;
+  transform: translateY(-50%);
+  color: white;
+  background-color: #004f56;
+}
+
+.carouselButton.prev {
+  left: 1rem;
+}
+.carouselButton.next {
+  right: 1rem;
+}
