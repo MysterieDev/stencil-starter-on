@@ -56,6 +56,8 @@ export namespace Components {
     interface PopIntroduction {
         "introduction": any;
     }
+    interface PopRotation {
+    }
     interface PopShop {
     }
     interface PopSupporter {
@@ -135,6 +137,12 @@ declare global {
         prototype: HTMLPopIntroductionElement;
         new (): HTMLPopIntroductionElement;
     };
+    interface HTMLPopRotationElement extends Components.PopRotation, HTMLStencilElement {
+    }
+    var HTMLPopRotationElement: {
+        prototype: HTMLPopRotationElement;
+        new (): HTMLPopRotationElement;
+    };
     interface HTMLPopShopElement extends Components.PopShop, HTMLStencilElement {
     }
     var HTMLPopShopElement: {
@@ -160,6 +168,7 @@ declare global {
         "pop-header": HTMLPopHeaderElement;
         "pop-heading": HTMLPopHeadingElement;
         "pop-introduction": HTMLPopIntroductionElement;
+        "pop-rotation": HTMLPopRotationElement;
         "pop-shop": HTMLPopShopElement;
         "pop-supporter": HTMLPopSupporterElement;
     }
@@ -215,6 +224,8 @@ declare namespace LocalJSX {
     interface PopIntroduction {
         "introduction"?: any;
     }
+    interface PopRotation {
+    }
     interface PopShop {
     }
     interface PopSupporter {
@@ -233,6 +244,7 @@ declare namespace LocalJSX {
         "pop-header": PopHeader;
         "pop-heading": PopHeading;
         "pop-introduction": PopIntroduction;
+        "pop-rotation": PopRotation;
         "pop-shop": PopShop;
         "pop-supporter": PopSupporter;
     }
@@ -253,6 +265,7 @@ declare module "@stencil/core" {
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
             "pop-heading": LocalJSX.PopHeading & JSXBase.HTMLAttributes<HTMLPopHeadingElement>;
             "pop-introduction": LocalJSX.PopIntroduction & JSXBase.HTMLAttributes<HTMLPopIntroductionElement>;
+            "pop-rotation": LocalJSX.PopRotation & JSXBase.HTMLAttributes<HTMLPopRotationElement>;
             "pop-shop": LocalJSX.PopShop & JSXBase.HTMLAttributes<HTMLPopShopElement>;
             "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
