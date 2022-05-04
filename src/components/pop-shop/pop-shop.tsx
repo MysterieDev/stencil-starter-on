@@ -89,7 +89,7 @@ export class PopShop {
       <Host>
         <div class="carousel">
           <div class="shopSide">
-            <pop-button text="&#8656;" size="s" color="lightblue" id="prev"></pop-button>
+            <pop-button text="<" size="s" color="lightblue" id="prev"></pop-button>
             <div class="sideImageFrame" id="leftFrame">
               <img src={LogoSnapback} class="previewImage" id="prevImage" />  
             </div>
@@ -107,7 +107,7 @@ export class PopShop {
             <div class="sideImageFrame" id="rightFrame">
               <img src={SweetSnapback} class="previewImage" id="nextImage" />
             </div>
-            <pop-button text="&#8658;" size="s" color="lightblue" id="next"></pop-button>
+            <pop-button text=">" size="s" color="lightblue" id="next"></pop-button>
           </div>
         </div>
       </Host>
