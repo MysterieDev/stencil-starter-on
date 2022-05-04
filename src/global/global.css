@@ -9,6 +9,11 @@
     --yellow-100: #fcee21;
 }
 
+* {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
 body {
     background-color: var(--blue-100);
     margin: 0;
