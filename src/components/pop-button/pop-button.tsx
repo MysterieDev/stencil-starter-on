@@ -16,7 +16,7 @@ export class PopButton {
 
   checkForLink() {
     if (this.link) {
-      return <a href={this.link}>{this.text}</a>;
+      return <a href={this.link} target="_blank">{this.text}</a>;
     } else {
       return <a>{this.text}</a>;
     }
