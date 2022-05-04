@@ -16,11 +16,13 @@
 
 ### Used by
 
+ - [pop-download](../pop-download)
  - [pop-introduction](../pop-introduction)
 
 ### Graph
 ```mermaid
 graph TD;
+  pop-download --> pop-heading
   pop-introduction --> pop-heading
   style pop-heading fill:#f9f,stroke:#333,stroke-width:4px
 ```
