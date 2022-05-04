@@ -14,19 +14,19 @@ export class PopButton {
 
   @Prop() color?: string;
 
-  render() {
-    return (
-      <Host>
-        <button class={`${this.size} ${this.color}`}>{this.checkForLink()}</button>
-      </Host>
-    );
-  }
-
   checkForLink() {
     if (this.link) {
       return <a href={this.link}>{this.text}</a>;
     } else {
       return <a>{this.text}</a>;
     }
+  }
+
+  render() {
+    return (
+      <Host>
+        <button class={`${this.size} ${this.color}`}>{this.checkForLink()}</button>
+      </Host>
+    );
   }
 }
