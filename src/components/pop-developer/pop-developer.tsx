@@ -26,7 +26,7 @@ export class PopDeveloper {
   render() {
     return (
       <Host>
-        <pop-heading heading="PopUp - die Schöpfer"></pop-heading>
+        <pop-heading heading="PopUp - die Schöpfer" id="Team"></pop-heading>
         <ul>
           {this.names.map(devName => (
             <li class="devCard">
