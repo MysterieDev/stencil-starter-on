@@ -11,6 +11,7 @@
   font-weight: 600;
   /* clip-path: polygon(0 100%, 100% 4%, 100% 4%, 0 100%); */
   clip-path: polygon(0 22%, 100% 8%, 100% 100%, 0 100%);
+  font-size: 1.2em;
 
   
 }
