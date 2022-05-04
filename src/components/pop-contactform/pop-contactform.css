@@ -1,31 +1,54 @@
 :host {
-  display: flex;
-  font-family: 'Open Sans' , sans-serif;
-  display: flex;
-  align-items:center;
-  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  width: 60%;
+  margin: 0 auto;
 }
-.contactFormular{
+.contactFormular {
   display: flex;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.AcceptSubmit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.textinput {
+  background-color: var(--blue-60);
+  border: none;
+  height: 37px;
+  width: 250px;
+  clip-path: polygon(4% 8%, 100% 0, 87% 100%, 14% 96%);
+  text-align: center;
+  color: white;
+}
 
-}
-.AcceptSubmit{
+.acceptContainer {
   display: flex;
-  align-items:center;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
 }
-.textinput{
-  background-color: var(--blue-60) ;
-  border: none;
-  height: 35px;
+.nameInput , .emailInput {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+ 
 }
-.SubmitButton{
-  border: none;
-  background-color: var(--blue-60) ;
-  height: 35px ;
-  width: 160px;
+#radioAccept{
+  margin-right: 10px;
+}
+.acceptContainer label {
+  color: white;
+}
+.nameInput input::placeholder , .emailInput input::placeholder{
+  color: white;
 }

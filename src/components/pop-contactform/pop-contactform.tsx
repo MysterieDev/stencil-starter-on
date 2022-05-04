@@ -6,25 +6,21 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class PopContactform {
-
   render() {
     return (
       <Host>
-        <div class="contactFormular">
-        <label >Name:</label>
-        <input class="textinput"  type="text"></input>
-        
-        <label >Email:</label>
-        <input class="textinput" type="email"></input>
+        <div class="nameInput">         
+          <input class="textinput" type="text" placeholder='Name'></input>
         </div>
-        <div class="AcceptSubmit">
-          <input class="accept" id="radioAccept" type="radio" >   </input>
-          <label> Ich bin damit einverstanden Emails zu erhalten</label>
-          <button class="SubmitButton">Absenden</button>
-          
+        <div class="acceptContainer">
+          <input class="accept" id="radioAccept" type="radio"></input>
+          <label > Ich bin damit einverstanden Emails zu erhalten</label>
         </div>
+        <div class="emailInput">        
+          <input class="textinput" type="email" placeholder='Email'></input>
+        </div>
+        <pop-button size='s' text='Absenden' color='lightblue' class="SubmitButton"></pop-button>
       </Host>
     );
   }
-
 }
