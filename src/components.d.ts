@@ -40,7 +40,7 @@ export namespace Components {
     interface PopContactform {
     }
     interface PopDownload {
-    } 
+    }
     interface PopFooter {
         "footerlinks": Array <{name: string, href: string}>;
     }
