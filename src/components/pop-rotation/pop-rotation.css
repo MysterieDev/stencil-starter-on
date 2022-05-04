@@ -1,0 +1,85 @@
+:host {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+img {
+  height: 220px;
+  width: 220px;
+  object-fit: contain;
+  transition: 200ms;
+}
+
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#description {
+  background-color: #004f56;
+  width: 400px;
+  height: 200px;
+  clip-path: polygon(0 5%, 100% 0, 93% 100%, 6% 96%);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding: 0 20px;
+}
+
+#mainPopyFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#selectablePopys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#selectablePopys img {
+  height: 100px;
+  width: 100px;
+}
+
+#selectablePopys img:first-child {
+  margin-right: 30px;
+}
+
+#selectablePopys img:last-child {
+  margin-left: 30px;
+}
+
+#popys {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #004f56;
+  width: 300px;
+  height: 340px;
+  padding: 50px;
+  clip-path: polygon(0 3%, 100% 7%, 93% 100%, 6% 96%);
+}
+
+#heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: 16px;
+}
+
+.rotation {
+  transform: rotateZ(180deg);
+}
+
+
+
+
