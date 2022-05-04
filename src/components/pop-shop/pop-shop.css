@@ -1,0 +1,74 @@
+:host {
+  display: block;
+}
+
+.carousel {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+#prev {
+  margin-right: 20px;
+}
+#next {
+  margin-left: 20px;
+}
+.previewImage{
+  height: 150px;
+}
+#mainImage{
+  height: 300px;
+  width: 300px;
+}
+.shopSide{
+  display: flex;
+  align-items: center;
+}
+#mainImageFrame{
+  background-color: #004f56;
+  clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
+  width: 450px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#shopContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 60px;
+  text-align: center;
+}
+#shopContent p {
+  margin: 10px 0;
+}
+#shopContent #price {
+  font-size: 22px;
+}
+#shopContent #title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.sideImageFrame{
+  background-color: #004f56;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#leftFrame {
+  clip-path: polygon(0 0, 100% 6%, 94% 93%, 5% 100%);
+}
+#rightFrame {
+  clip-path: polygon(0 6%, 100% 0, 95% 100%, 6% 93%);
+}
+

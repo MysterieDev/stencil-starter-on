@@ -56,6 +56,8 @@ export namespace Components {
     interface PopIntroduction {
         "introduction": any;
     }
+    interface PopShop {
+    }
     interface PopSupporter {
         "supporter": string;
     }
@@ -133,6 +135,12 @@ declare global {
         prototype: HTMLPopIntroductionElement;
         new (): HTMLPopIntroductionElement;
     };
+    interface HTMLPopShopElement extends Components.PopShop, HTMLStencilElement {
+    }
+    var HTMLPopShopElement: {
+        prototype: HTMLPopShopElement;
+        new (): HTMLPopShopElement;
+    };
     interface HTMLPopSupporterElement extends Components.PopSupporter, HTMLStencilElement {
     }
     var HTMLPopSupporterElement: {
@@ -152,6 +160,7 @@ declare global {
         "pop-header": HTMLPopHeaderElement;
         "pop-heading": HTMLPopHeadingElement;
         "pop-introduction": HTMLPopIntroductionElement;
+        "pop-shop": HTMLPopShopElement;
         "pop-supporter": HTMLPopSupporterElement;
     }
 }
@@ -206,6 +215,8 @@ declare namespace LocalJSX {
     interface PopIntroduction {
         "introduction"?: any;
     }
+    interface PopShop {
+    }
     interface PopSupporter {
         "supporter"?: string;
     }
@@ -222,6 +233,7 @@ declare namespace LocalJSX {
         "pop-header": PopHeader;
         "pop-heading": PopHeading;
         "pop-introduction": PopIntroduction;
+        "pop-shop": PopShop;
         "pop-supporter": PopSupporter;
     }
 }
@@ -241,6 +253,7 @@ declare module "@stencil/core" {
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
             "pop-heading": LocalJSX.PopHeading & JSXBase.HTMLAttributes<HTMLPopHeadingElement>;
             "pop-introduction": LocalJSX.PopIntroduction & JSXBase.HTMLAttributes<HTMLPopIntroductionElement>;
+            "pop-shop": LocalJSX.PopShop & JSXBase.HTMLAttributes<HTMLPopShopElement>;
             "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
     }
