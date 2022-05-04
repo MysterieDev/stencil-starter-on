@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  font-family: 'Open Sans' , sans-serif;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.contactFormular{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.AcceptSubmit{
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.textinput{
+  background-color: var(--blue-60) ;
+  border: none;
+  height: 35px;
+}
+.SubmitButton{
+  border: none;
+  background-color: var(--blue-60) ;
+  height: 35px ;
+  width: 160px;
+}
