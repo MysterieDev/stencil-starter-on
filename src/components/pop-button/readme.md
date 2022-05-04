@@ -19,11 +19,13 @@
 
 ### Used by
 
+ - [pop-contactform](../pop-contactform)
  - [pop-download](../pop-download)
 
 ### Graph
 ```mermaid
 graph TD;
+  pop-contactform --> pop-button
   pop-download --> pop-button
   style pop-button fill:#f9f,stroke:#333,stroke-width:4px
 ```

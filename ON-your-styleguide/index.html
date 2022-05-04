@@ -9,22 +9,10 @@
     <title>PopUp - Das ultimative Minispiel</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
     <script>
-      window.addEventListener('load', () => {
-        document.querySelector('#headerbar').navlinks = [
-          { name: 'Anleitung', href: '#' },
-          { name: 'Download', href: '#' },
-          { name: 'Team', href: '#' },
-          { name: 'Popies', href: '#' },
-          { name: 'Shop', href: '#' },
-          { name: 'Newsletter', href: '#' },
-          { name: 'Devlog', href: '#' },
-          { name: 'Kontakt', href: '#' },
-        ];
-        document.querySelector('#footerbar').footerlinks = [
-          { name: 'Impressum', href: '#' },
-          { name: 'Datenschutz', href: '#' },
-        ];
-      });
+      window.addEventListener('load',()=>{
+        document.querySelector("#headerbar").navlinks = [{name:"Anleitung" ,href:"#Anleitung"},{name:"Download" ,href:"#Download"},{name:"Team" ,href:"#Team"},{name:"Popies" ,href:"#Popies"},{name:"Shop" ,href:"#Shop"}, {name:"Sponsoren" ,href:"#Sponsoren"},  {name:"Newsletter" ,href:"#Newsletter"},{name:"Devlog" ,href:"#Devlog"}]
+        document.querySelector("#footerbar").footerlinks = [{name:"Impressum" ,href:"#"},{name:"Datenschutz" ,href:"#"}]
+      })
     </script>
   </head>
 
@@ -33,30 +21,38 @@
 
     <pop-introduction></pop-introduction>
 
-    <pop-heading heading="PopUp - wie funktioniert’s?"></pop-heading>
-    <div class="tutorial">
-      <pop-animated-card step="1"></pop-animated-card>
-      <pop-animated-card step="2"></pop-animated-card>
-      <pop-animated-card step="3"></pop-animated-card>
-    </div>
+    <pop-heading heading="PopUp - wie funktioniert’s?" id="Anleitung"></pop-heading>
+      <div class="tutorial">
+        <pop-animated-card step="1"></pop-animated-card>
+        <pop-animated-card step="2"></pop-animated-card>
+        <pop-animated-card step="3"></pop-animated-card>
+      </div>
 
-    <pop-download></pop-download>
+    
+      <pop-download id="Download"></pop-download>
 
-    <pop-developer names-json='["jessie","paul","flo","olli","benni"]'></pop-developer>
-    <pop-heading heading="PopUp - Familie Pop"></pop-heading>
+    <pop-heading heading="PopUp - die Schöpfer" id="Team"></pop-heading>
 
-    <pop-heading heading="PopUp - werde Pop-Star"></pop-heading>
+    <pop-heading heading="PopUp - Familie Pop" id="Popies"></pop-heading>
 
-    <pop-heading heading="PopUp - die Unterstützer"></pop-heading>
-    <div class="supporter">
-      <pop-supporter supporter="bakery"></pop-supporter>
-      <pop-supporter supporter="cinema"></pop-supporter>
-      <pop-supporter supporter="shop"></pop-supporter>
-    </div>
+    <pop-heading heading="PopUp - werde Pop-Star" id="Shop"></pop-heading>
 
-    <pop-heading heading="PopUp - bleib Pop-up to date"></pop-heading>
+    <pop-heading heading="PopUp - die Unterstützer" id="Sponsoren"></pop-heading>
+      <div class="supporter">
+        <pop-supporter supporter="bakery"></pop-supporter>
+        <pop-supporter supporter="cinema"></pop-supporter>
+        <pop-supporter supporter="shop"></pop-supporter>
+      </div>
 
-    <pop-heading heading="PopUp - pop aktuell"></pop-heading>
+    <pop-heading heading="PopUp - bleib Pop-up to date" id="Newsletter"></pop-heading>
+    <pop-contactform></pop-contactform>
+
+
+    <pop-heading heading="PopUp - pop aktuell" id="Devlog"></pop-heading>
+        
+    <pop-footer id="footerbar"></pop-footer>
+</body>
+
 
     <pop-footer id="footerbar"></pop-footer>
   </body>

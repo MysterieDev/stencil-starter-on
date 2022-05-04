@@ -3,8 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Open Sans' , sans-serif;
+  font-family: 'Open Sans' , sans-serif  ;
   width: 100%;
+  height: 120px ;
+  background-color: var(--blue-60);
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 0 78%);
+  font-weight: 600;
+  position: fixed;
+
+  font-size: 1.2em;
+  z-index: 100;
+ 
   
 }
 li, a {
@@ -18,6 +27,9 @@ li, a {
   justify-content: center;
   align-items: center;
   width: 80%;
+  height: 60%;
+  margin-top: -10;
+  
 }
 .headerlinks li {
   display: inline-block;
@@ -26,10 +38,10 @@ li, a {
 }
 
 li :hover {
-  color: gray;
+  color: var(--blue-dark);
   
 } 
 a :hover {
-  color: gray;
+  color: var(--blue-dark);
   
 }
