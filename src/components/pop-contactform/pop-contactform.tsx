@@ -9,6 +9,9 @@ export class PopContactform {
   render() {
     return (
       <Host>
+        <pop-heading heading="PopUp - bleib Pop-up to date" id="Newsletter"></pop-heading>
+        <br/>
+        <div class="Grid">
         <div class="nameInput">         
           <input class="textinput" type="text" placeholder='Name'></input>
         </div>
@@ -20,6 +23,7 @@ export class PopContactform {
           <input class="textinput" type="email" placeholder='Email'></input>
         </div>
         <pop-button size='s' text='Absenden' color='lightblue' class="SubmitButton"></pop-button>
+        </div>
       </Host>
     );
   }
