@@ -1,0 +1,46 @@
+:host {
+  display: block;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  clip-path: polygon(0 0, 100% 6%, 93% 92%, 5% 100%);
+  padding: 50px 75px;
+  background-color: var(--blue-dark);
+}
+
+.devCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--blue-80);
+  padding: 30px;
+  clip-path: polygon(7% 6%, 88% 0, 100% 100%, 0 98%);
+  transition: 200ms;
+}
+
+.devCard:nth-child(2n+1){
+  clip-path: polygon(10% 0, 89% 4%, 96% 92%, 5% 97%);
+}
+
+.devCard:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+}
+
+span{
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+}
