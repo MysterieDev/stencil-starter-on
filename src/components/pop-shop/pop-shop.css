@@ -1,12 +1,13 @@
 :host {
   display: block;
-  height: 100px;
 }
 
 .carousel {
-  width: 300px;
-  height: 300px;
-  background-color: red;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
 }
 
 .carouselButton {
@@ -17,13 +18,28 @@
 }
 
 #prev {
-  left: 1rem;
+  margin-right: 20px;
 }
 #next {
-  right: 1rem;
+  margin-left: 20px;
 }
+.previewImage{
+  height: 150px;
+}
+#mainImage{
+  height: 300px;
+}
+.shopSide{
+  display: flex;
+  align-items: center;
+}
+#mainImageFrame{
+  background-color: #004f56;
+  clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
+  width: 500px;
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-img {
-  width: 100px;
-  height: 100px;
 }
