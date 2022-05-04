@@ -4,6 +4,7 @@ const LogoSnapback = getAssetPath('/assets/Snapback_logo-popup.jpg');
 const PopUpShirt = getAssetPath('/assets/shirt_logo-popup_big.jpg');
 const SweetSnapback = getAssetPath('/assets/Snapback_sweetpopy.jpg');
 const LogoShirt = getAssetPath('/assets/shirt_logo-popup.jpg');
+const SweetShirt = getAssetPath('/assets/shirt_sweetpopy.jpg');
 
 @Component({
   tag: 'pop-shop',
@@ -28,20 +29,20 @@ export class PopShop {
         currentImage--;
         setShopImage();
       } else {
-        currentImage = 5;
-        prevShopImage.setAttribute('src', `${SweetSnapback}`);
-        shopImage.setAttribute('src', `${LogoShirt}`);
+        currentImage = 6;
+        prevShopImage.setAttribute('src', `${LogoShirt}`);
+        shopImage.setAttribute('src', `${SweetShirt}`);
         nextShopImage.setAttribute('src', `${GangsterShirt}`);
       }
     }
 
     function setNextImage() {
-      if (currentImage < 5) {
+      if (currentImage < 6) {
         currentImage++;
         setShopImage();
       } else {
         currentImage = 1;
-        prevShopImage.setAttribute('src', `${LogoShirt}`);
+        prevShopImage.setAttribute('src', `${SweetShirt}`);
         shopImage.setAttribute('src', `${GangsterShirt}`);
         nextShopImage.setAttribute('src', `${LogoSnapback}`);
       }
@@ -50,7 +51,7 @@ export class PopShop {
     function setShopImage() {
       switch (currentImage) {
         case 1:
-          prevShopImage.setAttribute('src', `${LogoShirt}`);
+          prevShopImage.setAttribute('src', `${SweetShirt}`);
           shopImage.setAttribute('src', `${GangsterShirt}`);
           nextShopImage.setAttribute('src', `${LogoSnapback}`);
           break;
@@ -72,6 +73,11 @@ export class PopShop {
         case 5:
           prevShopImage.setAttribute('src', `${SweetSnapback}`);
           shopImage.setAttribute('src', `${LogoShirt}`);
+          nextShopImage.setAttribute('src', `${SweetShirt}`);
+          break;
+        case 6:
+          prevShopImage.setAttribute('src', `${LogoShirt}`);
+          shopImage.setAttribute('src', `${SweetShirt}`);
           nextShopImage.setAttribute('src', `${GangsterShirt}`);
           break;
       }
@@ -83,22 +89,25 @@ export class PopShop {
       <Host>
         <div class="carousel">
           <div class="shopSide">
-            <button class="carouselButton prev" id="prev">&#8656;</button>
-            <img src={LogoSnapback} class="previewImage" id="prevImage" />
+            <pop-button text="&#8656;" size="s" color="lightblue" id="prev"></pop-button>
+            <div class="sideImageFrame" id="leftFrame">
+              <img src={LogoSnapback} class="previewImage" id="prevImage" />  
+            </div>
           </div>
           <div id="mainImageFrame">
             <img src={PopUpShirt} id="mainImage"/>
-            <div>
-              <h3>PopUp Shirt</h3>
-              <p>19,99 €</p>
-              <p>S, M, L</p>
-              <p>Luftig, locker, leicht - wie dein Lieblingspopcorn</p>
-              <pop-button>In den Warenkorb</pop-button>
+            <div id="shopContent">
+              <p id="title">PopUp Shirt</p>
+              <p id="price">19,99 €</p>
+              <p id="description">Luftig, locker, leicht - wie dein Lieblingspopcorn</p>
+              <pop-button text="In den Warenkorb" size="s" link="https://www.youtube.com/watch?v=dQw4w9WgXcQ" color="blue"></pop-button>
             </div>
           </div>
           <div class="shopSide">
-            <img src={SweetSnapback} class="previewImage" id="nextImage" />
-            <button class="carouselButton next" id="next">&#8658;</button>
+            <div class="sideImageFrame" id="rightFrame">
+              <img src={SweetSnapback} class="previewImage" id="nextImage" />
+            </div>
+            <pop-button text="&#8658;" size="s" color="lightblue" id="next"></pop-button>
           </div>
         </div>
       </Host>
