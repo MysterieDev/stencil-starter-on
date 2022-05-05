@@ -1,6 +1,6 @@
 import { Component, h, Host, Prop, Element, getAssetPath } from '@stencil/core';
 const BaeckereiLogo = getAssetPath("/assets/logo-bakery.svg");
-const CinemaLogo = getAssetPath("/assets/logo-nacho-cinema.svg");
+const CinemaLogo = getAssetPath("/assets/logo-nacho-cinema.png");
 const CheeseLogo = getAssetPath("/assets/logo-cheese-clothing.svg");
 
 @Component({
