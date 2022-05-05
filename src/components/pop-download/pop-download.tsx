@@ -15,7 +15,7 @@ export class PopDownload {
         <pop-heading heading="PopUp - lad’ es dir herunter!"></pop-heading>
         <div class="downloadContainer">
           <img src={appIcon} alt="App Icon Popy"/>
-          <pop-button text="Download" size="xxl" link="https://play.google.com/" color="darkblue"></pop-button>
+          <pop-button text="Download" size="xxl" link="https://play.google.com/" color="blue"></pop-button>
         </div>
       </Host>
     );
