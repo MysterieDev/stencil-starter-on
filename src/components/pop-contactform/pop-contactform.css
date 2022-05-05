@@ -1,13 +1,21 @@
 :host {
   font-family: 'Open Sans', sans-serif;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--blue-dark);
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 95%);
+  z-index: 90;
+  padding: 20px;
+}
+.Grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  width: 60%;
-  margin: 0 auto;
-}
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  
+  }
 .contactFormular {
   display: flex;
   align-items: center;
@@ -51,4 +59,19 @@
 }
 .nameInput input::placeholder , .emailInput input::placeholder{
   color: white;
+  opacity:60%;
+}
+#warning {
+  color: white;
+  
+}
+#warningWrapper{
+  display: none ;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(4% 8%, 100% 0, 87% 100%, 14% 96%);
+  background-color: var(--blue-60);
+  height: 37px;
+  width: 400px;
+  margin: 25px auto;
 }
