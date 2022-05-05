@@ -6,7 +6,7 @@
   background-color: var(--blue-dark);
   clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 95%);
   z-index: 90;
-  padding: 20px;
+  padding:  30px 0; 
 }
 .Grid{
   display: grid;
