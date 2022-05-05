@@ -39,6 +39,9 @@ export namespace Components {
     }
     interface PopContactform {
     }
+    interface PopDeveloper {
+        "namesJson": string;
+    }
     interface PopDownload {
     }
     interface PopFooter {
@@ -52,6 +55,10 @@ export namespace Components {
     }
     interface PopIntroduction {
         "introduction": any;
+    }
+    interface PopRotation {
+    }
+    interface PopShop {
     }
     interface PopSupporter {
         "supporter": string;
@@ -94,6 +101,12 @@ declare global {
         prototype: HTMLPopContactformElement;
         new (): HTMLPopContactformElement;
     };
+    interface HTMLPopDeveloperElement extends Components.PopDeveloper, HTMLStencilElement {
+    }
+    var HTMLPopDeveloperElement: {
+        prototype: HTMLPopDeveloperElement;
+        new (): HTMLPopDeveloperElement;
+    };
     interface HTMLPopDownloadElement extends Components.PopDownload, HTMLStencilElement {
     }
     var HTMLPopDownloadElement: {
@@ -124,6 +137,18 @@ declare global {
         prototype: HTMLPopIntroductionElement;
         new (): HTMLPopIntroductionElement;
     };
+    interface HTMLPopRotationElement extends Components.PopRotation, HTMLStencilElement {
+    }
+    var HTMLPopRotationElement: {
+        prototype: HTMLPopRotationElement;
+        new (): HTMLPopRotationElement;
+    };
+    interface HTMLPopShopElement extends Components.PopShop, HTMLStencilElement {
+    }
+    var HTMLPopShopElement: {
+        prototype: HTMLPopShopElement;
+        new (): HTMLPopShopElement;
+    };
     interface HTMLPopSupporterElement extends Components.PopSupporter, HTMLStencilElement {
     }
     var HTMLPopSupporterElement: {
@@ -137,11 +162,14 @@ declare global {
         "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
         "pop-contactform": HTMLPopContactformElement;
+        "pop-developer": HTMLPopDeveloperElement;
         "pop-download": HTMLPopDownloadElement;
         "pop-footer": HTMLPopFooterElement;
         "pop-header": HTMLPopHeaderElement;
         "pop-heading": HTMLPopHeadingElement;
         "pop-introduction": HTMLPopIntroductionElement;
+        "pop-rotation": HTMLPopRotationElement;
+        "pop-shop": HTMLPopShopElement;
         "pop-supporter": HTMLPopSupporterElement;
     }
 }
@@ -179,6 +207,9 @@ declare namespace LocalJSX {
     }
     interface PopContactform {
     }
+    interface PopDeveloper {
+        "namesJson"?: string;
+    }
     interface PopDownload {
     }
     interface PopFooter {
@@ -193,6 +224,10 @@ declare namespace LocalJSX {
     interface PopIntroduction {
         "introduction"?: any;
     }
+    interface PopRotation {
+    }
+    interface PopShop {
+    }
     interface PopSupporter {
         "supporter"?: string;
     }
@@ -203,11 +238,14 @@ declare namespace LocalJSX {
         "pop-button": PopButton;
         "pop-card": PopCard;
         "pop-contactform": PopContactform;
+        "pop-developer": PopDeveloper;
         "pop-download": PopDownload;
         "pop-footer": PopFooter;
         "pop-header": PopHeader;
         "pop-heading": PopHeading;
         "pop-introduction": PopIntroduction;
+        "pop-rotation": PopRotation;
+        "pop-shop": PopShop;
         "pop-supporter": PopSupporter;
     }
 }
@@ -221,11 +259,14 @@ declare module "@stencil/core" {
             "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-contactform": LocalJSX.PopContactform & JSXBase.HTMLAttributes<HTMLPopContactformElement>;
+            "pop-developer": LocalJSX.PopDeveloper & JSXBase.HTMLAttributes<HTMLPopDeveloperElement>;
             "pop-download": LocalJSX.PopDownload & JSXBase.HTMLAttributes<HTMLPopDownloadElement>;
             "pop-footer": LocalJSX.PopFooter & JSXBase.HTMLAttributes<HTMLPopFooterElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;
             "pop-heading": LocalJSX.PopHeading & JSXBase.HTMLAttributes<HTMLPopHeadingElement>;
             "pop-introduction": LocalJSX.PopIntroduction & JSXBase.HTMLAttributes<HTMLPopIntroductionElement>;
+            "pop-rotation": LocalJSX.PopRotation & JSXBase.HTMLAttributes<HTMLPopRotationElement>;
+            "pop-shop": LocalJSX.PopShop & JSXBase.HTMLAttributes<HTMLPopShopElement>;
             "pop-supporter": LocalJSX.PopSupporter & JSXBase.HTMLAttributes<HTMLPopSupporterElement>;
         }
     }

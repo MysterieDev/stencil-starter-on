@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="de">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +8,16 @@
     <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
     <title>PopUp - Das ultimative Minispiel</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
+    <link rel="icon" href="../assets/sweet_popy.png">
     <script>
       window.addEventListener('load',()=>{
         document.querySelector("#headerbar").navlinks = [{name:"Anleitung" ,href:"#Anleitung"},{name:"Download" ,href:"#Download"},{name:"Team" ,href:"#Team"},{name:"Popies" ,href:"#Popies"},{name:"Shop" ,href:"#Shop"}, {name:"Sponsoren" ,href:"#Sponsoren"},  {name:"Newsletter" ,href:"#Newsletter"},{name:"Devlog" ,href:"#Devlog"}]
         document.querySelector("#footerbar").footerlinks = [{name:"Impressum" ,href:"#"},{name:"Datenschutz" ,href:"#"}]
       })
     </script>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <pop-header id="headerbar"></pop-header>
 
     <pop-introduction></pop-introduction>
@@ -30,14 +29,15 @@
         <pop-animated-card step="3"></pop-animated-card>
       </div>
 
+    <pop-download id="Download"></pop-download>
     
-      <pop-download id="Download"></pop-download>
-
-    <pop-heading heading="PopUp - die Schöpfer" id="Team"></pop-heading>
+    <pop-developer names-json='["jessie", "paul", "flo", "olli", "benni"]'></pop-developer>
 
     <pop-heading heading="PopUp - Familie Pop" id="Popies"></pop-heading>
+    <pop-rotation></pop-rotation>
 
     <pop-heading heading="PopUp - werde Pop-Star" id="Shop"></pop-heading>
+    <pop-shop></pop-shop>
 
     <pop-heading heading="PopUp - die Unterstützer" id="Sponsoren"></pop-heading>
       <div class="supporter">
@@ -49,9 +49,9 @@
     
     <pop-contactform></pop-contactform>
 
+
     <pop-heading heading="PopUp - pop aktuell" id="Devlog"></pop-heading>
         
     <pop-footer id="footerbar"></pop-footer>
 </body>
-
 </html>
