@@ -27,6 +27,10 @@ export namespace Components {
     interface PopAnimatedCard {
         "step": number;
     }
+    interface PopBackground {
+        "color": string;
+        "variation": string;
+    }
     interface PopButton {
         "color"?: string;
         "link"?: string;
@@ -82,6 +86,12 @@ declare global {
     var HTMLPopAnimatedCardElement: {
         prototype: HTMLPopAnimatedCardElement;
         new (): HTMLPopAnimatedCardElement;
+    };
+    interface HTMLPopBackgroundElement extends Components.PopBackground, HTMLStencilElement {
+    }
+    var HTMLPopBackgroundElement: {
+        prototype: HTMLPopBackgroundElement;
+        new (): HTMLPopBackgroundElement;
     };
     interface HTMLPopButtonElement extends Components.PopButton, HTMLStencilElement {
     }
@@ -159,6 +169,7 @@ declare global {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
         "pop-animated-card": HTMLPopAnimatedCardElement;
+        "pop-background": HTMLPopBackgroundElement;
         "pop-button": HTMLPopButtonElement;
         "pop-card": HTMLPopCardElement;
         "pop-contactform": HTMLPopContactformElement;
@@ -194,6 +205,10 @@ declare namespace LocalJSX {
     }
     interface PopAnimatedCard {
         "step"?: number;
+    }
+    interface PopBackground {
+        "color"?: string;
+        "variation"?: string;
     }
     interface PopButton {
         "color"?: string;
@@ -235,6 +250,7 @@ declare namespace LocalJSX {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
         "pop-animated-card": PopAnimatedCard;
+        "pop-background": PopBackground;
         "pop-button": PopButton;
         "pop-card": PopCard;
         "pop-contactform": PopContactform;
@@ -256,6 +272,7 @@ declare module "@stencil/core" {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "pop-animated-card": LocalJSX.PopAnimatedCard & JSXBase.HTMLAttributes<HTMLPopAnimatedCardElement>;
+            "pop-background": LocalJSX.PopBackground & JSXBase.HTMLAttributes<HTMLPopBackgroundElement>;
             "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-contactform": LocalJSX.PopContactform & JSXBase.HTMLAttributes<HTMLPopContactformElement>;
