@@ -6,11 +6,11 @@ ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   clip-path: polygon(0 0, 100% 6%, 93% 92%, 5% 100%);
   padding: 50px 75px;
-  background-color: var(--blue-dark);
+  background-color: var(--blue-100);
 }
 
 .devCard{
@@ -34,13 +34,13 @@ ul{
 }
 
 img{
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   object-fit: contain;
 }
 
 span{
   color: #fff;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
 }
