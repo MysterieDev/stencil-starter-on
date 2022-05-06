@@ -46,6 +46,11 @@ export namespace Components {
     interface PopDeveloper {
         "namesJson": string;
     }
+    interface PopDevlog {
+        "rlsdate": string;
+        "updatetitle": string;
+        "version": string;
+    }
     interface PopDownload {
     }
     interface PopFooter {
@@ -117,6 +122,12 @@ declare global {
         prototype: HTMLPopDeveloperElement;
         new (): HTMLPopDeveloperElement;
     };
+    interface HTMLPopDevlogElement extends Components.PopDevlog, HTMLStencilElement {
+    }
+    var HTMLPopDevlogElement: {
+        prototype: HTMLPopDevlogElement;
+        new (): HTMLPopDevlogElement;
+    };
     interface HTMLPopDownloadElement extends Components.PopDownload, HTMLStencilElement {
     }
     var HTMLPopDownloadElement: {
@@ -174,6 +185,7 @@ declare global {
         "pop-card": HTMLPopCardElement;
         "pop-contactform": HTMLPopContactformElement;
         "pop-developer": HTMLPopDeveloperElement;
+        "pop-devlog": HTMLPopDevlogElement;
         "pop-download": HTMLPopDownloadElement;
         "pop-footer": HTMLPopFooterElement;
         "pop-header": HTMLPopHeaderElement;
@@ -225,6 +237,11 @@ declare namespace LocalJSX {
     interface PopDeveloper {
         "namesJson"?: string;
     }
+    interface PopDevlog {
+        "rlsdate"?: string;
+        "updatetitle"?: string;
+        "version"?: string;
+    }
     interface PopDownload {
     }
     interface PopFooter {
@@ -255,6 +272,7 @@ declare namespace LocalJSX {
         "pop-card": PopCard;
         "pop-contactform": PopContactform;
         "pop-developer": PopDeveloper;
+        "pop-devlog": PopDevlog;
         "pop-download": PopDownload;
         "pop-footer": PopFooter;
         "pop-header": PopHeader;
@@ -277,6 +295,7 @@ declare module "@stencil/core" {
             "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-contactform": LocalJSX.PopContactform & JSXBase.HTMLAttributes<HTMLPopContactformElement>;
             "pop-developer": LocalJSX.PopDeveloper & JSXBase.HTMLAttributes<HTMLPopDeveloperElement>;
+            "pop-devlog": LocalJSX.PopDevlog & JSXBase.HTMLAttributes<HTMLPopDevlogElement>;
             "pop-download": LocalJSX.PopDownload & JSXBase.HTMLAttributes<HTMLPopDownloadElement>;
             "pop-footer": LocalJSX.PopFooter & JSXBase.HTMLAttributes<HTMLPopFooterElement>;
             "pop-header": LocalJSX.PopHeader & JSXBase.HTMLAttributes<HTMLPopHeaderElement>;

@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.singleupdate{
+  clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
+  background-color: var(--blue-dark);
+  text-align: center;
+  padding: 20px 60px;
+  word-wrap: break-word;
+}
