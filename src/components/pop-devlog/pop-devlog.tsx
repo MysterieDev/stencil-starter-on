@@ -15,9 +15,8 @@ export class PopDevlog {
     return (
       <Host>
         <div class="singleupdate">
-          <p>{this.updatetitle}</p>
-          <p>{this.version}</p>
-          <p>{this.rlsdate}</p>
+          <p id="updatetitle">{this.updatetitle}</p>
+          <p id="version">v{this.version} | {this.rlsdate}</p>
           <slot></slot>
         </div>
       </Host>

@@ -1,11 +1,23 @@
 :host {
   display: block;
+  min-width: 200px;
+  max-width: 200px;
+  padding: 20px 60px;
+  padding-bottom: 30px;
+  clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
+  background-color: var(--blue-dark);
 }
 
 .singleupdate{
-  clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
-  background-color: var(--blue-dark);
   text-align: center;
-  padding: 20px 60px;
   word-wrap: break-word;
+  width: 100%;
+}
+.singleupdate p{
+  margin-bottom: 10px;
+}
+#updatetitle{
+  font-weight: bold;
+  font-size: 19px;
+  margin-bottom: -15px;
 }
