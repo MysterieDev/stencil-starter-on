@@ -1,82 +1,5 @@
 [
     {
-        "id": 1000,
-        "url": "fakerezept-1.html",
-        "title": "Fakerezept 1",
-        "ingredients": [
-            "Fake ingredient",
-            "250ml Milch oder Pflanzendrink",
-            "1  Msp. Zimt",
-            "Nach Bedarf Agavendicksaft"
-        ],
-        "preperations": [
-            "Fake preperations",
-            "Milch zusammen mit der Banane und dem Zimt pürieren.",
-            "Nach Bedarf mit Agavendicksaft abschmecken.",
-            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
-        ],
-        "tips": "Fake tip",
-        "imageUrl": "https://via.placeholder.com/600/92c952"
-    },
-    {
-        "id": 2000,
-        "url": "fakerezept-2.html",
-        "title": "Fakerezept 2",
-        "ingredients": [
-            "Fake ingredient",
-            "250ml Milch oder Pflanzendrink",
-            "1  Msp. Zimt",
-            "Nach Bedarf Agavendicksaft"
-        ],
-        "preperations": [
-            "Fake preperations",
-            "Milch zusammen mit der Banane und dem Zimt pürieren.",
-            "Nach Bedarf mit Agavendicksaft abschmecken.",
-            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
-        ],
-        "tips": "Fake tip",
-        "imageUrl": "https://via.placeholder.com/600/92c952"
-    },
-    {
-        "id": 3000,
-        "url": "fakerezept-3.html",
-        "title": "Fakerezept 3",
-        "ingredients": [
-            "Fake ingredient",
-            "250ml Milch oder Pflanzendrink",
-            "1  Msp. Zimt",
-            "Nach Bedarf Agavendicksaft"
-        ],
-        "preperations": [
-            "Fake preperations",
-            "Milch zusammen mit der Banane und dem Zimt pürieren.",
-            "Nach Bedarf mit Agavendicksaft abschmecken.",
-            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
-        ],
-        "tips": "Fake tip",
-        "imageUrl": "https://via.placeholder.com/600/92c952"
-    },
-    {
-        "id": 4000,
-        "url": "fakerezept-4.html",
-        "title": "Fakerezept 4",
-        "ingredients": [
-            "Fake ingredient",
-            "250ml Milch oder Pflanzendrink",
-            "1  Msp. Zimt",
-            "Nach Bedarf Agavendicksaft"
-        ],
-        "preperations": [
-            "Fake preperations",
-            "Milch zusammen mit der Banane und dem Zimt pürieren.",
-            "Nach Bedarf mit Agavendicksaft abschmecken.",
-            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
-        ],
-        "tips": "Fake tip",
-        "imageUrl": "https://via.placeholder.com/600/92c952"
-    },
-
-    {
         "id": 10,
         "url": "bananenmilch.html",
         "title": "Bananenmilch",
@@ -91,7 +14,8 @@
             "Milch zusammen mit der Banane und dem Zimt pürieren.",
             "Nach Bedarf mit Agavendicksaft abschmecken.",
             "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
-        ]
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Bananen_Milch.jpg"
     },
 
     {
@@ -117,7 +41,8 @@
             "Nach Belieben Körner (Sonnenblumenkerne, Sesam) darüberstreuen.",
             "Im Backofen für circa 20 Minuten backen."
         ],
-        "tips": "Tipp: Statt Paprika und getrockneten Tomaten können auch, je nach Saison, andere Gemüsesorten verwendet werden."
+        "tips": "Tipp: Statt Paprika und getrockneten Tomaten können auch, je nach Saison, andere Gemüsesorten verwendet werden.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Blaetterteigstangen.jpg"
     },
 
     {
@@ -138,7 +63,8 @@
             "Die Früchte kleinschneiden.",
             "Früchte in die Creme geben und servieren."
         ],
-        "tips": "Tipp: Im Sommer sind für die Creme vor allem exotische Früchte lecker."
+        "tips": "Tipp: Im Sommer sind für die Creme vor allem exotische Früchte lecker.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Frucht_creme.jpg"
     },
 
     {
@@ -164,7 +90,8 @@
             "Alles mit Gemüsebrühe ablöscheln und köcheln lassen.",
             "Wenn die Kartoffeln gar sind, alles mit einem Pürierstab pürieren bis die gewünschte Konsistenz erreicht ist.",
             "Mit Salz und Pfeffer abschmecken und mit frischer Petersilie garnieren."
-        ]
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Gemuesesuppe.jpg"
     },
 
     {
@@ -187,7 +114,8 @@
             "Wenn der Haferbrei etwas abgekühlt ist den JOghurt und Agavendicksaft unterrühren.",
             "Mit Nüssen und Obst belegen."
         ],
-        "tips": "Tipp: Besonders gut schmecken warme Beeren dazu. Dafür einfach die gewünschten Beeren erwärmen und über den Haferbrei geben."
+        "tips": "Tipp: Besonders gut schmecken warme Beeren dazu. Dafür einfach die gewünschten Beeren erwärmen und über den Haferbrei geben.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Hefe_Hasen.jpg"
     },
 
     {
@@ -211,7 +139,8 @@
             "Teig nochmals durchkneten und dann Brötchen formen. Die Teiglinge auf ein  mit Backpapier ausgelegtes Backblech legen.",
             "Für 20 Minuten backen. Danach die Temperatur auf 180° reduzieren und nochmals 5 weitere Minuten backen."
         ],
-        "tips": "Tipp: Der Hefeteig lässt sich auch bereits am Vorabend zubereiten. In diesem Fall den Teig über Nacht in den Kühlschrank stellen, wo er langsam aufgeht."
+        "tips": "Tipp: Der Hefeteig lässt sich auch bereits am Vorabend zubereiten. In diesem Fall den Teig über Nacht in den Kühlschrank stellen, wo er langsam aufgeht.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Kartoffelbroetchen.jpg"
     },
 
     {
@@ -239,7 +168,8 @@
             "Gefrierbeutel abnehmen und Teig in Rauten schneiden.",
             "Für circa 1 Stunde backen. Direkt nach dem Backen noch warm in Stücke schneiden / brechen."
         ],
-        "tips": "Tipp: Das Knäckebrot kann in einer luftdichten Dose aufbewahrt werden."
+        "tips": "Tipp: Das Knäckebrot kann in einer luftdichten Dose aufbewahrt werden.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Knaeckebrot.jpg"
     },
 
     {
@@ -260,7 +190,8 @@
             "Frischkäse mit Creme fraiche cremig rühren. Räucherlachs und Zwiebel hinzufügen und 2/3 des Schnittlauchs ebenfalls unterrühren.",
             "Mit Pfeffer und evtl. Salz abschmecken.",
             "Mit dem restlichen Schnittlauch dekorieren und kühlstellen."
-        ]
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Lachs_creme.jpg"
     },
 
     {
@@ -287,7 +218,8 @@
             "Mit den Semmelbröseln nach Belieben bestreuen.",
             "Den Auflauf für 80 Minuten backen."
         ],
-        "tips": "Tipp: Dazu schmeckt eine fruchtige Tomatensauce sehr gut."
+        "tips": "Tipp: Dazu schmeckt eine fruchtige Tomatensauce sehr gut.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Nudel_Auflauf.jpg"
     },
 
     {
@@ -313,7 +245,8 @@
             "Mit 2 Teelöffeln vom Teig kleine Häufchen abnehmen und in heißem Fett ausbacken.",
             "Mit Puderzucker bestäuben."
         ],
-        "tips": "Tipp: Die Quarkkrapfen schmecken am besten, wenn sie noch etwas warm sind."
+        "tips": "Tipp: Die Quarkkrapfen schmecken am besten, wenn sie noch etwas warm sind.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Quarkkrapfen.jpg"
     },
 
     {
@@ -342,7 +275,8 @@
             "Das Eiweiß steifschlagen und vorsichtig unterheben.",
             "Teig in eine gefettete Springform (26cm Durchmesser) füllen. Im vorgeheizten Backofen auf der mittleren Schiene für 60 Minuten backen.",
             "Nach dem Abkühlen mit Puderzucker bestäuben."
-        ]
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Rotweinkuchen.jpg"
     },
 
     {
@@ -368,7 +302,8 @@
             "Gemahlene Nüsse und Rum dazugeben.",
             "In eine eingefettete Springform (28er) geben und für circa 40 - 60 Minuten backen."
         ],
-        "tips": "Tipp: Besonders schön sieht der Kuchen aus, wenn er nach dem Abkühlen mit einem Zuckerguss verziert wird und auf diesem aus etwas geschmolzener Schokolade ein Zebramuster gemalt wird."
+        "tips": "Tipp: Besonders schön sieht der Kuchen aus, wenn er nach dem Abkühlen mit einem Zuckerguss verziert wird und auf diesem aus etwas geschmolzener Schokolade ein Zebramuster gemalt wird.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Schokoladen_Nuss_Kuchen.jpg"
     },
 
     {
@@ -390,7 +325,8 @@
             "Die Tomaten in kleine Würfel schneiden und mit dem Basilikum dazugeben.",
             "Mit Salz und Pfeffer abschmecken."
         ],
-        "tips": "Tipp: Der Spaghettisalat schmeckt am besten, wenn man ihn bereits am Vortag zubereitet und durchziehen lässt."
+        "tips": "Tipp: Der Spaghettisalat schmeckt am besten, wenn man ihn bereits am Vortag zubereitet und durchziehen lässt.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Spaghettisalat.jpg"
     },
 
     {
@@ -414,7 +350,8 @@
             "Essig, Rotwein, Zucker, Nelken, Koriander und Pfeffer hinzugeben und eine Stunde kochen lassen.",
             "Dann Tomatenmark dazugeben, nochmal aufkochen lassen und in Gläser abfüllen.",
             "Für 30 Minuten bei 90° einkochen lassen."
-        ]
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Ketchup.jpg"
     },
 
     {
@@ -438,6 +375,7 @@
             "Mit einem Pürierstab bis zur gewünschten Konsistenz pürieren.",
             "Mit Basilikum garnieren."
         ],
-        "tips": "Tipp: Dazu schmeckt geröstetes Weißbrot sehr gut. Dafür einfach Olivenöl in einer Pfanne erhitzen und Baguettescheiben kurz darin anrösten."
+        "tips": "Tipp: Dazu schmeckt geröstetes Weißbrot sehr gut. Dafür einfach Olivenöl in einer Pfanne erhitzen und Baguettescheiben kurz darin anrösten.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Tomatensuppe.jpg"
     }
 ]

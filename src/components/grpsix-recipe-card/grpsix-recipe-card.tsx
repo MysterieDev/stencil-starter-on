@@ -23,7 +23,7 @@ export class GrpsixRecipeCard {
   @Prop() recipeId: number;
 
   componentWillLoad() {
-    return fetch('./recipes.json')
+    return fetch('/ON-your-styleguide/rezepte/recipes.json')
     .then(res => res.json())
     .then((apiRecipes: Array<ApiData>) => (this.apiData = apiRecipes))
     .then(
