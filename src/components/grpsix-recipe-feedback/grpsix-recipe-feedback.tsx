@@ -15,7 +15,7 @@ export class GrpsixRecipeFeedback {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.value);
-    this.message = "- Danke, dass du dich für unseren Newsletter entschieden hast -";
+    this.message = "Dein persönliches Feedback wurde gespeichert";
   }
 
   ckeckInputFunction(event) {

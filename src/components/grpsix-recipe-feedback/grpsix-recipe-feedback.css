@@ -5,7 +5,9 @@
 .container-fluid {
   background-color: rgb(243, 223, 238); /*muss noch angepasst werden*/
   overflow:auto;
+  
 }
+
 
 #newsletter {
   width: 600px;
@@ -36,3 +38,4 @@
   font-size: medium;
   cursor: pointer;
 }
+

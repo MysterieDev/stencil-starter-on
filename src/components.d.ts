@@ -6,10 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface ExampleComponent {
-        "exampleProp": string;
-        "exampleToUpperCase": () => Promise<void>;
-    }
     interface GrpsixRecipeFeedback {
         "websiteName": string;
     }
@@ -29,12 +25,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
-    }
-    var HTMLExampleComponentElement: {
-        prototype: HTMLExampleComponentElement;
-        new (): HTMLExampleComponentElement;
-    };
     interface HTMLGrpsixRecipeFeedbackElement extends Components.GrpsixRecipeFeedback, HTMLStencilElement {
     }
     var HTMLGrpsixRecipeFeedbackElement: {
@@ -48,16 +38,11 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
-        "example-component": HTMLExampleComponentElement;
         "grpsix-recipe-feedback": HTMLGrpsixRecipeFeedbackElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
-    interface ExampleComponent {
-        "exampleProp"?: string;
-        "onExampleEvent"?: (event: CustomEvent<string>) => void;
-    }
     interface GrpsixRecipeFeedback {
         "websiteName"?: string;
     }
@@ -76,7 +61,6 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
-        "example-component": ExampleComponent;
         "grpsix-recipe-feedback": GrpsixRecipeFeedback;
         "my-component": MyComponent;
     }
@@ -85,7 +69,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "grpsix-recipe-feedback": LocalJSX.GrpsixRecipeFeedback & JSXBase.HTMLAttributes<HTMLGrpsixRecipeFeedbackElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
