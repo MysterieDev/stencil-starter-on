@@ -31,24 +31,30 @@ export class GrpsixRecipeFeedback {
         <slot>
         <div class="container-fluid">
         <div id="newsletter">
-          <h2>{this.websiteName} Newsletter</h2>
-          <p>Hier bekommst du jede Woche tolle Rezepte und praktische Tipps!</p>
+          <h2>Beurteilung des Rezeptes {this.websiteName}</h2>
+          <p>Gebe hier deine persönliche Bewertung zu dem Rezept {this.websiteName} ab und schaue diese später nochmals an</p>
           <form onSubmit={(e) => this.handleSubmit(e)}>
 
             <div class="form-group">
-              <input type="text" value={this.value} class="form-control" id="nameFeld" placeholder="Dein Name" required></input>
+              <input type="text" value={this.value} class="form-control" id="nameFeld" placeholder="Anlass" required></input>
             </div>
 
             <div class="form-group">
-              <input type="email" value={this.value} class="form-control" id="emailFeld" placeholder="Deine Email-Adresse" required></input>
+              <input type="text" value={this.value} class="form-control" id="emailFeld" placeholder="Bewertung" required></input>
             </div>
 
             <div class="checkbox">
-              <input type="checkbox" value={this.value} id="Datenschutz" required></input>
-              <label htmlFor="Datenschutz">  Ich habe die <a href="https://www.datenschutzkanzlei.de/datenschutzerklaerung/">Datenschutzerklärung</a> zur Kenntnis genommen.</label>
+              <input type="range" value={this.value} id="Datenschutz" required></input>
+              <label htmlFor="Datenschutz"></label>
             </div>
 
-            <button class="form-control" id="anmeldebtn">Jetzt Anmelden</button>
+            <button class="form-control" id="thumbsUp"><ion-icon name="thumbs-up-sharp"></ion-icon></button>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            
+            <button class="form-control" id="thumbsDown"><ion-icon name="thumbs-down-sharp"></ion-icon></button>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
             <div>{this.message}</div>
           
