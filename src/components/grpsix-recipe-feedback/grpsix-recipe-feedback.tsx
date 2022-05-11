@@ -15,13 +15,13 @@ export class GrpsixRecipeFeedback {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this.value);
-    this.message = "Dein persönliches Feedback wurde gespeichert";
+    this.message = "Dein persönliches Feedback wurde in der Favoriten-Liste gespeichert";
   }
 
   handleSubmit2(e) {
     e.preventDefault();
     console.log(this.value);
-    this.message = "Dein persönliches nregatives Feedback gespeichert";
+    this.message = "Dein persönliches Feedback wurde in der 'Rezept-Ausblenden'-Liste gespeichert";
   }
 
   
