@@ -38,23 +38,29 @@ export class ExpNavbar {
   render() {
     return (
       <Host>
-        <div class={this.isUnderpage ? "navwrapper dark-mode" : "navwrapper"}>
-        <img class="foodblogLogo" src="logo.jpg" alt="Logo des Foodblogs"></img>
+        <div id="foodLogo">
+        <img class="foodblogLogo" src="logo.png" alt="Logo des Foodblogs"></img>
+        </div>
+
+        <div class={this.isUnderpage ? "navwrapper under-page" : "navwrapper"}>
         <nav>
           <ul class="nav_links">
             {this.navlinks.map(navlink => (
               <li>
-                <a class={this.isUnderpage && "dark-mode-typo"} href={navlink.href}>{navlink.name}</a>
+                <a class={this.isUnderpage && "under-page-typo"} href={navlink.href}>{navlink.name}</a>
               </li>
             ))}
           </ul>
         </nav>
+        <input type="text" id="searchbar" placeholder='Suche'></input>
         {
           this.willShowContactBtn() &&
           <a href="#" class="cta">
           <button type="button" name="button">
-            Contact
+            <ion-icon name="home"></ion-icon>
           </button>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         </a>
         }
         </div>

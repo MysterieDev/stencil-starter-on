@@ -7,7 +7,8 @@
     /* Centers everything in the header - horizontally not vertivally */
   padding: 30px 10%;
   background-color: white;
-  border-bottom:5px solid rgba(0, 136, 169, 1);
+  border-bottom:1px solid lightslategrey;
+  border-top:1px solid lightslategrey;
 }
 
 /* Margin and padding resets the page when browsers add stuff in */
@@ -18,23 +19,29 @@
 li, a, button {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  color: #08107e;
+  font-size: 20px;
+  color: lightslategrey;
   text-decoration: none;
 
 }
 
 .foodblogLogo {
   cursor: pointer;
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
+}
+
+#foodLogo {
+  text-align: center;
+  display: block;
 }
 
 .nav_links {
   list-style: none;
-  background-color: pink;
-  /* Removes bullets */
+  /* Removes bullets*/ 
 }
+
+
 
 .nav_links li {
   /* targets nav links and each item */
@@ -51,21 +58,23 @@ transition: all 0.3 ease 0s;
 }
 
 .nav_links li a:hover {
-color: #dc89d7;
+color: lightblue;
 }
 
 /* BUTTON */
 
 button {
-  padding: 9px 25px;
-  background-color:  rgba(0, 136, 169, 1);
-  /* Needs to be rgba so we can drop the opactiy */
-  border: none;
-  /* removes border */
-  border-radius: 50px;
-  /* makes rounded */
+  background-color:  lightblue;
+  width: 80px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.3 ease 0s;
+  border-radius: 15%;
+  border: none;
+  text-decoration: none;
+  transition: background 0.2s; 
 }
 
 button:hover {
@@ -73,11 +82,19 @@ button:hover {
 /* same colour as above but alpha value (last value)makes it darker  */
 }
 
-.isUnderpage{
-background-color: pink;
+.under-page{
+background-color: lightslategrey;
 }
 
-.isUnderpage-typo{
+.under-page-typo{
   color: white;
 }
 
+/*#linkcss {
+  background-color: ;
+}*/
+
+#searchbar {
+  height: 20px;
+  width: 170px;
+}
