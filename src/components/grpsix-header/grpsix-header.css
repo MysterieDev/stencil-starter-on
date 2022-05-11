@@ -6,6 +6,8 @@
   align-items: center;
     /* Centers everything in the header - horizontally not vertivally */
   padding: 30px 10%;
+  background-color: white;
+  border-bottom:5px solid rgba(0, 136, 169, 1);
 }
 
 /* Margin and padding resets the page when browsers add stuff in */
@@ -22,12 +24,15 @@ li, a, button {
 
 }
 
-.logo {
+.foodblogLogo {
   cursor: pointer;
+  width: 10%;
+  height: 10%;
 }
 
 .nav_links {
   list-style: none;
+  background-color: pink;
   /* Removes bullets */
 }
 

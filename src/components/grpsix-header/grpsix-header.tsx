@@ -39,7 +39,7 @@ export class ExpNavbar {
     return (
       <Host>
         <div class={this.isUnderpage ? "navwrapper dark-mode" : "navwrapper"}>
-        <p>💖</p>
+        <img class="foodblogLogo" src="logo.jpg" alt="Logo des Foodblogs"></img>
         <nav>
           <ul class="nav_links">
             {this.navlinks.map(navlink => (
