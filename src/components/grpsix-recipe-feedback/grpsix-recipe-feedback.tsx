@@ -21,15 +21,10 @@ export class GrpsixRecipeFeedback {
   handleSubmit2(e) {
     e.preventDefault();
     console.log(this.value);
-    this.message = "Dein persönliches Feedback  gespeichert";
+    this.message = "Dein persönliches nregatives Feedback gespeichert";
   }
 
-  ckeckInputFunction(event) {
-    this.value = event.target.value;
-    if (event.target.validity.typeMismatch) {
-      console.log('this element is not valid')
-    }
-  }
+  
 
   render() {
     return (
@@ -65,7 +60,7 @@ export class GrpsixRecipeFeedback {
               <p><u>Gesamteindruck</u></p>
               <input type="range" value={this.value} id="range" required></input>
             </div>
-              <div class="button">
+              
             <button class="text-control" id="thumbsUp"><ion-icon name="thumbs-up-sharp"></ion-icon></button>
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -75,8 +70,8 @@ export class GrpsixRecipeFeedback {
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
             
-          </form>
-          </div>
+            </form>
+         
 
             <div>{this.message}</div>
           
