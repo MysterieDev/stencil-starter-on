@@ -5,57 +5,58 @@ import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
   styleUrl: 'grpsix-header.css',
   shadow: true,
 })
-export class GrpsixHeader {
+export class ExpNavbar {
   @Prop() navLinksJson: string;
   @Prop() contactBtnLabel: string;
   @Prop() contactBtnHref: string;
-  @Prop() isBackgroundPink: boolean;
+  @Prop() isUnderpage: boolean;
 
   @Watch('navLinksJson')
-  handleNavLinksJsonChanged() {
+  handleNavLinksJsonChanged(){
     this.convertNavJson();
   }
 
-  @State() navlinks: Array<{ name: string; href: string }> = [];
+  @State() navlinks: Array<{name: string, href: string}> = [];
 
-  componentWillLoad() {
+  componentWillLoad(){
     this.convertNavJson();
   }
 
-  convertNavJson() {
-    this.navlinks = JSON.parse(this.navLinksJson);
+  convertNavJson(){
+    this.navlinks =  JSON.parse(this.navLinksJson);
   }
 
-  willShowContactBtn() {
-    if (this.contactBtnHref && this.contactBtnLabel) {
-      return true;
-    } else {
-      false;
+  willShowContactBtn(){
+    if(this.contactBtnHref && this.contactBtnLabel){
+      return true
+    }
+    else{
+      return false;
     }
   }
 
   render() {
     return (
       <Host>
-        <div class={this.isBackgroundPink ? "navwrapper is-background-pink" : "navwrapper"}>
-          <p> :)</p>
-          <img class="logo" src="_images/logo.svg" alt="logo" />
-          <nav>
-            <ul class="nav_links">
-              {this.navlinks.map(navlink => (
-                <li>
-                  <a class={this.isBackgroundPink && "is-backgroundbpink-typo"} href={navlink.href}>{navlink.name}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          {this.willShowContactBtn() && (
-            <a href="#" class="cta">
-              <button type="button" name="button">
-                Contact
-              </button>
-            </a>
-          )}
+        <div class={this.isUnderpage ? "navwrapper dark-mode" : "navwrapper"}>
+        <p>💖</p>
+        <nav>
+          <ul class="nav_links">
+            {this.navlinks.map(navlink => (
+              <li>
+                <a class={this.isUnderpage && "dark-mode-typo"} href={navlink.href}>{navlink.name}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        {
+          this.willShowContactBtn() &&
+          <a href="#" class="cta">
+          <button type="button" name="button">
+            Contact
+          </button>
+        </a>
+        }
         </div>
       </Host>
     );

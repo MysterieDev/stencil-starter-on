@@ -68,11 +68,11 @@ button:hover {
 /* same colour as above but alpha value (last value)makes it darker  */
 }
 
-.is-background-pink{
+.isUnderpage{
 background-color: pink;
 }
 
-.is-background-pink-typo{
+.isUnderpage-typo{
   color: white;
 }
 
