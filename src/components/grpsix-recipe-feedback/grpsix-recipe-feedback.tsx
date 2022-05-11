@@ -7,7 +7,7 @@ import { Component, Host, h, State, Prop } from '@stencil/core';
 })
 export class GrpsixRecipeFeedback {
 
-  @Prop() websiteName: string;
+  @Prop() recipeName: string;
 
   @State() message: string = "";
   @State() value: string;
@@ -29,18 +29,33 @@ export class GrpsixRecipeFeedback {
     return (
       <Host>
         <slot>
-        <div class="container-fluid">
+        <div class="container-fluid" id="container1">
         <div id="newsletter">
-          <h2>Beurteilung des Rezeptes {this.websiteName}</h2>
-          <p>Gebe hier deine persönliche Bewertung zu dem Rezept {this.websiteName} ab und schaue diese später nochmals an</p>
+          <h2>Beurteilung des Rezeptes {this.recipeName}</h2>
+          <p>Gebe hier deine persönliche Bewertung zu dem Rezept {this.recipeName} ab und schaue diese später nochmals an</p>
           <form onSubmit={(e) => this.handleSubmit(e)}>
 
             <div class="form-group">
-              <input type="text" value={this.value} class="form-control" id="nameFeld" placeholder="Anlass" required></input>
+              <p>Anlass</p>
+              <input type="text" value={this.value} class="form-control" id="nameFeld" placeholder="für Hochzeiten, Kindergeburtstage, etc." required></input>
             </div>
 
             <div class="form-group">
-              <input type="text" value={this.value} class="form-control" id="emailFeld" placeholder="Bewertung" required></input>
+              <p>Bewertung</p>
+              <input type="text" value={this.value} class="form-control" id="emailFeld" placeholder="" required></input>
+            </div>
+
+            <div class="form-group">
+              <p>Zeitaufwand</p>
+              <input type="Checkbox" value={this.value} id="checkboxTime" class="checkboxTime"></input>
+              <input type="Checkbox" value={this.value} id="emailFeld"></input>
+              <input type="Checkbox" value={this.value} id="emailFeld"></input>
+              <input type="Checkbox" value={this.value} id="emailFeld"></input>
+              
+                <div class="box1">5min.</div>
+                <div class="box2">30min.</div>
+                <div class="box3">1h</div>
+              
             </div>
 
             <div class="checkbox">
