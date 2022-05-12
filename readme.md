@@ -54,6 +54,44 @@ Ist eine Komponente zum Anzeigen eines bestimmten Rezeptes anhand einer ID
 ```
 ---
 
+## Newsletter-Anmeldung
+Ist ein Banner, der sich über die gesamte Breite des Bildschirms zieht und ein Anmeldeformular für einen Newsletter enthält
+### Variablen
+- website-name: Name der Website / des Blogs
+
+### Example-Code-Snippet
+```HTML
+<grpsix-newsletter website-name="Unser"></grpsix-newsletter>
+```
+---
+
+## Foodfact-Cards
+Karten, die ein Bild eines Lebensmittels sowie Informationen zu diesem enthalten
+### Variablen
+- source-one: Pfad zu Bild 1
+- alt-one: Alttext zu Bild 1
+- source-two: Pfard zu Bild 2
+- alt-two: Alttext zu Bild 2
+- source-three: Pfard zu Bild 3
+- alt-three: Alttext zu Bild 3
+
+### Example-Code-Snippet
+```HTML
+<grpsix-foodfacts source-one="Erdbeere.jpeg" alt-one="Eine ganze und eine halbe Erdbeere mit Blattgrün." source-two="Erdnuss.jpeg" alt-two="Zwei Erdnüsse ohne und zwei Erdnüsse mit Schale." source-three="Spargel.jpeg" alt-three="Mehrere grüne Spargel, die auf einer Fläche liegen."></grpsix-foodfacts>
+```
+---
+
+## Brightness-Slider
+Slider, mit dem die Helligkeit der gesamten Seite / des gesamten Blogs verändert werden kann
+### Variablen
+- Keine
+
+### Example-Code-Snippet
+```HTML
+<grpsix-brightnessslider></grpsix-brightnessslider>
+```
+---
+
 # Data-Description
 ## JSON for Recipes
 ### Beschreibung
