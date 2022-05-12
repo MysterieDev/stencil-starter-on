@@ -52,7 +52,7 @@ export class ExpNavbar {
             ))}
           </ul>
         </nav>
-        <input type="text" id="searchbar" placeholder='Suche'></input>
+        <input type="search" id="searchbar" placeholder='Suche'></input>
         {
           this.willShowContactBtn() &&
           <a href="#" class="cta">
