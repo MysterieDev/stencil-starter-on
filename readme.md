@@ -1,6 +1,8 @@
 ![Built With Stencil](https://img.shields.io/badge/-Built%20With%20Stencil-16161d.svg?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI%2BCgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU%2BCjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik00MjQuNywzNzMuOWMwLDM3LjYtNTUuMSw2OC42LTkyLjcsNjguNkgxODAuNGMtMzcuOSwwLTkyLjctMzAuNy05Mi43LTY4LjZ2LTMuNmgzMzYuOVYzNzMuOXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTQyNC43LDI5Mi4xSDE4MC40Yy0zNy42LDAtOTIuNy0zMS05Mi43LTY4LjZ2LTMuNkgzMzJjMzcuNiwwLDkyLjcsMzEsOTIuNyw2OC42VjI5Mi4xeiIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDI0LjcsMTQxLjdIODcuN3YtMy42YzAtMzcuNiw1NC44LTY4LjYsOTIuNy02OC42SDMzMmMzNy45LDAsOTIuNywzMC43LDkyLjcsNjguNlYxNDEuN3oiLz4KPC9zdmc%2BCg%3D%3D&colorA=16161d&style=flat-square)
 
-## Gruppenmitglieder
+(i) Zur Besseren Lesbarkeit kann die Readme in einem Vorschau-Editor geöffnet werden.
+
+# Gruppenmitglieder
 Anna-Lena Kubat @annalenakbt
 
 Antje Schmollinger @Antje-Claudia
@@ -11,6 +13,82 @@ Olga Merz @olgaluisemerz
 
 Rosanna Wagner @WagnerRosanna
 
+# Component-Description
+Alle Komponenten enthalten jeweils ihre eigene Readme. Hier trotzdem nochmal etwas zusammengefasst aufgeführt.
+## Hero-Banner
+Ist ein Banner, welcher ein Bild und optional Text mit einem Button enthalten kann
+### Variablen pflicht
+- image-src: Pfad zum Bild
+- image-alt-text: Alttext
+
+### Variablen optional
+- heading: Überschrift (2. Ordnung)
+- text: Text unter der Überschrift
+- link-href: link, dargestellt als Button
+
+### Example-Code-Snippet
+```HTML
+<grpsix-herobanner image-src="pfad-zum-bild" image-alt-text="Alttext" heading="Heading 1" text="Hallo Welt!"  link-text="klick mich!" link-href="#"></grpsix-herobanner>
+```
+---
+
+## Recipe Gallery
+Ist eine Übersicht aller Rezepte
+### Variablen
+- Keine
+
+### Example-Code-Snippet
+```HTML
+<grpsix-recipe-gallery></grpsix-recipe-gallery>
+```
+---
+
+## Recipe Card
+Ist eine Komponente zum Anzeigen eines bestimmten Rezeptes anhand einer ID
+### Variablen
+- recipe-id: Rezept-ID
+
+### Example-Code-Snippet
+```HTML
+<grpsix-recipe-card recipe-id="40"></grpsix-recipe-card>
+```
+---
+
+# Data-Description
+## JSON for Recipes
+### Beschreibung
+Die JSON wurde von der Gruppe selbst erstellt und mit Daten befüllt.
+Diese hat nachfolgenden Aufbau. (``Key: Dateityp`` => Beschreibung des Inhalts)
+- ``id: number`` PFLICHT => Die eindeutige ID des Rezeptes, dient dem Aufruf über Comonents
+- ``url: string`` => Der Dateipfad, zum Aufruf über interne Links etc. (**title** des Rezeptes wird **klein geschrieben**, **Umlaute** zu **Einzelschreibwese** (ä --> ae), **Leerzeichen** werden mit einem **Bindenstrich** getrennt.)
+- ``title: string`` => Ist der Titel des Rezeptes
+- ``ingredients: Array<>`` => Sind die Zudaten als Array gespeichert. Darüber kann dann iterert werden
+- ``preperations: Array<>`` => Die Zubereitungsweise als Array gespeichert. Darüber kann dann iterert werden
+- ``tips: string`` OPTIONAL => Zusätzliche Tips können hier gespeichert werden
+- ``imageUrl: string`` => Der Dateiname zum Bild des Rezeptes inkl. Dateiendung (Bestenfalls gut komprimiertes JPEG); **Keine Sonderzeichen, Leerzeichen (ßäöü?…), Slashes (/), Klammern!** (**Name** der Datei wird **klein geschrieben**, **Umlaute** zu **Einzelschreibwese** (ä --> ae), **Leerzeichen** werden mit einem **Bindenstrich** getrennt.)
+
+### Example JSON mit einem Rezept
+```JSON
+[
+    {
+        "id": 20,
+        "url": "beispielrezept-1.html",
+        "title": "Beispielrezept 1",
+        "ingredients": [
+            "Zutat 1",
+            "Zutat 2"
+        ],
+        "preperations": [
+            "Erst das hier machen",
+            "Danach das hier machen",
+        ],
+        "tips": "Hier steht ein Tipp",
+        "imageUrl": "bildpfad/Bildname.dateiendung"
+    }
+]
+```
+
+## Images
 
 # Stencil Component Starter
 
