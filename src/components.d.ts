@@ -6,9 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface ExampleComponent {
-        "exampleProp": string;
-        "exampleToUpperCase": () => Promise<void>;
+    interface GrpsixRecipeFeedback {
+        "recipeName": string;
     }
     interface GrpsixButtons {
         "buttonLabel": string;
@@ -39,11 +38,11 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
+    interface HTMLGrpsixRecipeFeedbackElement extends Components.GrpsixRecipeFeedback, HTMLStencilElement {
     }
-    var HTMLExampleComponentElement: {
-        prototype: HTMLExampleComponentElement;
-        new (): HTMLExampleComponentElement;
+    var HTMLGrpsixRecipeFeedbackElement: {
+        prototype: HTMLGrpsixRecipeFeedbackElement;
+        new (): HTMLGrpsixRecipeFeedbackElement;
     };
     interface HTMLGrpsixButtonsElement extends Components.GrpsixButtons, HTMLStencilElement {
     }
@@ -70,6 +69,7 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "grpsix-recipe-feedback": HTMLGrpsixRecipeFeedbackElement;
         "example-component": HTMLExampleComponentElement;
         "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-hovercards": HTMLGrpsixHovercardsElement;
@@ -78,9 +78,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface ExampleComponent {
-        "exampleProp"?: string;
-        "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    interface GrpsixRecipeFeedback {
+        "recipeName"?: string;
     }
     interface GrpsixButtons {
         "buttonLabel"?: string;
@@ -110,6 +109,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "grpsix-recipe-feedback": GrpsixRecipeFeedback;
         "example-component": ExampleComponent;
         "grpsix-buttons": GrpsixButtons;
         "grpsix-hovercards": GrpsixHovercards;
@@ -121,6 +121,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "grpsix-recipe-feedback": LocalJSX.GrpsixRecipeFeedback & JSXBase.HTMLAttributes<HTMLGrpsixRecipeFeedbackElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-hovercards": LocalJSX.GrpsixHovercards & JSXBase.HTMLAttributes<HTMLGrpsixHovercardsElement>;
