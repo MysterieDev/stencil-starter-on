@@ -1,17 +1,23 @@
 :host {
   display: block;
-  min-width: 200px;
-  max-width: 200px;
-  padding: 20px 60px;
-  padding-bottom: 30px;
+}
+.blogPolygon1{
   clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
-  background-color: var(--blue-dark);
+}
+.blogPolygon2{
+  clip-path: polygon(0 0, 97% 4%, 88% 96%, 12% 99%);
 }
 
 .singleupdate{
   text-align: center;
   word-wrap: break-word;
-  width: 100%;
+  
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 300px;
+  padding: 20px 60px;
+  padding-bottom: 30px;
+  background-color: var(--blue-dark);
 }
 .singleupdate p{
   margin-bottom: 10px;

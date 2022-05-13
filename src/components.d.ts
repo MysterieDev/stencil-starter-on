@@ -47,6 +47,7 @@ export namespace Components {
         "namesJson": string;
     }
     interface PopDevlog {
+        "form"?: string;
         "rlsdate": string;
         "updatetitle": string;
         "version": string;
@@ -238,6 +239,7 @@ declare namespace LocalJSX {
         "namesJson"?: string;
     }
     interface PopDevlog {
+        "form"?: string;
         "rlsdate"?: string;
         "updatetitle"?: string;
         "version"?: string;

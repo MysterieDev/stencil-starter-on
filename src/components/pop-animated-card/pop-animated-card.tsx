@@ -88,8 +88,7 @@ export class PopAnimatedCard {
             <h3>{this.checkStep()}</h3>
             <img class="image" src={this.checkImage()}></img>
             <p>{this.checkStepDescription()}</p>
-        </div>
-        
+        </div>        
       </Host>
     );
   }
