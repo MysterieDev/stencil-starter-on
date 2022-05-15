@@ -1,0 +1,54 @@
+
+/* For documentation: https://getbootstrap.com/docs/5.2/customize/css-variables/#content */
+:root {
+    --bs-secondary: #F9F5F1; /* Edited */
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 255, 254, 252;
+    --bs-secondary-rgb: rgb(249, 245, 241); /* Edited */
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-body-color-rgb: rgba(17,17,17);
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: "Inter", Inter, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1.2rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: rgba(17,17,17);
+    --bs-body-bg: #FFFEFC; /* Edited */
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: rgba(0, 0, 0, 0.1); /* Edited */
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-heading-color: ;
+    --bs-link-color: var(--bs-body-color); /* Edited */
+    --bs-link-hover-color: #EB5757; /* Edited */
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+
+
+    /**
+    * Custom Variables
+    */
+    --grpsix-text-color-medium: rgba(0,0,0,0.6);
+
+    --grpsix-bg-dark: #9F9284;
+  }
+  
