@@ -92,6 +92,36 @@ Slider, mit dem die Helligkeit der gesamten Seite / des gesamten Blogs veränder
 ```
 ---
 
+## Cookie Banner
+Banner, der auf die Cookie- und Datenschutzrichtlinien hinweist und erst verschwindet, wenn diese mit einem Klick auf den Button "akzeptieren" akzeptiert wurden
+
+### Variablen (Pflicht)
+- linkDatenschutzrichtlinie: Link zur Unterseite mit den Datenschutzrichtlinien und zu Informationen zur Verwendung von Cookies
+
+### Example-Code-Snippet
+```HTML
+<grpsix-cookiebanner link-datenschutzrichtlinie="ON-your-styleguide/datenschutz.html"></grpsix-cookiebanner>
+```
+---
+
+## Hover Cards
+Karten mit einem Bild auf der Vorderseite, die sich beim hovern auf die Rückseite drehen und dort weitere Informationen anzeigen
+
+### Variablen (Pflicht)
+- imageQuelle: Pfad zum jeweiligen Bild
+- altText: Alt Text mit einer Beschreibung zum Bild
+
+### Variablen (optional)
+- headlineLarge: Überschrift (1. Ordnung)
+- headlineMedium: Überschrift (2. Ordnung)
+- descriptionText: Beschreibungstext
+
+### Example-Code-Snippet
+```HTML
+<grpsix-hovercards image-quelle="Antje.jpg" alt-text="Bild von Antje Schmollinger" headline-large="Antje Schmollinger" headline-medium="Developing and Design" description-text="Studentin, DHBW Mosbach"></grpsix-hovercards>
+```
+---
+
 # Data-Description
 ## JSON for Recipes
 ### Beschreibung
