@@ -7,7 +7,7 @@ import { Component, Host, h, State, Prop } from '@stencil/core';
 })
 export class GrpsixRecipeFeedback {
 
-  @Prop() recipeName: string = "Bananenmilch";
+  @Prop() recipeName: string;
 
   @State() message: string = "";
   @State() value: string;
