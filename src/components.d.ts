@@ -10,6 +10,8 @@ export namespace Components {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
     }
+    interface ImpressumComponent {
+    }
     interface MyComponent {
         /**
           * The first name
@@ -35,6 +37,12 @@ declare global {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
     };
+    interface HTMLImpressumComponentElement extends Components.ImpressumComponent, HTMLStencilElement {
+    }
+    var HTMLImpressumComponentElement: {
+        prototype: HTMLImpressumComponentElement;
+        new (): HTMLImpressumComponentElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -49,6 +57,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
+        "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
         "qr-generator": HTMLQrGeneratorElement;
     }
@@ -57,6 +66,8 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface ImpressumComponent {
     }
     interface MyComponent {
         /**
@@ -77,6 +88,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
+        "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
         "qr-generator": QrGenerator;
     }
@@ -86,6 +98,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
         }
