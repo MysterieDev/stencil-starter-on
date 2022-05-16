@@ -1,0 +1,11 @@
+.btn-primary {
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: var(--grpsix-bg-dark);
+    --bs-btn-border-color: var(--grpsix-bg-dark);
+    --bs-btn-hover-color: var(--bs-body-color);
+    --bs-btn-hover-bg: var(--bs-secondary);
+    --bs-btn-hover-border-color: var(--grpsix-bg-dark);
+    --bs-btn-active-bg: var(--grpsix-bg-dark);
+    --bs-btn-disabled-bg: var(--grpsix-bg-dark);
+    --bs-btn-disabled-border-color: var(--grpsix-bg-dark);
+}
