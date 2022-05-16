@@ -7,8 +7,8 @@ import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
 })
 export class ExpNavbar {
   @Prop() navTabsJson: string;
-  @Prop() contactBtnLabel: string;
-  @Prop() contactBtnHref: string;
+  @Prop() homeButton: string;
+  @Prop() homeButtonLink: string;
   @Prop() isUnderpage: boolean;
 
   @Watch('navTabsJson')
@@ -27,7 +27,7 @@ export class ExpNavbar {
   }
 
   willShowContactBtn(){
-    if(this.contactBtnHref && this.contactBtnLabel){
+    if(this.homeButtonLink && this.homeButton){
       return true
     }
     else{
