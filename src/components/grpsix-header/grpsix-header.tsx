@@ -39,7 +39,7 @@ export class ExpNavbar {
     return (
       <Host>
         <div id="foodLogo">
-        <img class="foodblogLogo" src="logo.png" alt="Logo des Foodblogs"></img>
+        <img class="foodblogLogo" src="/ON-your-styleguide/logo.png" alt="Logo des Foodblogs"></img>
         </div>
 
         <div class={this.isUnderpage ? "navwrapper under-page" : "navwrapper"}>

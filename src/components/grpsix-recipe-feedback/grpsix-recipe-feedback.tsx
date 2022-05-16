@@ -31,7 +31,7 @@ export class GrpsixRecipeFeedback {
       <Host>
         <slot>
         <div class="imageContainer" id="container0">
-          <img src="paper.jpg" alt="paper" id="kreis"/>
+          <img src="/ON-your-styleguide/paper.jpg" alt="paper" id="kreis"/>
         <div class="container-fluid" id="container1">
         <div id="recipe">
           <h2>Beurteilung des Rezeptes {this.recipeName}</h2>

@@ -49,6 +49,7 @@ export namespace Components {
         "websiteName": string;
     }
     interface GrpsixRecipeCard {
+        "imageAltTextInfo": string;
         "recipeId": number;
     }
     interface GrpsixRecipeFeedback {
@@ -183,6 +184,7 @@ declare namespace LocalJSX {
         "websiteName"?: string;
     }
     interface GrpsixRecipeCard {
+        "imageAltTextInfo"?: string;
         "recipeId"?: number;
     }
     interface GrpsixRecipeFeedback {

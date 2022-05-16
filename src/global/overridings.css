@@ -38,3 +38,10 @@
         max-height: 17rem;
     }
 }
+
+
+.grpsix-recipe-card-header {
+    color: white;
+    max-height: 20rem;
+    overflow: hidden;
+}
