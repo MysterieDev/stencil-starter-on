@@ -10,7 +10,6 @@
   margin-bottom: 60px;
   padding: 20px;
   padding-bottom: 15px;
-  float: left;
   border-radius: 5px;
   /*background-color:xx;   Je nach Farbkonzept noch eine Farbe dazu!*/
 }
@@ -25,13 +24,9 @@
 }
 
 .container-fluid {
-  height: auto;
+  display: flex;
   padding-left: 9%;
   padding-right: 9%;
-}
-
-#cardOne {
-  float: left;
 }
 
 #cardTwo {
@@ -43,9 +38,9 @@
   float: right;
 }
 
-#button {
+.button {
   float: right;
-  background-color: rgb(243, 223, 238);
+  background-color: lightblue;
   padding: 15px;
   padding-left: 30px;
   padding-right: 30px;

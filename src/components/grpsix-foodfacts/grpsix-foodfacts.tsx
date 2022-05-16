@@ -25,7 +25,7 @@ export class GrpsixFoodfacts {
                 <h3 class="card-title">FOOD FACTS: Erdbeere</h3>
                 <details>
                   <summary>Die süße Versuchung
-                    <p id="button">more</p>
+                    <p class="button">more</p>
                   </summary>
                   <p>
                     <br/>
@@ -57,7 +57,7 @@ export class GrpsixFoodfacts {
                 <h3 class="card-title">FOOD FACTS: Erdnuss</h3>
                 <details>
                   <summary>Eigentlich gar keine Nuss
-                    <p id="button">more</p>
+                    <p class="button">more</p>
                   </summary>
                   <p>
                     <br/>
@@ -88,7 +88,7 @@ export class GrpsixFoodfacts {
                 <h3 class="card-title">FOOD FACTS: Spargel</h3>
                 <details>
                   <summary>Über oder unter der Erde
-                    <p id="button">more</p>
+                    <p class="button">more</p>
                   </summary>
                   <p>
                     <br/>
