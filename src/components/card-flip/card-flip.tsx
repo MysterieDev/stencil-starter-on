@@ -1,18 +1,29 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'card-flip',
   styleUrl: 'card-flip.css',
-  shadow: true,
+  shadow: true
 })
-export class CardFlip {
+export class cardFlip{
+
+  @Prop({reflect: true, mutable: true}) imgSrc: string;
 
   render() {
     return (
       <Host>
-        <slot></slot>
+        
+        <div class="container">
+          <div class="card">
+            <div class="front">
+              <slot name="front"></slot>
+            </div>
+            <div class="back">
+              <slot name="back"></slot>
+            </div>
+            </div>
+            </div>
       </Host>
     );
   }
-
 }

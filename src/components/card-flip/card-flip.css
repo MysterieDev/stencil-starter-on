@@ -1,3 +1,37 @@
-:host {
-  display: block;
+.container {
+  display: flex;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 10%;
+  height: 10%;
+  transition: transform 5s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.back {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  transition: transform 1s;
 }
