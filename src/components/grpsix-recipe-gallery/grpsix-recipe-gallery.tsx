@@ -36,7 +36,7 @@ componentWillLoad() {
           this.apiData.map(recipe =>
             <div class="col">
               <div class="card">
-                <img src={recipe.imageUrl} class="card-img-top" alt={this.imageAltTextInfo + (recipe.title)} />
+                <img src={recipe.imageUrl} class="card-img-top grpsix-card-image-height" alt={this.imageAltTextInfo + (recipe.title)} />
                 <div class="card-body">
                   <h5 class="card-title">{recipe.title}</h5>
                 </div>
