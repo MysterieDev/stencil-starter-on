@@ -1,0 +1,43 @@
+:host {
+  display: flex;
+  color:white;
+  position: sticky;
+  top:75%;
+
+  justify-content: center;
+  z-index: 100000;
+}
+
+.container {
+  position: absolute;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #FEAA00;
+  border-radius: 5px;
+  padding: 10px 40px 30px 40px;
+}
+
+.content {
+  position: relative;
+}
+
+#closeButton {
+  position: absolute;
+  top:0px;
+  right:0px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+p .link {
+  text-decoration: underline white;
+  cursor: pointer;
+}
+
+.buttons {
+  cursor: pointer;
+}
