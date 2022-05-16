@@ -6,24 +6,24 @@ import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
   shadow: true,
 })
 export class ExpNavbar {
-  @Prop() navLinksJson: string;
+  @Prop() navTabsJson: string;
   @Prop() contactBtnLabel: string;
   @Prop() contactBtnHref: string;
   @Prop() isUnderpage: boolean;
 
-  @Watch('navLinksJson')
-  handleNavLinksJsonChanged(){
+  @Watch('navTabsJson')
+  handlenavTabsJsonChanged(){
     this.convertNavJson();
   }
 
-  @State() navlinks: Array<{name: string, href: string}> = [];
+  @State() tablinks: Array<{name: string, href: string}> = [];
 
   componentWillLoad(){
     this.convertNavJson();
   }
 
   convertNavJson(){
-    this.navlinks =  JSON.parse(this.navLinksJson);
+    this.tablinks =  JSON.parse(this.navTabsJson);
   }
 
   willShowContactBtn(){
@@ -45,7 +45,7 @@ export class ExpNavbar {
         <div class={this.isUnderpage ? "navwrapper under-page" : "navwrapper"}>
         <nav>
           <ul class="nav_links">
-            {this.navlinks.map(navlink => (
+            {this.tablinks.map(navlink => (
               <li>
                 <a class={this.isUnderpage && "under-page-typo"} href={navlink.href}>{navlink.name}</a>
               </li>
