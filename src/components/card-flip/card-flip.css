@@ -12,17 +12,25 @@
 }
 
 .front,
-.back {
+.back,
+.front2,
+.back2,
+.front3,
+.back3,
+.front4,
+.back4 {
   height: 100%;
   width: 100%;
   color: black;
   text-align: center;
-  border-radius: 10px;
   backface-visibility: hidden;
   position: absolute;
 }
 
-.back {
+.back,
+.back2,
+.back3,
+.back4 {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   text-align: center;
@@ -33,5 +41,5 @@
 
 .card:hover {
   transform: rotateY(180deg);
-  transition: transform 1s;
+  transition: transform 3s;
 }
