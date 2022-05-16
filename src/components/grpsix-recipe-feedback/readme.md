@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property     | Attribute     | Description | Type     | Default          |
-| ------------ | ------------- | ----------- | -------- | ---------------- |
-| `recipeName` | `recipe-name` |             | `string` | `"Bananenmilch"` |
+| Property     | Attribute     | Description | Type     | Default     |
+| ------------ | ------------- | ----------- | -------- | ----------- |
+| `recipeName` | `recipe-name` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

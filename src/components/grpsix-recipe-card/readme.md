@@ -7,9 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute   | Description | Type     | Default     |
-| ---------- | ----------- | ----------- | -------- | ----------- |
-| `recipeId` | `recipe-id` |             | `number` | `undefined` |
+| Property           | Attribute             | Description | Type     | Default       |
+| ------------------ | --------------------- | ----------- | -------- | ------------- |
+| `imageAltTextInfo` | `image-alt-text-info` |             | `string` | `"Bild für "` |
+| `recipeId`         | `recipe-id`           |             | `number` | `undefined`   |
 
 
 ----------------------------------------------
