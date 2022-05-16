@@ -24,6 +24,12 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface QrGenerator {
+        "link": string;
+    }
+    interface TimerCountdown {
+        "time": number;
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +44,23 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
+    }
+    var HTMLQrGeneratorElement: {
+        prototype: HTMLQrGeneratorElement;
+        new (): HTMLQrGeneratorElement;
+    };
+    interface HTMLTimerCountdownElement extends Components.TimerCountdown, HTMLStencilElement {
+    }
+    var HTMLTimerCountdownElement: {
+        prototype: HTMLTimerCountdownElement;
+        new (): HTMLTimerCountdownElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "qr-generator": HTMLQrGeneratorElement;
+        "timer-countdown": HTMLTimerCountdownElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +82,17 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface QrGenerator {
+        "link"?: string;
+    }
+    interface TimerCountdown {
+        "time"?: number;
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "qr-generator": QrGenerator;
+        "timer-countdown": TimerCountdown;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +101,8 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
+            "timer-countdown": LocalJSX.TimerCountdown & JSXBase.HTMLAttributes<HTMLTimerCountdownElement>;
         }
     }
 }
