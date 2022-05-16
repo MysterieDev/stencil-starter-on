@@ -1,6 +1,5 @@
 import { Component, Host, h, Prop } from '@stencil/core';
 
-let body:HTMLElement;
 let componentElement:ShadowRoot;
 let closeButton:HTMLElement;
 let acceptButton:HTMLElement;
@@ -14,12 +13,12 @@ let banner:HTMLDivElement;
 export class CookieBanner {
 
   @Prop() header:string;
-  @Prop() bannertext:string;
+  @Prop() text:string;
   @Prop() buttontext:string;
-  @Prop() linkguide?:string;
-  @Prop() link?:string;
+  @Prop() linkguide:string;
+  @Prop() link:string;
 
-  linkGuidelines() {
+  linkGuide() {
     window.open(this.link);
   }
 
@@ -27,37 +26,30 @@ export class CookieBanner {
     return (
       <Host>
         <div class="container">
-          <div class="content">
             <button id="closeButton" class="buttons">&#10005;</button>
               <p class="heading">{this.header && <p>{this.header}</p>}</p>
-                <p>{this.bannertext && <p>{this.bannertext}</p>}</p>
-              <p onClick={() => this.linkGuidelines()}>{this.linkguide && <p class="link">{this.linkguide}</p>}</p>
+                <p>{this.text && <p>{this.text}</p>}</p>
+              <p onClick={() => this.linkGuide()}>{this.linkguide && <p class="link">{this.linkguide}</p>}</p>
             <button id="acceptButton" class="buttons">{this.buttontext && <p>{this.buttontext}</p>}</button>
-          </div>
         </div>
-        <slot></slot>
       </Host>
     );
   }
   componentDidLoad() {
-    defineObjectReferences();
-    body = document.querySelector("body");
-    body.style.overflowY="hidden";
-
+    Initialization();
   }
 }
 
-function defineObjectReferences() {
+function Initialization() {
   componentElement =  document.querySelector("cookie-banner").shadowRoot;
   closeButton = componentElement.querySelector("#closeButton");
   acceptButton = componentElement.querySelector("#acceptButton");
   banner = componentElement.querySelector(".container");
 
-  closeButton.addEventListener("click", removeCookieBanner);
-  acceptButton.addEventListener("click", removeCookieBanner);
+  closeButton.addEventListener("click", removeBanner);
+  acceptButton.addEventListener("click", removeBanner);
 }
 
-function removeCookieBanner(){
+function removeBanner(){
  banner.style.display = "none";
- body.style.overflowY="scroll";
 }
