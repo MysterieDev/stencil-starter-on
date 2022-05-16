@@ -24,6 +24,10 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PictureCarousel {
+        "frequency": string;
+        "imgsrcs": string;
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +42,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPictureCarouselElement extends Components.PictureCarousel, HTMLStencilElement {
+    }
+    var HTMLPictureCarouselElement: {
+        prototype: HTMLPictureCarouselElement;
+        new (): HTMLPictureCarouselElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "picture-carousel": HTMLPictureCarouselElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +73,14 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PictureCarousel {
+        "frequency"?: string;
+        "imgsrcs"?: string;
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "picture-carousel": PictureCarousel;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +89,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "picture-carousel": LocalJSX.PictureCarousel & JSXBase.HTMLAttributes<HTMLPictureCarouselElement>;
         }
     }
 }

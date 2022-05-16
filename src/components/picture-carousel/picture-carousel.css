@@ -1,3 +1,95 @@
 :host {
   display: block;
 }
+#carousel-frame {
+  width: 80%;
+  height: 75vh;
+  margin: auto;
+  vertical-align: middle;
+  overflow: hidden;
+  position: relative;
+  z-index: 200;
+}
+
+#carousel {
+  position: inherit;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.carouselshow-image {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.carouselButton {
+  pointer-events: auto;
+  position: absolute;
+  cursor: pointer;
+  margin: 0 auto;
+  z-index: 200;
+  width: 100px;
+}
+
+.button-container {
+  position: absolute;
+  margin: 0 auto;
+  height: 100px;
+  z-index: 200;
+  width: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.5);
+
+}
+
+.button-container-next{
+  border-radius: 100%;
+  right: 1%;
+  z-index: 500;
+}
+
+.button-container-stop{
+  visibility: hidden;
+}
+
+.button-container-prev{
+  border-radius: 100%;
+  left: 1%;
+  z-index: 500;
+}
+#stopCarouselButton {
+  visibility: hidden;
+}
+
+.image-carousel {
+  z-index: 0;
+}
+
+#nextImage {
+  width:100%;
+  object-fit: cover;
+  object-position: +50% 0;
+  width: 33%;
+  height: auto;
+}
+#prevImage {
+  width:100%;
+  height:auto;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+}
+#activeImage {
+  width:100%;
+  height:auto;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: cover;
+}
