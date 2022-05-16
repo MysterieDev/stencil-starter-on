@@ -9,18 +9,28 @@
 body {
   background-color: #f5f8ff;
 }
+
+.wrapperCookiebanner {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, .5);
+}
+
 #cookiePopup {
   background-color: #ffffff;
-  position: absolute;
+  position: relative;
   font-size: 14px;
   width: 70vw;
-  max-width: 42.85em;
   box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
   text-align: justify;
   line-height: 1.8em;
   padding: 2em 1.4em;
   border-radius: 6px;
   transition: all 0.5s ease-in;
+  margin: 300px auto;
 }
 #cookiePopup img {
   display: block;
@@ -34,7 +44,7 @@ body {
   margin: 1.4em 0;
 }
 #cookiePopup button {
-  background-color: #ff94ac;
+  background-color: lightblue;
   border: none;
   color: #ffffff;
   font-size: 1.2em;
@@ -49,7 +59,7 @@ body {
   box-shadow: 0 .2em .4em;
 }
 #cookiePopup a {
-  color: #ff94ac;
+  color: lightslategrey;
 }
 .hide {
   visibility: hidden;
