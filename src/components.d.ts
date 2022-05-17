@@ -6,6 +6,12 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AgeAlert {
+        "buttontext": string;
+        "buttontextremove": string;
+        "header": string;
+        "text": string;
+    }
     interface CardFlip {
         "imgSrc": string;
     }
@@ -42,6 +48,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAgeAlertElement extends Components.AgeAlert, HTMLStencilElement {
+    }
+    var HTMLAgeAlertElement: {
+        prototype: HTMLAgeAlertElement;
+        new (): HTMLAgeAlertElement;
+    };
     interface HTMLCardFlipElement extends Components.CardFlip, HTMLStencilElement {
     }
     var HTMLCardFlipElement: {
@@ -79,6 +91,7 @@ declare global {
         new (): HTMLQrGeneratorElement;
     };
     interface HTMLElementTagNameMap {
+        "age-alert": HTMLAgeAlertElement;
         "card-flip": HTMLCardFlipElement;
         "cookie-banner": HTMLCookieBannerElement;
         "example-component": HTMLExampleComponentElement;
@@ -88,6 +101,12 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AgeAlert {
+        "buttontext"?: string;
+        "buttontextremove"?: string;
+        "header"?: string;
+        "text"?: string;
+    }
     interface CardFlip {
         "imgSrc"?: string;
     }
@@ -123,6 +142,7 @@ declare namespace LocalJSX {
         "link"?: string;
     }
     interface IntrinsicElements {
+        "age-alert": AgeAlert;
         "card-flip": CardFlip;
         "cookie-banner": CookieBanner;
         "example-component": ExampleComponent;
@@ -135,6 +155,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
             "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
