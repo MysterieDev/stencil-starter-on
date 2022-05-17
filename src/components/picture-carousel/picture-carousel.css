@@ -22,7 +22,7 @@
 .carouselshow-image {
   width: 100%;
   height: auto;
-  display: inline-block;
+  display: inlinfle-block;
   vertical-align: middle;
   object-fit: cover;
   z-index: 0;
@@ -73,18 +73,20 @@
 }
 
 #nextImage {
+  visibility: hidden;
   width:100%;
   object-fit: cover;
-  object-position: +50% 0;
-  width: 33%;
+  object-position: +100% 0;
+
   height: auto;
 }
 #prevImage {
+  visibility: hidden;
   width:100%;
-  height:auto;
-  display: inline-block;
-  vertical-align: middle;
   object-fit: cover;
+  object-position: -100% 0;
+
+  height: auto;
 }
 #activeImage {
   width:100%;
