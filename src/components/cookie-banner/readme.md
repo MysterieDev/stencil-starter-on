@@ -7,13 +7,14 @@
 
 ## Properties
 
-| Property     | Attribute    | Description | Type     | Default     |
-| ------------ | ------------ | ----------- | -------- | ----------- |
-| `bannertext` | `bannertext` |             | `string` | `undefined` |
-| `buttontext` | `buttontext` |             | `string` | `undefined` |
-| `header`     | `header`     |             | `string` | `undefined` |
-| `link`       | `link`       |             | `string` | `undefined` |
-| `linkguide`  | `linkguide`  |             | `string` | `undefined` |
+| Property           | Attribute          | Description | Type     | Default     |
+| ------------------ | ------------------ | ----------- | -------- | ----------- |
+| `buttontext`       | `buttontext`       |             | `string` | `undefined` |
+| `buttontextremove` | `buttontextremove` |             | `string` | `undefined` |
+| `header`           | `header`           |             | `string` | `undefined` |
+| `link`             | `link`             |             | `string` | `undefined` |
+| `linkguide`        | `linkguide`        |             | `string` | `undefined` |
+| `text`             | `text`             |             | `string` | `undefined` |
 
 
 ----------------------------------------------
