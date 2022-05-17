@@ -6,7 +6,6 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-
     interface CardFlip {
         "imgSrc": string;
     }
@@ -17,7 +16,6 @@ export namespace Components {
         "link": string;
         "linkguide": string;
         "text": string;
-
     }
     interface ExampleComponent {
         "exampleProp": string;
@@ -42,13 +40,12 @@ export namespace Components {
     }
 }
 declare global {
-
     interface HTMLCardFlipElement extends Components.CardFlip, HTMLStencilElement {
     }
     var HTMLCardFlipElement: {
         prototype: HTMLCardFlipElement;
         new (): HTMLCardFlipElement;
-    }
+    };
     interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
     }
     var HTMLCookieBannerElement: {
@@ -74,7 +71,6 @@ declare global {
         new (): HTMLQrGeneratorElement;
     };
     interface HTMLElementTagNameMap {
-
         "card-flip": HTMLCardFlipElement;
         "cookie-banner": HTMLCookieBannerElement;
         "example-component": HTMLExampleComponentElement;
@@ -83,7 +79,6 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-
     interface CardFlip {
         "imgSrc"?: string;
     }
