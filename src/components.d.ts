@@ -12,6 +12,9 @@ export namespace Components {
         "header": string;
         "text": string;
     }
+    interface CardFlip {
+        "imgSrc": string;
+    }
     interface CookieBanner {
         "buttontext": string;
         "buttontextremove": string;
@@ -23,6 +26,8 @@ export namespace Components {
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
+    }
+    interface ImpressumComponent {
     }
     interface MyComponent {
         /**
@@ -49,6 +54,12 @@ declare global {
         prototype: HTMLAgeAlertElement;
         new (): HTMLAgeAlertElement;
     };
+    interface HTMLCardFlipElement extends Components.CardFlip, HTMLStencilElement {
+    }
+    var HTMLCardFlipElement: {
+        prototype: HTMLCardFlipElement;
+        new (): HTMLCardFlipElement;
+    };
     interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
     }
     var HTMLCookieBannerElement: {
@@ -60,6 +71,12 @@ declare global {
     var HTMLExampleComponentElement: {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
+    };
+    interface HTMLImpressumComponentElement extends Components.ImpressumComponent, HTMLStencilElement {
+    }
+    var HTMLImpressumComponentElement: {
+        prototype: HTMLImpressumComponentElement;
+        new (): HTMLImpressumComponentElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -75,8 +92,10 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "age-alert": HTMLAgeAlertElement;
+        "card-flip": HTMLCardFlipElement;
         "cookie-banner": HTMLCookieBannerElement;
         "example-component": HTMLExampleComponentElement;
+        "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
         "qr-generator": HTMLQrGeneratorElement;
     }
@@ -87,6 +106,9 @@ declare namespace LocalJSX {
         "buttontextremove"?: string;
         "header"?: string;
         "text"?: string;
+    }
+    interface CardFlip {
+        "imgSrc"?: string;
     }
     interface CookieBanner {
         "buttontext"?: string;
@@ -99,6 +121,8 @@ declare namespace LocalJSX {
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface ImpressumComponent {
     }
     interface MyComponent {
         /**
@@ -119,8 +143,10 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "age-alert": AgeAlert;
+        "card-flip": CardFlip;
         "cookie-banner": CookieBanner;
         "example-component": ExampleComponent;
+        "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
         "qr-generator": QrGenerator;
     }
@@ -130,8 +156,10 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
+            "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
         }
