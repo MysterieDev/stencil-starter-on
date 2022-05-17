@@ -7,9 +7,9 @@ let imageReferences: string[]
 let previous: HTMLImageElement;
 let next: HTMLImageElement;
 
-let previousImage: HTMLImageElement;
+// let previousImage: HTMLImageElement;
 let activeImage: HTMLImageElement;
-let nextImage: HTMLImageElement;
+// let nextImage: HTMLImageElement;
 
 let componentElement: ShadowRoot;
 
@@ -52,9 +52,9 @@ export class PictureCarousel {
             <img src="./assets/picture-carousel/arrow-right.png" class="carouselButton" id="nextImageButton"></img>
           </div>
           <div id="carousel">
-            <img class="image-carousel" id="prevImage"></img>
+            {/* <img class="image-carousel" id="prevImage"></img> */}
             <img class="image-carousel" id="activeImage"></img>
-            <img class="image-carousel" id="nextImage"></img>
+            {/* <img class="image-carousel" id="nextImage"></img> */}
           </div>
         </div>
         <slot></slot>
@@ -77,9 +77,9 @@ function defineObjectReferences() {
   next = componentElement.querySelector("#nextImageButton");
   previous = componentElement.querySelector("#previousImageButton");
 
-  previousImage = componentElement.querySelector("#prevImage");
+  // previousImage = componentElement.querySelector("#prevImage");
   activeImage = componentElement.querySelector("#activeImage");
-  nextImage = componentElement.querySelector("#nextImage");
+  // nextImage = componentElement.querySelector("#nextImage");
 }
 
 
@@ -91,30 +91,26 @@ function addEventListeners() {
 
 function addImages() {
   let arrayEntry: number = currentImageNumber
-  let a: number = arrayEntry - 2;
+  // let a: number = arrayEntry - 2;
   let b: number = arrayEntry - 1;
-  let c: number = arrayEntry;
+  // let c: number = arrayEntry;
 
   switch (arrayEntry) {
     case 1:
-      a = imageReferences.length - 1;
+      // a = imageReferences.length - 1;
       b = 0;
-      c = 1;
+      // c = 1;
       break;
     case 0:
-      a = imageReferences.length - 2;
+      // a = imageReferences.length - 2;
       b = imageReferences.length - 1;
-      c = 0;
+      // c = 0;
       break;
   }
 
-  previousImage.src = imageReferences[a]
-  console.log(previousImage.src)
+  // previousImage.src = imageReferences[a]
   activeImage.src = imageReferences[b]
-  console.log(activeImage.src);
-  nextImage.src = imageReferences[c]
-  console.log(nextImage.src);
-
+  // nextImage.src = imageReferences[c]
 }
 
 
