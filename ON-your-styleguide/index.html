@@ -20,12 +20,41 @@
     text="Um bei uns auf der Seite verweilen zu können, müssen Sie mindestens 18 Jahre alt sein. Bitte bestätigen Sie das nachfolgend..."
     buttontext="Ja" buttontextremove="Nein"></age-alert>
 
+  
     <cookie-banner header="Datenschutzeinstellung"
     text="Wir nutzen Cookies unserem Shop. Einige sind notwendig, während andere uns helfen, den Shop und die Besuchererfahrungen zu verbessern.Bitte bestätigen sie nachfolgend, dass Cookies erhoben werden dürfen."
     linkguides="Zu unseren AGB's" link="https://www.spirituosen-superbillig.com/Datenschutz.html"
     buttontext="Annehmen" buttontextremove="Ablehnen"></cookie-banner>
 
+    <card-flip>
+        <slot slot="front"> 
+            <img width="100%" src="/src/components/card-flip/assets/Spezial_500ml.png" alt="Aplirsbacher Spezial" /></slot>
+                <slot slot="back">
+                    Kraftvolles Klosterbier mit einem runden, vollmundigen Körper und einem ausgeprägten Charakter. <br> 
+                    Sein unverkennbares Markenzeichen: <br>
+                    der besonders hohe Stammwürzegehalt.</slot>
+
+                    <slot slot="front2"> 
+                        <img width="100%" src="/src/components/card-flip/assets/Pils_500ml_600x600.png" alt="Alpirsbacher Pils" /></slot>
+                            <slot slot="back2">
+                                Hell-sonnengelbe Farbe mit typisch fein-herben Geschmack – <br> 
+                                dank feinstem Aromahopfen und ausgesuchter Braugerste.</slot>
+              
+                    <slot slot="front3"> 
+                        <img width="100%" src="/src/components/card-flip/assets/Kleiner-Mo-nch_600x600.png" alt="Alpirsbacher Kleiner Mönch" /></slot>
+                            <slot slot="back3">
+                                Er ist der Novize unter den alteingesessenen Brau-Spezialitäten von Alpirsbacher Klosterbräu.</slot>
+            
+                    <slot slot="front4"> 
+                        <img width="100%" src="/src/components/card-flip/assets/Alkoholfreies-Schwarzwaldbier-0-0_330ml_600x600.png" alt="Alpirsbacher" /></slot>
+                            <slot slot="back4">
+                                Biergenuss ohne Reue! Garantiert 0,0 % Alkohol dank modernster Entalkoholisierungstechnik.</slot>
+    </card-flip>
+    
     <qr-generator link="https://chart.googleapis.com/chart?cht=qr&chl=youtube.com&chs=177x177"></qr-generator>
+
+    <impressum-component>
+    </impressum-component>
 
 </body>
 
