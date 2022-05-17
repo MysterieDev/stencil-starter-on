@@ -16,11 +16,4 @@ render() {
     </button>
   );
   }
-
 }
-
-{/* <apollo-button id="primary" text="Start Stream" appearance="primary"></apollo-button>
-        <apollo-button text="Send" appearance="secondary"></apollo-button>
-        <apollo-button text="Record" appearance="tertiary"></apollo-button>
-        <apollo-button text="End Stream" appearance="warning"></apollo-button>
-        <apollo-button text="Delete VOD" appearance="danger"></apollo-button> */}
