@@ -6,9 +6,32 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AgeAlert {
+        "buttontext": string;
+        "buttontextremove": string;
+        "header": string;
+        "text": string;
+    }
+    interface CardFlip {
+        "imgSrc": string;
+    }
+    interface CookieBanner {
+        "buttontext": string;
+        "buttontextremove": string;
+        "header": string;
+        "link": string;
+        "linkguide": string;
+        "text": string;
+    }
+    interface CustomButton {
+        "color"?: string;
+        "text": string;
+    }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
+    }
+    interface ImpressumComponent {
     }
     interface MyComponent {
         /**
@@ -24,13 +47,46 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface QrGenerator {
+        "link": string;
+    }
 }
 declare global {
+    interface HTMLAgeAlertElement extends Components.AgeAlert, HTMLStencilElement {
+    }
+    var HTMLAgeAlertElement: {
+        prototype: HTMLAgeAlertElement;
+        new (): HTMLAgeAlertElement;
+    };
+    interface HTMLCardFlipElement extends Components.CardFlip, HTMLStencilElement {
+    }
+    var HTMLCardFlipElement: {
+        prototype: HTMLCardFlipElement;
+        new (): HTMLCardFlipElement;
+    };
+    interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
+    }
+    var HTMLCookieBannerElement: {
+        prototype: HTMLCookieBannerElement;
+        new (): HTMLCookieBannerElement;
+    };
+    interface HTMLCustomButtonElement extends Components.CustomButton, HTMLStencilElement {
+    }
+    var HTMLCustomButtonElement: {
+        prototype: HTMLCustomButtonElement;
+        new (): HTMLCustomButtonElement;
+    };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
     var HTMLExampleComponentElement: {
         prototype: HTMLExampleComponentElement;
         new (): HTMLExampleComponentElement;
+    };
+    interface HTMLImpressumComponentElement extends Components.ImpressumComponent, HTMLStencilElement {
+    }
+    var HTMLImpressumComponentElement: {
+        prototype: HTMLImpressumComponentElement;
+        new (): HTMLImpressumComponentElement;
     };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
@@ -38,15 +94,50 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
+    }
+    var HTMLQrGeneratorElement: {
+        prototype: HTMLQrGeneratorElement;
+        new (): HTMLQrGeneratorElement;
+    };
     interface HTMLElementTagNameMap {
+        "age-alert": HTMLAgeAlertElement;
+        "card-flip": HTMLCardFlipElement;
+        "cookie-banner": HTMLCookieBannerElement;
+        "custom-button": HTMLCustomButtonElement;
         "example-component": HTMLExampleComponentElement;
+        "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
+        "qr-generator": HTMLQrGeneratorElement;
     }
 }
 declare namespace LocalJSX {
+    interface AgeAlert {
+        "buttontext"?: string;
+        "buttontextremove"?: string;
+        "header"?: string;
+        "text"?: string;
+    }
+    interface CardFlip {
+        "imgSrc"?: string;
+    }
+    interface CookieBanner {
+        "buttontext"?: string;
+        "buttontextremove"?: string;
+        "header"?: string;
+        "link"?: string;
+        "linkguide"?: string;
+        "text"?: string;
+    }
+    interface CustomButton {
+        "color"?: string;
+        "text"?: string;
+    }
     interface ExampleComponent {
         "exampleProp"?: string;
         "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    }
+    interface ImpressumComponent {
     }
     interface MyComponent {
         /**
@@ -62,17 +153,32 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface QrGenerator {
+        "link"?: string;
+    }
     interface IntrinsicElements {
+        "age-alert": AgeAlert;
+        "card-flip": CardFlip;
+        "cookie-banner": CookieBanner;
+        "custom-button": CustomButton;
         "example-component": ExampleComponent;
+        "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
+        "qr-generator": QrGenerator;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
+            "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
+            "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
+            "custom-button": LocalJSX.CustomButton & JSXBase.HTMLAttributes<HTMLCustomButtonElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
+            "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
         }
     }
 }

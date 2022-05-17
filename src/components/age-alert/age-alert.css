@@ -1,0 +1,46 @@
+:host {
+  top: 100%;
+  display: flex;
+  color:#FEAA00;
+  position: sticky;
+  justify-content:center;
+  z-index: 200000;
+}
+
+.container {
+  position: absolute;
+  width: 50%;
+  height: 500px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background-image: url(/src/components/age-alert/asset/Bier_2_2400x1350.jpeg);
+  background-size: auto auto;
+  background-repeat: no-repeat;
+  padding: 10px 40px 30px 40px;
+}
+
+#closeButton{
+  background-color: #cbcbcb;
+  margin-left: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1px;
+}
+
+.alertText{
+  text-align: center;
+}
+
+p .link {
+  cursor: pointer;
+}
+
+.buttons {
+  cursor: pointer;
+  border-radius: 10px;
+}
