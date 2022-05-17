@@ -32,6 +32,9 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface QrGenerator {
+        "link": string;
+    }
 }
 declare global {
     interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
@@ -52,10 +55,17 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLQrGeneratorElement extends Components.QrGenerator, HTMLStencilElement {
+    }
+    var HTMLQrGeneratorElement: {
+        prototype: HTMLQrGeneratorElement;
+        new (): HTMLQrGeneratorElement;
+    };
     interface HTMLElementTagNameMap {
         "cookie-banner": HTMLCookieBannerElement;
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "qr-generator": HTMLQrGeneratorElement;
     }
 }
 declare namespace LocalJSX {
@@ -85,10 +95,14 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface QrGenerator {
+        "link"?: string;
+    }
     interface IntrinsicElements {
         "cookie-banner": CookieBanner;
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "qr-generator": QrGenerator;
     }
 }
 export { LocalJSX as JSX };
@@ -98,6 +112,7 @@ declare module "@stencil/core" {
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "qr-generator": LocalJSX.QrGenerator & JSXBase.HTMLAttributes<HTMLQrGeneratorElement>;
         }
     }
 }
