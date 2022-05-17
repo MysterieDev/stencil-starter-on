@@ -23,6 +23,10 @@ export namespace Components {
         "linkguide": string;
         "text": string;
     }
+    interface CustomButton {
+        "color"?: string;
+        "text": string;
+    }
     interface ExampleComponent {
         "exampleProp": string;
         "exampleToUpperCase": () => Promise<void>;
@@ -66,6 +70,12 @@ declare global {
         prototype: HTMLCookieBannerElement;
         new (): HTMLCookieBannerElement;
     };
+    interface HTMLCustomButtonElement extends Components.CustomButton, HTMLStencilElement {
+    }
+    var HTMLCustomButtonElement: {
+        prototype: HTMLCustomButtonElement;
+        new (): HTMLCustomButtonElement;
+    };
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
     }
     var HTMLExampleComponentElement: {
@@ -94,6 +104,7 @@ declare global {
         "age-alert": HTMLAgeAlertElement;
         "card-flip": HTMLCardFlipElement;
         "cookie-banner": HTMLCookieBannerElement;
+        "custom-button": HTMLCustomButtonElement;
         "example-component": HTMLExampleComponentElement;
         "impressum-component": HTMLImpressumComponentElement;
         "my-component": HTMLMyComponentElement;
@@ -116,6 +127,10 @@ declare namespace LocalJSX {
         "header"?: string;
         "link"?: string;
         "linkguide"?: string;
+        "text"?: string;
+    }
+    interface CustomButton {
+        "color"?: string;
         "text"?: string;
     }
     interface ExampleComponent {
@@ -145,6 +160,7 @@ declare namespace LocalJSX {
         "age-alert": AgeAlert;
         "card-flip": CardFlip;
         "cookie-banner": CookieBanner;
+        "custom-button": CustomButton;
         "example-component": ExampleComponent;
         "impressum-component": ImpressumComponent;
         "my-component": MyComponent;
@@ -158,6 +174,7 @@ declare module "@stencil/core" {
             "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
             "card-flip": LocalJSX.CardFlip & JSXBase.HTMLAttributes<HTMLCardFlipElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
+            "custom-button": LocalJSX.CustomButton & JSXBase.HTMLAttributes<HTMLCustomButtonElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "impressum-component": LocalJSX.ImpressumComponent & JSXBase.HTMLAttributes<HTMLImpressumComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;

@@ -1,0 +1,37 @@
+:host {
+  display: block;
+}
+
+button {
+  background: #342628;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+  padding: 0 10px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.button.red {
+  background: #ff1a3c;
+  color: #fff;
+}
+
+.button.red:hover {
+  background: #ab0000;
+}
+
+
+.button.yellow {
+  background: #FEAA00;
+  color: #fff;
+}
+
+.button.yellow:hover {
+  background: #c18100;
+}
