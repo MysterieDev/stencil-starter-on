@@ -6,6 +6,12 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AgeAlert {
+        "buttontext": string;
+        "buttontextremove": string;
+        "header": string;
+        "text": string;
+    }
     interface CookieBanner {
         "buttontext": string;
         "buttontextremove": string;
@@ -37,6 +43,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAgeAlertElement extends Components.AgeAlert, HTMLStencilElement {
+    }
+    var HTMLAgeAlertElement: {
+        prototype: HTMLAgeAlertElement;
+        new (): HTMLAgeAlertElement;
+    };
     interface HTMLCookieBannerElement extends Components.CookieBanner, HTMLStencilElement {
     }
     var HTMLCookieBannerElement: {
@@ -62,6 +74,7 @@ declare global {
         new (): HTMLQrGeneratorElement;
     };
     interface HTMLElementTagNameMap {
+        "age-alert": HTMLAgeAlertElement;
         "cookie-banner": HTMLCookieBannerElement;
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
@@ -69,6 +82,12 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AgeAlert {
+        "buttontext"?: string;
+        "buttontextremove"?: string;
+        "header"?: string;
+        "text"?: string;
+    }
     interface CookieBanner {
         "buttontext"?: string;
         "buttontextremove"?: string;
@@ -99,6 +118,7 @@ declare namespace LocalJSX {
         "link"?: string;
     }
     interface IntrinsicElements {
+        "age-alert": AgeAlert;
         "cookie-banner": CookieBanner;
         "example-component": ExampleComponent;
         "my-component": MyComponent;
@@ -109,6 +129,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "age-alert": LocalJSX.AgeAlert & JSXBase.HTMLAttributes<HTMLAgeAlertElement>;
             "cookie-banner": LocalJSX.CookieBanner & JSXBase.HTMLAttributes<HTMLCookieBannerElement>;
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
