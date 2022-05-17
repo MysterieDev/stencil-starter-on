@@ -16,10 +16,9 @@
   padding: 10px 40px 30px 40px;
 }
 
-#closeButton {
-  position: absolute;
-  top:0px;
-  right:0px;
+#closeButton{
+  background-color: #dadada;
+  margin-left: 10px;
 }
 
 .heading {
