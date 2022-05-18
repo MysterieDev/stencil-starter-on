@@ -24,6 +24,9 @@ export namespace Components {
         "sourceThree": string;
         "sourceTwo": string;
     }
+    interface GrpsixFooter {
+        "image": string;
+    }
     interface GrpsixHeader {
         "homeButton": string;
         "homeButtonLink": string;
@@ -84,6 +87,12 @@ declare global {
         prototype: HTMLGrpsixFoodfactsElement;
         new (): HTMLGrpsixFoodfactsElement;
     };
+    interface HTMLGrpsixFooterElement extends Components.GrpsixFooter, HTMLStencilElement {
+    }
+    var HTMLGrpsixFooterElement: {
+        prototype: HTMLGrpsixFooterElement;
+        new (): HTMLGrpsixFooterElement;
+    };
     interface HTMLGrpsixHeaderElement extends Components.GrpsixHeader, HTMLStencilElement {
     }
     var HTMLGrpsixHeaderElement: {
@@ -131,6 +140,7 @@ declare global {
         "grpsix-buttons": HTMLGrpsixButtonsElement;
         "grpsix-cookiebanner": HTMLGrpsixCookiebannerElement;
         "grpsix-foodfacts": HTMLGrpsixFoodfactsElement;
+        "grpsix-footer": HTMLGrpsixFooterElement;
         "grpsix-header": HTMLGrpsixHeaderElement;
         "grpsix-herobanner": HTMLGrpsixHerobannerElement;
         "grpsix-hovercards": HTMLGrpsixHovercardsElement;
@@ -158,6 +168,9 @@ declare namespace LocalJSX {
         "sourceOne"?: string;
         "sourceThree"?: string;
         "sourceTwo"?: string;
+    }
+    interface GrpsixFooter {
+        "image"?: string;
     }
     interface GrpsixHeader {
         "homeButton"?: string;
@@ -198,6 +211,7 @@ declare namespace LocalJSX {
         "grpsix-buttons": GrpsixButtons;
         "grpsix-cookiebanner": GrpsixCookiebanner;
         "grpsix-foodfacts": GrpsixFoodfacts;
+        "grpsix-footer": GrpsixFooter;
         "grpsix-header": GrpsixHeader;
         "grpsix-herobanner": GrpsixHerobanner;
         "grpsix-hovercards": GrpsixHovercards;
@@ -215,6 +229,7 @@ declare module "@stencil/core" {
             "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
             "grpsix-cookiebanner": LocalJSX.GrpsixCookiebanner & JSXBase.HTMLAttributes<HTMLGrpsixCookiebannerElement>;
             "grpsix-foodfacts": LocalJSX.GrpsixFoodfacts & JSXBase.HTMLAttributes<HTMLGrpsixFoodfactsElement>;
+            "grpsix-footer": LocalJSX.GrpsixFooter & JSXBase.HTMLAttributes<HTMLGrpsixFooterElement>;
             "grpsix-header": LocalJSX.GrpsixHeader & JSXBase.HTMLAttributes<HTMLGrpsixHeaderElement>;
             "grpsix-herobanner": LocalJSX.GrpsixHerobanner & JSXBase.HTMLAttributes<HTMLGrpsixHerobannerElement>;
             "grpsix-hovercards": LocalJSX.GrpsixHovercards & JSXBase.HTMLAttributes<HTMLGrpsixHovercardsElement>;
