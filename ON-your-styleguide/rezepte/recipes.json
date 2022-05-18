@@ -115,7 +115,7 @@
             "Mit Nüssen und Obst belegen."
         ],
         "tips": "Tipp: Besonders gut schmecken warme Beeren dazu. Dafür einfach die gewünschten Beeren erwärmen und über den Haferbrei geben.",
-        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Hefe_Hasen.jpg"
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Porridge.jpg"
     },
 
     {
@@ -331,8 +331,8 @@
 
     {
         "id": 140,
-        "url": "tomatenketchup-selbstgemachte.html",
-        "title": "Tomatenketchup - selbstgemachte",
+        "url": "tomatenketchup.html",
+        "title": "Tomatenketchup",
         "ingredients": [
             "2kg Tomaten",
             "2 Zwiebeln",

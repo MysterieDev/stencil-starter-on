@@ -3,9 +3,9 @@
 }
 
 #container1 {
-  height: 800px;
+  height: 1000px;
   width: 500px;
-  background-color: pink;
+  background-color: lightblue;
   border-radius: 50px;
   align-items: center;
   justify-content: center;
@@ -13,8 +13,8 @@
 
 #container0 {
   height: 900px;
-  width: 900px;
-  
+  width: fit-content;
+  margin: 0 auto;
 }
 
 img {
@@ -72,7 +72,12 @@ img {
 #container0 {
   position:relative
 }
-#container1 {position:absolute;right: 350px;bottom:50px;z-index:10}
+#container1 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 10;
+}
 
 #kreis {
   border-radius: 10%;

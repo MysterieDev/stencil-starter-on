@@ -39,7 +39,7 @@ export class ExpNavbar {
     return (
       <Host>
         <div id="foodLogo">
-        <img class="foodblogLogo" src="logo.png" alt="Logo des Foodblogs"></img>
+        <img class="foodblogLogo" src="/ON-your-styleguide/logo.png" alt="Logo des Foodblogs"></img>
         </div>
 
         <div class={this.isUnderpage ? "navwrapper under-page" : "navwrapper"}>
@@ -55,7 +55,7 @@ export class ExpNavbar {
         <input type="search" id="searchbar" placeholder='Suche'></input>
         {
           this.willShowContactBtn() &&
-          <a href="#" class="cta">
+          <a href={this.homeButtonLink} class="cta">
           <button type="button" name="button">
             <ion-icon name="home"></ion-icon>
           </button>

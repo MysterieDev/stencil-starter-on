@@ -21,6 +21,7 @@ export class GrpsixRecipeCard {
   @State() apiData: ApiData[];
   @State() myActualRecipe: any; // Any?
   @Prop() recipeId: number;
+  @Prop() imageAltTextInfo: string = "Bild für ";
 
   componentWillLoad() {
     return fetch('/ON-your-styleguide/rezepte/recipes.json')
@@ -37,8 +38,19 @@ export class GrpsixRecipeCard {
   render() {
     return (
       <Host>
-        <div class="container">
-          <h1>{this.myActualRecipe.title}</h1>
+
+        <div class="container-fluid m-0 p-0 position-relative is-stretch row align-content-center grpsix-herobanner-wrapper grpsix-recipe-card-header">
+          <img class="p-0" src={this.myActualRecipe.imageUrl && this.myActualRecipe.imageUrl} alt={this.imageAltTextInfo + (this.myActualRecipe.title)} />
+          <div class="grpsix-overlay-grey"></div>
+          <div class="position-absolute text-center ">
+            { 
+            this.myActualRecipe.title &&
+            <h1 class="grpsix-herobanner-heading">{this.myActualRecipe.title}</h1>
+            }
+          </div>
+        </div>
+
+        <div class="container mt-5 mb-5">
           {/* https://stenciljs.com/docs/templating-jsx#loops */}
 
           {this.myActualRecipe.ingredients &&

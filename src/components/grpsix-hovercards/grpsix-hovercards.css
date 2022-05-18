@@ -11,7 +11,7 @@ img {
   height: 390px;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
-  margin-left: 40%;
+  margin: 0 auto;
   margin-top: 5%;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 .back-page {
-  background-color: rgb(243, 223, 238);
+  background-color: lightblue;
   color: #000000;
   transform: rotateY(180deg);
 }

@@ -7,43 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/dist/stencil-starter-on/stencil-starter-on.esm.js" type="module"></script>
     <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
-    <title>your design guide</title>
+    <title>Our cool blog</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
 </head>
 
 <body>
-    <!-- <example-component example-prop="Dies ist ein Property-Inhalt der Webcomponent"> Dies ist der Slot-Inhalt </example-component>
-    <p>Ihr könnt all diesen Content verändern und mehr Unterseiten hinzufügen</p>
-    <small>Viel Spaß beim kreativ werden :-)</small> -->
-
     
-    <!-- <example-component></example-component> -->
-    <grpsix-newsletter website-name="Unser"></grpsix-newsletter>
-    <small>Viel Spaß beim kreativ werden :-)</small>
-    <grpsix-cookiebanner link-datenschutzrichtlinie="ON-your-styleguide/datenschutz.html"></grpsix-cookiebanner>
-    <grpsix-buttons>Endlich: Ein Button!</grpsix-buttons>
-    <grpsix-hovercards image-quelle="Anna-Lena.jpg" alt-text="Bild von Anna-Lena Kubat" headline-large="Anna-Lena Kubat" headline-medium="Developing and Design" description-text="Studentin, DHBW Mosbach"></grpsix-hovercards>
-    <grpsix-hovercards image-quelle="Antje.jpg" alt-text="Bild von Antje Schmollinger" headline-large="Antje Schmollinger" headline-medium="Developing and Design" description-text="Studentin, DHBW Mosbach"></grpsix-hovercards>
-    <grpsix-hovercards image-quelle="Julian.jpg" alt-text="Bild von Julian Fleischmann" headline-large="Julian Fleischmann" headline-medium="Developing and Design" description-text="Student, DHBW Mosbach"></grpsix-hovercards>
-    <grpsix-hovercards image-quelle="Olga.jpg" alt-text="Bild von Olga Merz"headline-large="Olga Merz" headline-medium="Developing and Design" description-text="Studentin, DHBW Mosbach"></grpsix-hovercards>
-    <grpsix-hovercards image-source="Rosanna.jpg" alt-text="Bild von Rosanna Wagner"headline-large="Rosanna Wagner" headline-medium="Developing and Design" description-text="Studentin, DHBW Mosbach"></grpsix-hovercards>
-    <h1>h1. Bootstrap heading</h1>
-    <h2>h2. Bootstrap heading</h2>
 
-    <grpsix-header id="navbar" contact-btn-label="kontakt" contact-btn-href="#" is-underpage nav-links-json='[{"name":"Rezeptübersicht","href":"#"}, {"name":"Foodfacts","href":"#"}, {"name":"Über uns","href":"#"}, {"name":"Rezeptübersicht","href":"#"}, {"name":"Rezeptübersicht","href":"#"}]'></grpsix-header>
-    
-      
-      
-
-    <grpsix-recipe-feedback website-name="'Rezeptname'" ></grpsix-recipe-feedback>
-    <grpsix-foodfacts source-one="Erdbeere.jpeg" alt-one="Eine ganze und eine halbe Erdbeere mit Blattgrün." source-two="Erdnuss.jpeg" alt-two="Zwei Erdnüsse ohne und zwei Erdnüsse mit Schale." source-three="Spargel.jpeg" alt-three="Mehrere grüne Spargel, die auf einer Fläche liegen."></grpsix-foodfacts>
-    <grpsix-brightnessslider></grpsix-brightnessslider>
-    <grpsix-recipe-card recipe-id="10"></grpsix-recipe-card>
-
-    <div class="container">Hallo, das ist ein container
-        <div class="border-top">Das ist ein Div mit </div>
+    <!-- Header -->
+    <grpsix-header id="navbar" home-button="kontakt" home-button-link="#" nav-tabs-json='[{"name":"Rezeptübersicht","href":"/ON-your-styleguide/rezepte"}, {"name":"Foodfacts","href":"#foodfacts"}, {"name":"Über uns","href":"/ON-your-styleguide/ueber_uns.html"}]'></grpsix-header>
+   
+    <div class="w-100">
+        <grpsix-brightnessslider></grpsix-brightnessslider>
     </div>
 
+    <grpsix-herobanner image-src="/ON-your-styleguide/rezepte/bilder/Bananen_Milch.jpg" image-alt-text="Bild der Bananen-Milch" heading="Rezept des Monats" text="Erfahre diesen Monat mehr über die Bananen-Milch!"  link-text="Zum Rezept" link-href="/ON-your-styleguide/rezepte/bananenmilch.html"></grpsix-herobanner>
+
+    <grpsix-cookiebanner link-datenschutzrichtlinie="https://www.datenschutzkanzlei.de/datenschutzerklaerung/"></grpsix-cookiebanner>
+      
+    <div id="foodfacts">
+        <grpsix-foodfacts source-one="Erdbeere.jpeg" alt-one="Eine ganze und eine halbe Erdbeere mit Blattgrün." source-two="Erdnuss.jpeg" alt-two="Zwei Erdnüsse ohne und zwei Erdnüsse mit Schale." source-three="Spargel.jpeg" alt-three="Mehrere grüne Spargel, die auf einer Fläche liegen."></grpsix-foodfacts>
+    </div>
+    
+
+    <grpsix-newsletter website-name="Unser"></grpsix-newsletter>
+
+    
+
+    <!-- Footer -->
 </body>
 
 </html>
