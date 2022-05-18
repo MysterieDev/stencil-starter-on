@@ -25,7 +25,11 @@ export namespace Components {
         "sourceTwo": string;
     }
     interface GrpsixFooter {
+<<<<<<< HEAD
         "image": string;
+=======
+        "imageLogo": string;
+>>>>>>> grpsix-socialmedia
     }
     interface GrpsixHeader {
         "homeButton": string;
@@ -60,6 +64,8 @@ export namespace Components {
     }
     interface GrpsixRecipeGallery {
         "imageAltTextInfo": string;
+    }
+    interface GrpsixSocialmedia {
     }
 }
 declare global {
@@ -135,6 +141,12 @@ declare global {
         prototype: HTMLGrpsixRecipeGalleryElement;
         new (): HTMLGrpsixRecipeGalleryElement;
     };
+    interface HTMLGrpsixSocialmediaElement extends Components.GrpsixSocialmedia, HTMLStencilElement {
+    }
+    var HTMLGrpsixSocialmediaElement: {
+        prototype: HTMLGrpsixSocialmediaElement;
+        new (): HTMLGrpsixSocialmediaElement;
+    };
     interface HTMLElementTagNameMap {
         "grpsix-brightnessslider": HTMLGrpsixBrightnesssliderElement;
         "grpsix-buttons": HTMLGrpsixButtonsElement;
@@ -148,6 +160,7 @@ declare global {
         "grpsix-recipe-card": HTMLGrpsixRecipeCardElement;
         "grpsix-recipe-feedback": HTMLGrpsixRecipeFeedbackElement;
         "grpsix-recipe-gallery": HTMLGrpsixRecipeGalleryElement;
+        "grpsix-socialmedia": HTMLGrpsixSocialmediaElement;
     }
 }
 declare namespace LocalJSX {
@@ -170,7 +183,11 @@ declare namespace LocalJSX {
         "sourceTwo"?: string;
     }
     interface GrpsixFooter {
+<<<<<<< HEAD
         "image"?: string;
+=======
+        "imageLogo"?: string;
+>>>>>>> grpsix-socialmedia
     }
     interface GrpsixHeader {
         "homeButton"?: string;
@@ -206,6 +223,8 @@ declare namespace LocalJSX {
     interface GrpsixRecipeGallery {
         "imageAltTextInfo"?: string;
     }
+    interface GrpsixSocialmedia {
+    }
     interface IntrinsicElements {
         "grpsix-brightnessslider": GrpsixBrightnessslider;
         "grpsix-buttons": GrpsixButtons;
@@ -219,6 +238,7 @@ declare namespace LocalJSX {
         "grpsix-recipe-card": GrpsixRecipeCard;
         "grpsix-recipe-feedback": GrpsixRecipeFeedback;
         "grpsix-recipe-gallery": GrpsixRecipeGallery;
+        "grpsix-socialmedia": GrpsixSocialmedia;
     }
 }
 export { LocalJSX as JSX };
@@ -237,6 +257,7 @@ declare module "@stencil/core" {
             "grpsix-recipe-card": LocalJSX.GrpsixRecipeCard & JSXBase.HTMLAttributes<HTMLGrpsixRecipeCardElement>;
             "grpsix-recipe-feedback": LocalJSX.GrpsixRecipeFeedback & JSXBase.HTMLAttributes<HTMLGrpsixRecipeFeedbackElement>;
             "grpsix-recipe-gallery": LocalJSX.GrpsixRecipeGallery & JSXBase.HTMLAttributes<HTMLGrpsixRecipeGalleryElement>;
+            "grpsix-socialmedia": LocalJSX.GrpsixSocialmedia & JSXBase.HTMLAttributes<HTMLGrpsixSocialmediaElement>;
         }
     }
 }
