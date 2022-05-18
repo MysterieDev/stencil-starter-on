@@ -25,11 +25,7 @@ export namespace Components {
         "sourceTwo": string;
     }
     interface GrpsixFooter {
-<<<<<<< HEAD
         "image": string;
-=======
-        "imageLogo": string;
->>>>>>> grpsix-socialmedia
     }
     interface GrpsixHeader {
         "homeButton": string;
@@ -183,11 +179,7 @@ declare namespace LocalJSX {
         "sourceTwo"?: string;
     }
     interface GrpsixFooter {
-<<<<<<< HEAD
         "image"?: string;
-=======
-        "imageLogo"?: string;
->>>>>>> grpsix-socialmedia
     }
     interface GrpsixHeader {
         "homeButton"?: string;

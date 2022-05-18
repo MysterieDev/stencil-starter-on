@@ -2,3 +2,51 @@
   display: block;
 }
 
+.footer {
+  display: inline-block;
+}
+
+.footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: var(--footer-component-height);
+  background-color: var(--footer-component-background-color);
+}
+
+.footer .footer-subcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.footer .footer-subcontainer-href {
+  padding: 15px;
+}
+
+.footer .footer-subcontainer-href:link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer .footer-subcontainer-href:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.footer .footer-subcontainer-href:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.footer .footer-subcontainer-href:active {
+  color: black;
+  text-decoration: none;
+}
+
+.footer .footer-subcontainer-img {
+  height: 150px;
+}

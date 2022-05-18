@@ -22,9 +22,8 @@ export class GrpsixSocialmedia {
           <span class="mdi mdi-24px mdi-dark mdi-email">
           <a href='https://www.mosbach.dhbw.de/international/de/kontakt/'></a>
           </span>
-          <img src= "Facebook.png"/>
           <span class="mdi mdi-24px mdi-dark mdi-facebook">
-          <a href='https://de-de.facebook.com/dhbwmosbach.home/'></a>
+          <a href='https://de-de.facebook.com/dhbwmosbach.home/'><img src= "Facebook.png"/></a>
           </span>
           <span class="mdi mdi-24px mdi-dark mdi-instagram">
           <a href='https://www.instagram.com/dhbw.mosbach/?hl=de'></a>
