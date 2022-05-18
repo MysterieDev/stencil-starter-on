@@ -6,6 +6,8 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class GrpsixSocialmedia {
+
+
   componentDidLoad() {
   }
 
@@ -13,13 +15,14 @@ export class GrpsixSocialmedia {
     return (
       <Host>
         <span class="social">
-        <span class="social-container">
+        <span class="social-container"> 
           <span class="mdi mdi-24px mdi-dark mdi-cards-heart">
           <a href='https://www.mosbach.dhbw.de/'></a>
           </span>
           <span class="mdi mdi-24px mdi-dark mdi-email">
           <a href='https://www.mosbach.dhbw.de/international/de/kontakt/'></a>
           </span>
+          <img src= "Facebook.png"></img>
           <span class="mdi mdi-24px mdi-dark mdi-facebook">
           <a href='https://de-de.facebook.com/dhbwmosbach.home/'></a>
           </span>
