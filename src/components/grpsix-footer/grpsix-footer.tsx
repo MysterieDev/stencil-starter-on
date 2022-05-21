@@ -18,11 +18,12 @@ export class GrpsixFooter {
         <span class="footer-container">
           <span class="footer-subcontainer">
             <a class="footer-subcontainer-href" href="#">IMPRESSUM</a>
-            <a class="footer-subcontainer-href" href="#">DATENSCHUTZERKLÄRUNG</a>
+            <a class="footer-subcontainer-href" href="#">DATENSCHUTZ</a>
           </span>
-          <span class="footer-subcontainer">
-            <img class="footer-subcontainer-img"> 
-            <a href='https://de.freepik.com/vektoren/blume'>Blume Vektor erstellt von Marifdez - de.freepik.com</a></img>
+          <span>
+          <div id="foodLogo">
+          <img class="foodblogLogo" src="/ON-your-styleguide/logo.png" alt="Logo des Foodblogs"></img>
+          </div>
           </span>
           <span class="footer-subcontainer">
             <span>Kontaktiere uns: fragenan@foodblog.de</span>

@@ -15,21 +15,21 @@ export class GrpsixSocialmedia {
     return (
       <Host>
         <span class="social">
-        <span class="social-container"> 
-          <span class="mdi mdi-24px mdi-dark mdi-cards-heart">
-          <a href='https://www.mosbach.dhbw.de/'></a>
+        <span class="social-container">
+        <span class="herzLogo">
+          <a href='https://www.mosbach.dhbw.de/'><img src= "herz.png"/></a> 
           </span>
-          <span class="mdi mdi-24px mdi-dark mdi-email">
-          <a href='https://www.mosbach.dhbw.de/international/de/kontakt/'></a>
+          <span class="emailLogo">
+          <a href='https://www.mosbach.dhbw.de/international/de/kontakt/'><img src= "email.png"/></a>
           </span>
-          <span class="mdi mdi-24px mdi-dark mdi-facebook">
-          <a href='https://de-de.facebook.com/dhbwmosbach.home/'><img src= "Facebook.png"/></a>
+          <span class="facebookLogo">
+          <a href='https://de-de.facebook.com/dhbwmosbach.home/'><img src= "facebook.png"/></a>
           </span>
-          <span class="mdi mdi-24px mdi-dark mdi-instagram">
-          <a href='https://www.instagram.com/dhbw.mosbach/?hl=de'></a>
+          <span class="instagramLogo">
+          <a href='https://www.instagram.com/dhbw.mosbach/?hl=de'><img src= "instagram.png"/></a>
           </span>
-          <span class="mdi mdi-24px mdi-dark mdi-twitter">
-          <a href='https://twitter.com/onlinewerkdhbw'></a>
+          <span class="twitterLogo">
+          <a href='https://twitter.com/onlinewerkdhbw'><img src= "twitter.png"/></a>
           </span>
         </span>
       </span>

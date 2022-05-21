@@ -12,7 +12,7 @@
   justify-content: space-between;
   width: 100vw;
   height: var(--footer-component-height);
-  background-color: var(--footer-component-background-color);
+  background-color: rgb(173, 216, 230);
 }
 
 .footer .footer-subcontainer {
@@ -48,5 +48,16 @@
 }
 
 .footer .footer-subcontainer-img {
-  height: 150px;
+  height: 20px;
+}
+
+.foodblogLogo {
+  cursor: pointer;
+  width: 45%;
+  height: 45%; 
+}
+
+#foodLogo {
+  text-align: center;
+  display: block;
 }
