@@ -1,0 +1,381 @@
+[
+    {
+        "id": 10,
+        "url": "bananenmilch.html",
+        "title": "Bananenmilch",
+        "ingredients": [
+            "1 Banane",
+            "250ml Milch oder Pflanzendrink",
+            "1  Msp. Zimt",
+            "Nach Bedarf Agavendicksaft"
+        ],
+        "preperations": [
+            "Banane schälen und in grobe Stücke schneiden.",
+            "Milch zusammen mit der Banane und dem Zimt pürieren.",
+            "Nach Bedarf mit Agavendicksaft abschmecken.",
+            "Für 10 Minuten kühlstellen. Dann in Gläser füllen und servieren."
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Bananen_Milch.jpg"
+    },
+
+    {
+        "id": 20,
+        "url": "blaetterteigstangen.html",
+        "title": "Blätterteigstangen",
+        "ingredients": [
+            "2 Packungen gerollten Blätterteig",
+            "200g Frischkäse (Doppelrahmstufe)",
+            "getrocknete Tomaten",
+            "1 Paprika",
+            "200g geriebener Käse (z. B. Edamer)",
+            "Salz, Pfeffer",
+            "Kräuter nach Wahl",
+            "Bei Bedarf: Saaten (Sesam, Sonnenblumenkerne, …)"
+        ],
+        "preperations": [
+            "Den Backofen auf 220° Umluft vorheizen.",
+            "Die getrockneten Tomaten und die Paprika kleinschneiden.",
+            "Zusammen mit dem Frischkäse und dem geriebenen Käse zu einer streichfähigen Masse verarbeiten. Bei Bedarf noch etwas Milch hinzugeben und mit Salz und Pfeffer, sowie den Kräutern abschmecken.",
+            "Die Masse auf die eine Platte des Blätterteigs streichen. Die andere Platte darauf legen und etwas festdrücken.",
+            "Mit einem Pizzaschneider oder Teigrädchen in Streifen schneiden, drehen und auf ein Backblech legen.",
+            "Nach Belieben Körner (Sonnenblumenkerne, Sesam) darüberstreuen.",
+            "Im Backofen für circa 20 Minuten backen."
+        ],
+        "tips": "Tipp: Statt Paprika und getrockneten Tomaten können auch, je nach Saison, andere Gemüsesorten verwendet werden.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Blaetterteigstangen.jpg"
+    },
+
+    {
+        "id": 30,
+        "url": "sommerliche-fruechte-quark-creme.html",
+        "title": "Sommerliche Früchte-Quark-Creme",
+        "ingredients": [
+            "500g Quark",
+            "1/8 Liter Fruchtsaft",
+            "1/8 Liter Buttermilch / Milch / Joghurt",
+            "1 Becher Sahne",
+            "80g Zucker",
+            "Früchte nach Wahl (Ananas, Mandarine, Banane, …)"
+        ],
+        "preperations": [
+            "Sahne steif aufschlagen.",
+            "Quark mit Fruchtsaft, Buttermilch, Quark und Zucker glattrühren. Die geschlagene Sahne dazugeben und kaltstellen.",
+            "Die Früchte kleinschneiden.",
+            "Früchte in die Creme geben und servieren."
+        ],
+        "tips": "Tipp: Im Sommer sind für die Creme vor allem exotische Früchte lecker.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Frucht_creme.jpg"
+    },
+
+    {
+        "id": 40,
+        "url": "gemuesesuppe.html",
+        "title": "Gemüsesuppe",
+        "ingredients": [
+            "1 Zwiebel",
+            "1 EL Öl",
+            "1 Stange Lauch",
+            "3 Möhren",
+            "1 Stück Sellerie",
+            "4 Blätter Wirsing",
+            "1 Knoblauchzehe",
+            "2 Tomaten",
+            "2 Kartoffeln",
+            "1 1/2 Liter Gemüsebrühe",
+            "Petersilie, Salz, Pfeffer"
+        ],
+        "preperations": [
+            "Möhre, Kartoffeln und Sellerie schälen. Gemüse waschen und anschließend kleinschneiden.",
+            "Öl in einem Topf erhitzen und die Zwiebel anbraten. Anschließend das restliche Gemüse zugeben und andünsten.",
+            "Alles mit Gemüsebrühe ablöscheln und köcheln lassen.",
+            "Wenn die Kartoffeln gar sind, alles mit einem Pürierstab pürieren bis die gewünschte Konsistenz erreicht ist.",
+            "Mit Salz und Pfeffer abschmecken und mit frischer Petersilie garnieren."
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Gemuesesuppe.jpg"
+    },
+
+    {
+        "id": 50,
+        "url": "haferbrei-porridge.html",
+        "title": "Haferbrei (\"Porridge\")",
+        "ingredients": [
+            "60g feine Haferflocken",
+            "200ml Milch oder Pflanzendrink",
+            "1 TL Agavendicksaft",
+            "2 EL Joghurt",
+            "Nüsse nach Wahl",
+            "Zimt",
+            "Obst"
+        ],
+        "preperations": [
+            "Haferflocken mit der Milch in einem kleinen Topf aufkochen.",
+            "In der Zwischenzeit das Obst kleinschneiden und die Nüsse hacken.",
+            "Nachdem der Haferbrei die gewünschte Konsistenz erreicht hat, den Zimt dazugeben. In eine Schüssel geben.",
+            "Wenn der Haferbrei etwas abgekühlt ist den JOghurt und Agavendicksaft unterrühren.",
+            "Mit Nüssen und Obst belegen."
+        ],
+        "tips": "Tipp: Besonders gut schmecken warme Beeren dazu. Dafür einfach die gewünschten Beeren erwärmen und über den Haferbrei geben.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Porridge.jpg"
+    },
+
+    {
+        "id": 60,
+        "url": "kartoffelbroetchen.html",
+        "title": "Kartoffelbrötchen",
+        "ingredients": [
+            "400g Mehl (Typ 550)",
+            "50g Roggenmehl (Typ 997)",
+            "10g Salz",
+            "100g geriebene, gekochte Pellkartoffeln",
+            "270g lauwarmes Wasser",
+            "10g Zucker",
+            "10g Butter",
+            "5g Hefe"
+        ],
+        "preperations": [
+            "Lauwarmes Wasser in eine Schüssel geben. Die Hefe zerbröseln und Zucker zugeben. Alles mit dem Schneebesen verrühren. Mischung ein paar Minuten stehen lassen.",
+            "Mehl, Salz, Kartoffeln und Butter hinzugeben und einen Teig herstellen. Für 2 Stunden an einem warmen Ort gehen lassen.",
+            "Teig auf 240° Ober-/Unterhitze vorheizen.",
+            "Teig nochmals durchkneten und dann Brötchen formen. Die Teiglinge auf ein  mit Backpapier ausgelegtes Backblech legen.",
+            "Für 20 Minuten backen. Danach die Temperatur auf 180° reduzieren und nochmals 5 weitere Minuten backen."
+        ],
+        "tips": "Tipp: Der Hefeteig lässt sich auch bereits am Vorabend zubereiten. In diesem Fall den Teig über Nacht in den Kühlschrank stellen, wo er langsam aufgeht.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Kartoffelbroetchen.jpg"
+    },
+
+    {
+        "id": 70,
+        "url": "knaeckebrot.html",
+        "title": "Knäckebrot",
+        "ingredients": [
+            "110g Buchweizenmehl",
+            "110g Haferkleie",
+            "4 EL Kürbiskerne",
+            "4 EL Sonnenblumenkerne",
+            "4 EL Leinsamen",
+            "4 EL Sesam",
+            "4 EL Flohsamenschalen",
+            "4 EL Chiasamen",
+            "1 TL Salz",
+            "6 EL Öl (Raps)",
+            "300ml warmes Wasser"
+        ],
+        "preperations": [
+            "Backofen auf 150° Ober-/Unterhitze vorheizen.",
+            "Alle Zutaten zu einem zähen Teig vermischen.",
+            "Das Blech leicht einölen und darauf ein Backpapier legen.",
+            "Teig dünn aufstreichen und Gefrierbeutel darüber verteilen, um besser ausrollen zu können.",
+            "Gefrierbeutel abnehmen und Teig in Rauten schneiden.",
+            "Für circa 1 Stunde backen. Direkt nach dem Backen noch warm in Stücke schneiden / brechen."
+        ],
+        "tips": "Tipp: Das Knäckebrot kann in einer luftdichten Dose aufbewahrt werden.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Knaeckebrot.jpg"
+    },
+
+    {
+        "id": 80,
+        "url": "lachscreme.html",
+        "title": "Lachscreme",
+        "ingredients": [
+            "600g Frischkäse",
+            "200g Creme fraiche",
+            "1 kleine Zwiebel",
+            "1 kleiner Bund Schnittlauch",
+            "125g Räucherlachs",
+            "Pfeffer, evtl. Salz"
+        ],
+        "preperations": [
+            "Den Räucherlachs und die Zwiebel in Würfel schneiden.",
+            "Den Schnittlauch ebenfalls kleinschneiden.",
+            "Frischkäse mit Creme fraiche cremig rühren. Räucherlachs und Zwiebel hinzufügen und 2/3 des Schnittlauchs ebenfalls unterrühren.",
+            "Mit Pfeffer und evtl. Salz abschmecken.",
+            "Mit dem restlichen Schnittlauch dekorieren und kühlstellen."
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Lachs_creme.jpg"
+    },
+
+    {
+        "id": 90,
+        "url": "makkaroni-auflauf.html",
+        "title": "Makkaroni-Auflauf",
+        "ingredients": [
+            "250g Makkaroni",
+            "2 Stangen Lauch",
+            "evtl. Erbsen, Brokkoli",
+            "1 EL Butter",
+            "5 Eier",
+            "750ml Milch",
+            "Pfeffer, Muskat",
+            "Kräuter der Provence",
+            "Semmelbrösel"
+        ],
+        "preperations": [
+            "Backofen auf 200° Ober-/Unterhitze vorheizen.",
+            "Die Makkaroni in kochendem Salzwasser nach Packungsanleitung kochen.",
+            "Den Lauch schneiden. Bei Bedarf weiteres Gemüse schneiden.",
+            "Makkaroni mit dem Gemüse in eine Auflaufform geben.",
+            "Eier mit den Gewürzen und der Milch verrühren und über die Makkaroni-Gemüse-Mischung geben.",
+            "Mit den Semmelbröseln nach Belieben bestreuen.",
+            "Den Auflauf für 80 Minuten backen."
+        ],
+        "tips": "Tipp: Dazu schmeckt eine fruchtige Tomatensauce sehr gut.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Nudel_Auflauf.jpg"
+    },
+
+    {
+        "id": 100,
+        "url": "quarkkrapfen.html",
+        "title": "Quarkkrapfen",
+        "ingredients": [
+            "50g Margarine",
+            "50g Zucker",
+            "1 Ei",
+            "1 Prise Salz",
+            "150g Mehl",
+            "50g Stärke",
+            "1 TL Backpulver",
+            "125g Quark",
+            "Puderzucker zum Bestäuben"
+        ],
+        "preperations": [
+            "Margarine mit dem Zucker schaumig rühren.",
+            "Das Ei dazugeben und weiterrühren.",
+            "Salz, Mehl, Stärke und Backpulver mischen und unterrühren.",
+            "Zum Schluss den Quark unterrühren.",
+            "Mit 2 Teelöffeln vom Teig kleine Häufchen abnehmen und in heißem Fett ausbacken.",
+            "Mit Puderzucker bestäuben."
+        ],
+        "tips": "Tipp: Die Quarkkrapfen schmecken am besten, wenn sie noch etwas warm sind.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Quarkkrapfen.jpg"
+    },
+
+    {
+        "id": 110,
+        "url": "rotweinkuchen.html",
+        "title": "Rotweinkuchen",
+        "ingredients": [
+            "4 Eier",
+            "250g Butter",
+            "200g Zucker",
+            "1 Päckchen Vanillezucker",
+            "250g Mehl",
+            "1 Päckchen Backpulver",
+            "1 TL Kakao",
+            "1/2 TL Zimt",
+            "1/8 Liter Rotwein",
+            "1 EL Rum",
+            "125g Schokostreusel",
+            "etwas Puderzucker zum Bestäuben"
+        ],
+        "preperations": [
+            "Backofen auf 180° vorheizen.",
+            "Eier trennen. Eigelb, Butter, Zucker und Vanillezucker in einer Schüssel schaumig rühren.",
+            "Backpulver mit dem Mehl, Kakao und Zimt in eine Schüssel sieben. Nach und nach zur Eier-Zucker Mischung geben.",
+            "Rotwein und Schokostreusel unterrühren.",
+            "Das Eiweiß steifschlagen und vorsichtig unterheben.",
+            "Teig in eine gefettete Springform (26cm Durchmesser) füllen. Im vorgeheizten Backofen auf der mittleren Schiene für 60 Minuten backen.",
+            "Nach dem Abkühlen mit Puderzucker bestäuben."
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Rotweinkuchen.jpg"
+    },
+
+    {
+        "id": 120,
+        "url": "schokoladen-nuss-kuchen.html",
+        "title": "Schokoladen-Nuss-Kuchen",
+        "ingredients": [
+            "250g Butter oder Margarine",
+            "200g Zucker",
+            "6 Eier",
+            "125g gemahlene Nüsse (z.B. Walnüsse)",
+            "100g Zartbitter- oder Blockschokolade",
+            "1 Päckchen Backpulver",
+            "250g Mehl",
+            "1 TL Kakao",
+            "1 EL Rum"
+        ],
+        "preperations": [
+            "Backofen auf 180° Ober-/Unterhitze vorheizen.",
+            "Schokolade klein raspeln oder hacken.",
+            "Butter mit Zucker un den Eiern schaumig schlagen.",
+            "Mehl mit Backpulver und Kakao in eine Schüssel sieben. Anschließend unter die Ei-Zucker-Masse rühren.",
+            "Gemahlene Nüsse und Rum dazugeben.",
+            "In eine eingefettete Springform (28er) geben und für circa 40 - 60 Minuten backen."
+        ],
+        "tips": "Tipp: Besonders schön sieht der Kuchen aus, wenn er nach dem Abkühlen mit einem Zuckerguss verziert wird und auf diesem aus etwas geschmolzener Schokolade ein Zebramuster gemalt wird.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Schokoladen_Nuss_Kuchen.jpg"
+    },
+
+    {
+        "id": 130,
+        "url": "spaghettisalat.html",
+        "title": "Spaghettisalat",
+        "ingredients": [
+            "500g Spaghetti",
+            "100g getrocknete Tomaten",
+            "1 Bund Basilikum",
+            "7 EL Öl",
+            "4 Knoblauchzehen",
+            "8 Tomaten",
+            "Salz, Pfeffer"
+        ],
+        "preperations": [
+            "Die Spaghetti in kochendem Salzwasser nach Packungsanleitung kochen.",
+            "Getrocknete Tomaten, Öl und Knoblauch pürieren. Die Mischung unter die gekochten Spaghetti mischen.",
+            "Die Tomaten in kleine Würfel schneiden und mit dem Basilikum dazugeben.",
+            "Mit Salz und Pfeffer abschmecken."
+        ],
+        "tips": "Tipp: Der Spaghettisalat schmeckt am besten, wenn man ihn bereits am Vortag zubereitet und durchziehen lässt.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Spaghettisalat.jpg"
+    },
+
+    {
+        "id": 140,
+        "url": "tomatenketchup.html",
+        "title": "Tomatenketchup",
+        "ingredients": [
+            "2kg Tomaten",
+            "2 Zwiebeln",
+            "1 EL Salz",
+            "2 EL Essig",
+            "2 EL Rotwein",
+            "100g Zucker",
+            "1 Msp. Nelken",
+            "1 Msp. Koriander",
+            "1 Msp. Pfeffer",
+            "100g Tomatenmark"
+        ],
+        "preperations": [
+            "Die Tomaten und die Zwiebel kleinschneiden. Zusammen mit dem Salz andünsten.",
+            "Essig, Rotwein, Zucker, Nelken, Koriander und Pfeffer hinzugeben und eine Stunde kochen lassen.",
+            "Dann Tomatenmark dazugeben, nochmal aufkochen lassen und in Gläser abfüllen.",
+            "Für 30 Minuten bei 90° einkochen lassen."
+        ],
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Ketchup.jpg"
+    },
+
+    {
+        "id": 150,
+        "url": "tomatensuppe.html",
+        "title": "Tomatensuppe",
+        "ingredients": [
+            "700g Tomaten",
+            "50g ZWiebeln",
+            "30g Margarine oder Butter",
+            "500ml Gemüsebrühe",
+            "60g Tomatenmark",
+            "1 TL Salz",
+            "1 EL italienische Kräuter",
+            "frischer Basilikum"
+        ],
+        "preperations": [
+            "Die Tomaten und die Zwiebel kleinschneiden. Anschließend Margarine in einem Topf erhitzen und Tomaten und Zwiebel darin anbraten.",
+            "Mit Gemüsebrühe ablöschen.",
+            "Tomatenmark und Gewürze dazugeben.",
+            "Mit einem Pürierstab bis zur gewünschten Konsistenz pürieren.",
+            "Mit Basilikum garnieren."
+        ],
+        "tips": "Tipp: Dazu schmeckt geröstetes Weißbrot sehr gut. Dafür einfach Olivenöl in einer Pfanne erhitzen und Baguettescheiben kurz darin anrösten.",
+        "imageUrl": "/ON-your-styleguide/rezepte/bilder/Tomatensuppe.jpg"
+    }
+]

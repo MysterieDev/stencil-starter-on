@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+.card {
+  width: 25%;
+  border: 0.1px solid rgb(175, 174, 174);
+  box-shadow: 3px 5px 10px silver;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 20px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  /*background-color:xx;   Je nach Farbkonzept noch eine Farbe dazu!*/
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.card-img-top {
+  width: 100%;
+  border-bottom: 0.5px solid rgb(175, 174, 174);
+}
+
+.container-fluid {
+  display: flex;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+#cardTwo {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+#cardThree {
+  float: right;
+}
+
+.button {
+  float: right;
+  background-color: lightblue;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 1.5px 2.5px 5px silver;
+}
+
+#button:hover {
+  transform: scale(1.1);
+}

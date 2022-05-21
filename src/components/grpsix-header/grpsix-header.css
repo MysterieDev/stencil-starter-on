@@ -1,0 +1,100 @@
+.navwrapper  {
+  display: flex;
+    /* Puts elements next to one another, not on top */
+  justify-content: space-between;
+    /* This pushes the left & right items to far edges and adds space between  */
+  align-items: center;
+    /* Centers everything in the header - horizontally not vertivally */
+  padding: 30px 10%;
+  background-color: white;
+  border-bottom:1px solid lightslategrey;
+  border-top:1px solid lightslategrey;
+}
+
+/* Margin and padding resets the page when browsers add stuff in */
+/* This selects everything on the page, not recomended but it's what the tutorial went with */
+
+
+/* This just sets the font styles  - text dec none removes the underlines*/
+li, a, button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: lightslategrey;
+  text-decoration: none;
+
+}
+
+.foodblogLogo {
+  cursor: pointer;
+  width: 20%;
+  height: 20%;
+}
+
+#foodLogo {
+  text-align: center;
+  display: block;
+}
+
+.nav_links {
+  list-style: none;
+  /* Removes bullets*/ 
+}
+
+
+
+.nav_links li {
+  /* targets nav links and each item */
+  display: inline-block;
+  /* puts all the nav links side by side */
+  padding: 0px 20px;
+}
+
+/* LINK COLOURS ON HOVER */
+
+.nav_links li a {
+  /* Need to target the a's so that the transition colour works */
+transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+color: lightblue;
+}
+
+/* BUTTON */
+
+button {
+  background-color:  lightblue;
+  width: 80px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 15%;
+  border: none;
+  text-decoration: none;
+  transition: background 0.2s; 
+}
+
+button:hover {
+  background-color:  pink(255, 192, 203, 0.8);
+/* same colour as above but alpha value (last value)makes it darker  */
+}
+
+.under-page{
+background-color: lightslategrey;
+}
+
+.under-page-typo{
+  color: white;
+}
+
+/*#linkcss {
+  background-color: ;
+}*/
+
+#searchbar {
+  height: 20px;
+  width: 170px;
+}

@@ -1,3 +1,10 @@
 :root {
     --app-example-var: black;
 }
+
+@import "../vendors/bootstrap.css";
+@import "variables.css";
+@import "typography.css";
+@import "colors.css";
+
+@import "overridings.css";

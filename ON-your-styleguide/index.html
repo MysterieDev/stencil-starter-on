@@ -7,14 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="/dist/stencil-starter-on/stencil-starter-on.esm.js" type="module"></script>
     <link rel="stylesheet" href="/dist/stencil-starter-on/stencil-starter-on.css" />
-    <title>your design guide</title>
+    <title>Our cool blog</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
 </head>
 
 <body>
-    <example-component example-prop="Dies ist ein Property-Inhalt der Webcomponent"> Dies ist der Slot-Inhalt </example-component>
-    <p>Ihr könnt all diesen Content verändern und mehr Unterseiten hinzufügen</p>
-    <small>Viel Spaß beim kreativ werden :-)</small>
+    
+
+    <!-- Header -->
+    <grpsix-header id="navbar" home-button="kontakt" home-button-link="#" nav-tabs-json='[{"name":"Rezeptübersicht","href":"/ON-your-styleguide/rezepte"}, {"name":"Foodfacts","href":"#foodfacts"}, {"name":"Über uns","href":"/ON-your-styleguide/ueber_uns.html"}]'></grpsix-header>
+   
+    <div class="w-100">
+        <grpsix-brightnessslider></grpsix-brightnessslider>
+    </div>
+
+    <grpsix-herobanner image-src="/ON-your-styleguide/rezepte/bilder/Bananen_Milch.jpg" image-alt-text="Bild der Bananen-Milch" heading="Rezept des Monats" text="Erfahre diesen Monat mehr über die Bananen-Milch!"  link-text="Zum Rezept" link-href="/ON-your-styleguide/rezepte/bananenmilch.html"></grpsix-herobanner>
+
+    <grpsix-cookiebanner link-datenschutzrichtlinie="https://www.datenschutzkanzlei.de/datenschutzerklaerung/"></grpsix-cookiebanner>
+      
+    <div id="foodfacts">
+        <grpsix-foodfacts source-one="Erdbeere.jpeg" alt-one="Eine ganze und eine halbe Erdbeere mit Blattgrün." source-two="Erdnuss.jpeg" alt-two="Zwei Erdnüsse ohne und zwei Erdnüsse mit Schale." source-three="Spargel.jpeg" alt-three="Mehrere grüne Spargel, die auf einer Fläche liegen."></grpsix-foodfacts>
+    </div>
+    
+
+    <grpsix-newsletter website-name="Unser"></grpsix-newsletter>
+    
+    <grpsix-socialmedia></grpsix-socialmedia>
+
+    
+
+    <!-- Footer -->
+
+    <grpsix-footer></grpsix-footer>
+
 </body>
 
 </html>

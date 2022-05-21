@@ -1,0 +1,47 @@
+/* Fixing the card images */
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .grpsix-card-image-height {
+        overflow: hidden;
+        object-fit: cover;
+    }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .grpsix-card-image-height {
+        max-height: 8rem;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .grpsix-card-image-height {
+        max-height: 12rem;
+    }
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .grpsix-card-image-height {
+        max-height: 14rem;
+    }
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .grpsix-card-image-height {
+        max-height: 17rem;
+    }
+}
+
+
+.grpsix-recipe-card-header {
+    color: white;
+    max-height: 20rem;
+    overflow: hidden;
+}

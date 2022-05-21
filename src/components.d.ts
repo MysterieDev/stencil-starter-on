@@ -6,73 +6,250 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface ExampleComponent {
-        "exampleProp": string;
-        "exampleToUpperCase": () => Promise<void>;
+    interface GrpsixBrightnessslider {
+        "container": HTMLElement;
+        "slider": HTMLElement;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface GrpsixButtons {
+        "buttonLabel": string;
+    }
+    interface GrpsixCookiebanner {
+        "linkDatenschutzrichtlinie": string;
+    }
+    interface GrpsixFoodfacts {
+        "altOne": string;
+        "altThree": string;
+        "altTwo": string;
+        "sourceOne": string;
+        "sourceThree": string;
+        "sourceTwo": string;
+    }
+    interface GrpsixFooter {
+        "image": string;
+    }
+    interface GrpsixHeader {
+        "homeButton": string;
+        "homeButtonLink": string;
+        "isUnderpage": boolean;
+        "navTabsJson": string;
+    }
+    interface GrpsixHerobanner {
+        "heading": string;
+        "imageAltText": string;
+        "imageSrc": string;
+        "linkHref": string;
+        "linkText": string;
+        "text": string;
+    }
+    interface GrpsixHovercards {
+        "altText": string;
+        "descriptionText": string;
+        "headlineLarge": string;
+        "headlineMedium": string;
+        "imageQuelle": string;
+    }
+    interface GrpsixNewsletter {
+        "websiteName": string;
+    }
+    interface GrpsixRecipeCard {
+        "imageAltTextInfo": string;
+        "recipeId": number;
+    }
+    interface GrpsixRecipeFeedback {
+        "recipeName": string;
+    }
+    interface GrpsixRecipeGallery {
+        "imageAltTextInfo": string;
+    }
+    interface GrpsixSocialmedia {
     }
 }
 declare global {
-    interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
+    interface HTMLGrpsixBrightnesssliderElement extends Components.GrpsixBrightnessslider, HTMLStencilElement {
     }
-    var HTMLExampleComponentElement: {
-        prototype: HTMLExampleComponentElement;
-        new (): HTMLExampleComponentElement;
+    var HTMLGrpsixBrightnesssliderElement: {
+        prototype: HTMLGrpsixBrightnesssliderElement;
+        new (): HTMLGrpsixBrightnesssliderElement;
     };
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLGrpsixButtonsElement extends Components.GrpsixButtons, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLGrpsixButtonsElement: {
+        prototype: HTMLGrpsixButtonsElement;
+        new (): HTMLGrpsixButtonsElement;
+    };
+    interface HTMLGrpsixCookiebannerElement extends Components.GrpsixCookiebanner, HTMLStencilElement {
+    }
+    var HTMLGrpsixCookiebannerElement: {
+        prototype: HTMLGrpsixCookiebannerElement;
+        new (): HTMLGrpsixCookiebannerElement;
+    };
+    interface HTMLGrpsixFoodfactsElement extends Components.GrpsixFoodfacts, HTMLStencilElement {
+    }
+    var HTMLGrpsixFoodfactsElement: {
+        prototype: HTMLGrpsixFoodfactsElement;
+        new (): HTMLGrpsixFoodfactsElement;
+    };
+    interface HTMLGrpsixFooterElement extends Components.GrpsixFooter, HTMLStencilElement {
+    }
+    var HTMLGrpsixFooterElement: {
+        prototype: HTMLGrpsixFooterElement;
+        new (): HTMLGrpsixFooterElement;
+    };
+    interface HTMLGrpsixHeaderElement extends Components.GrpsixHeader, HTMLStencilElement {
+    }
+    var HTMLGrpsixHeaderElement: {
+        prototype: HTMLGrpsixHeaderElement;
+        new (): HTMLGrpsixHeaderElement;
+    };
+    interface HTMLGrpsixHerobannerElement extends Components.GrpsixHerobanner, HTMLStencilElement {
+    }
+    var HTMLGrpsixHerobannerElement: {
+        prototype: HTMLGrpsixHerobannerElement;
+        new (): HTMLGrpsixHerobannerElement;
+    };
+    interface HTMLGrpsixHovercardsElement extends Components.GrpsixHovercards, HTMLStencilElement {
+    }
+    var HTMLGrpsixHovercardsElement: {
+        prototype: HTMLGrpsixHovercardsElement;
+        new (): HTMLGrpsixHovercardsElement;
+    };
+    interface HTMLGrpsixNewsletterElement extends Components.GrpsixNewsletter, HTMLStencilElement {
+    }
+    var HTMLGrpsixNewsletterElement: {
+        prototype: HTMLGrpsixNewsletterElement;
+        new (): HTMLGrpsixNewsletterElement;
+    };
+    interface HTMLGrpsixRecipeCardElement extends Components.GrpsixRecipeCard, HTMLStencilElement {
+    }
+    var HTMLGrpsixRecipeCardElement: {
+        prototype: HTMLGrpsixRecipeCardElement;
+        new (): HTMLGrpsixRecipeCardElement;
+    };
+    interface HTMLGrpsixRecipeFeedbackElement extends Components.GrpsixRecipeFeedback, HTMLStencilElement {
+    }
+    var HTMLGrpsixRecipeFeedbackElement: {
+        prototype: HTMLGrpsixRecipeFeedbackElement;
+        new (): HTMLGrpsixRecipeFeedbackElement;
+    };
+    interface HTMLGrpsixRecipeGalleryElement extends Components.GrpsixRecipeGallery, HTMLStencilElement {
+    }
+    var HTMLGrpsixRecipeGalleryElement: {
+        prototype: HTMLGrpsixRecipeGalleryElement;
+        new (): HTMLGrpsixRecipeGalleryElement;
+    };
+    interface HTMLGrpsixSocialmediaElement extends Components.GrpsixSocialmedia, HTMLStencilElement {
+    }
+    var HTMLGrpsixSocialmediaElement: {
+        prototype: HTMLGrpsixSocialmediaElement;
+        new (): HTMLGrpsixSocialmediaElement;
     };
     interface HTMLElementTagNameMap {
-        "example-component": HTMLExampleComponentElement;
-        "my-component": HTMLMyComponentElement;
+        "grpsix-brightnessslider": HTMLGrpsixBrightnesssliderElement;
+        "grpsix-buttons": HTMLGrpsixButtonsElement;
+        "grpsix-cookiebanner": HTMLGrpsixCookiebannerElement;
+        "grpsix-foodfacts": HTMLGrpsixFoodfactsElement;
+        "grpsix-footer": HTMLGrpsixFooterElement;
+        "grpsix-header": HTMLGrpsixHeaderElement;
+        "grpsix-herobanner": HTMLGrpsixHerobannerElement;
+        "grpsix-hovercards": HTMLGrpsixHovercardsElement;
+        "grpsix-newsletter": HTMLGrpsixNewsletterElement;
+        "grpsix-recipe-card": HTMLGrpsixRecipeCardElement;
+        "grpsix-recipe-feedback": HTMLGrpsixRecipeFeedbackElement;
+        "grpsix-recipe-gallery": HTMLGrpsixRecipeGalleryElement;
+        "grpsix-socialmedia": HTMLGrpsixSocialmediaElement;
     }
 }
 declare namespace LocalJSX {
-    interface ExampleComponent {
-        "exampleProp"?: string;
-        "onExampleEvent"?: (event: CustomEvent<string>) => void;
+    interface GrpsixBrightnessslider {
+        "container"?: HTMLElement;
+        "slider"?: HTMLElement;
     }
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface GrpsixButtons {
+        "buttonLabel"?: string;
+    }
+    interface GrpsixCookiebanner {
+        "linkDatenschutzrichtlinie"?: string;
+    }
+    interface GrpsixFoodfacts {
+        "altOne"?: string;
+        "altThree"?: string;
+        "altTwo"?: string;
+        "sourceOne"?: string;
+        "sourceThree"?: string;
+        "sourceTwo"?: string;
+    }
+    interface GrpsixFooter {
+        "image"?: string;
+    }
+    interface GrpsixHeader {
+        "homeButton"?: string;
+        "homeButtonLink"?: string;
+        "isUnderpage"?: boolean;
+        "navTabsJson"?: string;
+    }
+    interface GrpsixHerobanner {
+        "heading"?: string;
+        "imageAltText"?: string;
+        "imageSrc"?: string;
+        "linkHref"?: string;
+        "linkText"?: string;
+        "text"?: string;
+    }
+    interface GrpsixHovercards {
+        "altText"?: string;
+        "descriptionText"?: string;
+        "headlineLarge"?: string;
+        "headlineMedium"?: string;
+        "imageQuelle"?: string;
+    }
+    interface GrpsixNewsletter {
+        "websiteName"?: string;
+    }
+    interface GrpsixRecipeCard {
+        "imageAltTextInfo"?: string;
+        "recipeId"?: number;
+    }
+    interface GrpsixRecipeFeedback {
+        "recipeName"?: string;
+    }
+    interface GrpsixRecipeGallery {
+        "imageAltTextInfo"?: string;
+    }
+    interface GrpsixSocialmedia {
     }
     interface IntrinsicElements {
-        "example-component": ExampleComponent;
-        "my-component": MyComponent;
+        "grpsix-brightnessslider": GrpsixBrightnessslider;
+        "grpsix-buttons": GrpsixButtons;
+        "grpsix-cookiebanner": GrpsixCookiebanner;
+        "grpsix-foodfacts": GrpsixFoodfacts;
+        "grpsix-footer": GrpsixFooter;
+        "grpsix-header": GrpsixHeader;
+        "grpsix-herobanner": GrpsixHerobanner;
+        "grpsix-hovercards": GrpsixHovercards;
+        "grpsix-newsletter": GrpsixNewsletter;
+        "grpsix-recipe-card": GrpsixRecipeCard;
+        "grpsix-recipe-feedback": GrpsixRecipeFeedback;
+        "grpsix-recipe-gallery": GrpsixRecipeGallery;
+        "grpsix-socialmedia": GrpsixSocialmedia;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "grpsix-brightnessslider": LocalJSX.GrpsixBrightnessslider & JSXBase.HTMLAttributes<HTMLGrpsixBrightnesssliderElement>;
+            "grpsix-buttons": LocalJSX.GrpsixButtons & JSXBase.HTMLAttributes<HTMLGrpsixButtonsElement>;
+            "grpsix-cookiebanner": LocalJSX.GrpsixCookiebanner & JSXBase.HTMLAttributes<HTMLGrpsixCookiebannerElement>;
+            "grpsix-foodfacts": LocalJSX.GrpsixFoodfacts & JSXBase.HTMLAttributes<HTMLGrpsixFoodfactsElement>;
+            "grpsix-footer": LocalJSX.GrpsixFooter & JSXBase.HTMLAttributes<HTMLGrpsixFooterElement>;
+            "grpsix-header": LocalJSX.GrpsixHeader & JSXBase.HTMLAttributes<HTMLGrpsixHeaderElement>;
+            "grpsix-herobanner": LocalJSX.GrpsixHerobanner & JSXBase.HTMLAttributes<HTMLGrpsixHerobannerElement>;
+            "grpsix-hovercards": LocalJSX.GrpsixHovercards & JSXBase.HTMLAttributes<HTMLGrpsixHovercardsElement>;
+            "grpsix-newsletter": LocalJSX.GrpsixNewsletter & JSXBase.HTMLAttributes<HTMLGrpsixNewsletterElement>;
+            "grpsix-recipe-card": LocalJSX.GrpsixRecipeCard & JSXBase.HTMLAttributes<HTMLGrpsixRecipeCardElement>;
+            "grpsix-recipe-feedback": LocalJSX.GrpsixRecipeFeedback & JSXBase.HTMLAttributes<HTMLGrpsixRecipeFeedbackElement>;
+            "grpsix-recipe-gallery": LocalJSX.GrpsixRecipeGallery & JSXBase.HTMLAttributes<HTMLGrpsixRecipeGalleryElement>;
+            "grpsix-socialmedia": LocalJSX.GrpsixSocialmedia & JSXBase.HTMLAttributes<HTMLGrpsixSocialmediaElement>;
         }
     }
 }

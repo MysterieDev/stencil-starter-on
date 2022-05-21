@@ -1,0 +1,38 @@
+:host {
+  display: block;
+}
+
+.container-fluid {
+  background-color: lightblue; /*muss noch angepasst werden*/
+  overflow:auto;
+}
+
+#newsletter {
+  width: 600px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  height: auto;
+}
+
+.form-control {
+  width: 100%;
+  height: 34px;
+  padding-left: 10px;
+  margin: 5px;
+}
+
+.checkbox {
+  float: left;
+  margin: 5px;
+}
+
+#anmeldebtn {
+  width: 615px;
+  border: 2px solid black;
+  background-color: lightblue;
+  margin-bottom: 15px;
+  font-size: medium;
+  cursor: pointer;
+}
