@@ -1,0 +1,44 @@
+:host {
+  display: block;
+}
+
+.OpenWeather{
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  border: none;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  background-color: #516277;
+  text-align: center;
+  line-height: 58px;
+  color: white;
+}
+.OpenWeather:hover{
+  cursor: pointer;
+}
+
+#weather{
+  height: 100px;
+  width: 300px;
+  background-color: #516277;
+  position: fixed;
+  left: 30px;
+  bottom: 105px;
+  border: none;
+  border-radius: 15px;
+
+box-shadow: 10px 10px 0px 5px rgba(0,0,0,0.70);
+z-index: 1029;
+}
+
+#weather>p, .OpenWeather{
+  font-size: 30px;
+  color: white;;
+}
+
+
+#weather>p{
+  text-align: center;
+}

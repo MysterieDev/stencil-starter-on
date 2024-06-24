@@ -24,6 +24,8 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface WeatherLn {
+    }
 }
 declare global {
     interface HTMLExampleComponentElement extends Components.ExampleComponent, HTMLStencilElement {
@@ -38,9 +40,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLWeatherLnElement extends Components.WeatherLn, HTMLStencilElement {
+    }
+    var HTMLWeatherLnElement: {
+        prototype: HTMLWeatherLnElement;
+        new (): HTMLWeatherLnElement;
+    };
     interface HTMLElementTagNameMap {
         "example-component": HTMLExampleComponentElement;
         "my-component": HTMLMyComponentElement;
+        "weather-ln": HTMLWeatherLnElement;
     }
 }
 declare namespace LocalJSX {
@@ -62,9 +71,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface WeatherLn {
+    }
     interface IntrinsicElements {
         "example-component": ExampleComponent;
         "my-component": MyComponent;
+        "weather-ln": WeatherLn;
     }
 }
 export { LocalJSX as JSX };
@@ -73,6 +85,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "example-component": LocalJSX.ExampleComponent & JSXBase.HTMLAttributes<HTMLExampleComponentElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "weather-ln": LocalJSX.WeatherLn & JSXBase.HTMLAttributes<HTMLWeatherLnElement>;
         }
     }
 }
